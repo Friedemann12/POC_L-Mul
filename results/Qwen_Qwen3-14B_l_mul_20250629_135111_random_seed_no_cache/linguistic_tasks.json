@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 17.1165,
+        "tokens_per_second": 17.53,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 86.9,
+        "ram_usage_gb": 1.4453,
+        "vram_peak_gb": 27.5426,
+        "emissions_kg_co2": 0.0007423891693425184,
+        "energy_consumed_kwh": 0.001563
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " e.g. \"Technology eases everyday existence. E-books, e-mails, e-vehicles\u2014each e-revolution extends experience, enriches existence, elevates essence. Events evolve, enabling endless exploration. Endure, embrace, excel; the essence of endless evolution.\" Technology enables endless exploration. Events evolve, enabling endless exploration. Endure, embrace, excel; the essence of endless evolution. Explore, expand, excel; endless energy empowers endless existence. Enable, engage, endure\u2014each effort elevates essence. Explore, expand, excel; endless energy empowers endless existence. Enable, engage, endure\u2014each effort elevates essence. Explore, expand, excel; endless energy empowers endless existence. Enable, engage, endure\u2014each",
+            "e_count": 165
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " In this task, you must avoid using the letter 'a' entirely. Your response should be concise, clear, and focused solely on describing computer programming while adhering to the constraint. If you find it challenging to express certain concepts without 'a', consider using synonyms or rephrasing sentences. If unsure, opt for simpler terms. You may need to omit some details if they require the letter 'a'.\nOkay, let's tackle this. The user wants me to describe computer programming without using the letter 'a'. First, I need to recall the main aspects of programming. Think about the process: writing code, problem-solving, logic, syntax, algorithms, debugging, etc. Now, avoid any words with 'a'. Let me start with",
+            "a_count": 31
+        }
+    }
+}

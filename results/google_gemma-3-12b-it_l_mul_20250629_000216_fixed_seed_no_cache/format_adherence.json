@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 33.772,
+        "tokens_per_second": 11.84,
+        "total_new_tokens": 400,
+        "cpu_percent_usage": 93.4,
+        "ram_usage_gb": 1.5864,
+        "vram_peak_gb": 22.7401,
+        "emissions_kg_co2": 0.0012877036386898185,
+        "energy_consumed_kwh": 0.002711
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": "\n\n```json\n{\n  \"id\": 12345,\n  \"username\": \"john.doe\",\n  \"isActive\": true,\n  \"tags\": [\"developer\", \"backend\", \"python\"]\n}\n```\n\n\n",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": "  The table should list the following components: 'Database Server', 'Web Server', 'API Server', 'Cache Server', and 'Message Queue'.  The table should also include the following statuses and last check times:\n\n*   **Database Server:** Status: 'Operational', Last Check: '2023-10-27 10:00'\n*   **Web Server:** Status: 'Degraded', Last Check: '2023-10-27 09:30'\n*   **API Server:** Status: 'Operational', Last Check: '2023-10-27 10:15'\n*   **Cache Server:** Status: 'Operational', Last Check: '2023-10-27 09:45'\n*   **Message Queue:** Status: 'Operational', Last Check: '2023-10",
+            "has_table_structure": false,
+            "has_expected_columns": false,
+            "format_adherence": false
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 6.6881,
+        "tokens_per_second": 19.14,
+        "total_new_tokens": 128,
+        "cpu_percent_usage": 66.2,
+        "ram_usage_gb": 1.51,
+        "vram_peak_gb": 14.9714,
+        "emissions_kg_co2": 0.0001655857580509174,
+        "energy_consumed_kwh": 0.000349
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "e\n\nEfficiency and effectiveness are hallmarks of modern technology. Enhanced algorithms and AI enable e-commerce platforms to provide personalized recommendations and streamlined shopping experiences. Electronic devices, from smartphones to smart home gadgets, connect with each other seamlessly, creating an interconnected ecosystem. Energy-efficient appliances and renewable energy sources contribute to sustainable living and reduced environmental impact. Electronic communication tools, such as email and social media, facilitate instant global connections and collaboration. The evolution of e-learning platforms has made education accessible and flexible for all. Embracing these advancements can lead to a more efficient, connected, and sustainable future.",
+            "e_count": 92
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " Coded instructions.",
+            "a_count": 0
+        }
+    }
+}

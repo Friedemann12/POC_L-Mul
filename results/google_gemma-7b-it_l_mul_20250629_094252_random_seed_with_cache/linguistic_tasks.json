@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 9.9086,
+        "tokens_per_second": 28.96,
+        "total_new_tokens": 287,
+        "cpu_percent_usage": 77.1,
+        "ram_usage_gb": 1.5201,
+        "vram_peak_gb": 16.0104,
+        "emissions_kg_co2": 0.0003179448960430409,
+        "energy_consumed_kwh": 0.000669
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nSure, here is your response:\n\nModern technology has revolutionized various aspects of human life, bringing unprecedented convenience and accessibility through its myriad applications. From the ubiquitous smartphone that connects people across the globe to the powerful computer that fuels our daily activities, technology has fundamentally altered the way we interact with the world. The exponential growth of the digital realm has created a virtual space where individuals can interact, collaborate, and access vast repositories of information. Furthermore, advancements in artificial intelligence have enabled machines to mimic human cognitive abilities, revolutionizing industries from healthcare to finance. With the continued development of cutting-edge technologies such as blockchain and quantum computing, the future of human interaction with technology promises to be even more profound.",
+            "e_count": 90
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nA computer program is a set of instructions that tells a computer what to do. It is like a recipe that tells you how to make a cake. The instructions are written in a language that the computer understands.\n\nThe program is divided into parts, like a cake recipe has different sections. Each part of the program does a specific job. For example, one part of the program might be responsible for creating the cake batter, while another part might be responsible for frosting the cake.\n\nWhen you run a program, the computer reads the instructions and follows them. It's like when you follow the steps in a recipe to make a cake. The computer completes each part of the program one step at a time.",
+            "a_count": 48
+        }
+    }
+}

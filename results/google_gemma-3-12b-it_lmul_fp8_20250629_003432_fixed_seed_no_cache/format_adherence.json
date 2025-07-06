@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 116.914,
+        "tokens_per_second": 3.42,
+        "total_new_tokens": 400,
+        "cpu_percent_usage": 98.2,
+        "ram_usage_gb": 7.409,
+        "vram_peak_gb": 12.5031,
+        "emissions_kg_co2": 0.0031680377772416116,
+        "energy_consumed_kwh": 0.00667
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": "\n\n```json\n{\n  \"id\": 12345,\n  \"username\": \"john.doe\",\n  \"isActive\": true,\n  \"tags\": [\"user\", \"active\", \"premium\"]\n}\n```\n\n",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": "  The table should list the following components: 'Database Server', 'Web Server', 'API Server', 'Cache Server', and 'Message Queue'.  The status of each component should be 'Online' except for the 'Message Queue' which should be 'Degraded'.  The last check for each component should be a timestamp in the format 'YYYY-MM-DD HH:MM:SS'.  For the 'Message Queue', the last check should be more recent than the others.\n\n```markdown\n| Component | Status | Last Check |\n|---|---|---|\n| Database Server | Online | 2024-01-27 10:00:00 |\n| Web Server | Online | 2024-01-27 10:05:00 |\n| API Server | Online | 2024-01-27 10:10:00 |",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

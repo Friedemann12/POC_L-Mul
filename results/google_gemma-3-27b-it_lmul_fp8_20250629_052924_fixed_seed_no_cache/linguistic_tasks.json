@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 116.1916,
+        "tokens_per_second": 2.58,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 98.2,
+        "ram_usage_gb": 6.9826,
+        "vram_peak_gb": 27.8305,
+        "emissions_kg_co2": 0.003747189422477345,
+        "energy_consumed_kwh": 0.007889
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nA vast global grid now links us. Data flows at light's quick jump. Apps aid us in daily tasks. Tools aid work, play. Such innovation transforms how humans function.\n",
+            "e_count": 0
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nIt's instructing the device, using codes, to do things. Think of it like giving precise steps. You set rules for the device, telling it what to do, when to do it, using simple words the device understands. More complex routines build from these steps. It\u2019s how we solve problems with machines.  Logic is key; every instruction must be correct. Developers write these codes, then test them to fix errors. The result? The device performs the intended function.\n\n\n\n",
+            "a_count": 3
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 73.8722,
+        "tokens_per_second": 5.41,
+        "total_new_tokens": 400,
+        "cpu_percent_usage": 97.1,
+        "ram_usage_gb": 2.3453,
+        "vram_peak_gb": 8.5304,
+        "emissions_kg_co2": 0.0018758905800896589,
+        "energy_consumed_kwh": 0.003949
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": " The JSON object should also include a 'createdAt' field with a timestamp.\n\nHere is an example of what the JSON object might look like:\n\n```json\n{\n  \"id\": 1234,\n  \"username\": \"john_doe\",\n  \"isActive\": true,\n  \"tags\": [\"developer\", \"python\", \"java\"],\n  \"createdAt\": \"2023-10-01T12:00:00Z\"\n}\n```\n\nTo create a JSON object in Python, you can use the `json` module. Here is an example of how to create the JSON object:\n\n```python\nimport json\nfrom datetime import datetime\n\n# Create a dictionary for the user\nuser = {\n    \"id\": 1234,\n    \"username\": \"john_doe\",\n    \"isActive\": True,\n    \"tags\": [\"developer\", \"python\", \"java\"],\n    \"createdAt\": datetime.",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": " I'll provide the data for each row.\n\n### Example Row\nComponent: Battery\nStatus: OK\nLast Check: 2023-10-10\n\n### Additional Rows:\n1. Component: Camera\n   Status: Faulty\n   Last Check: 2023-10-09\n\n2. Component: Motor\n   Status: OK\n   Last Check: 2023-10-11\n\n3. Component: Sensor\n   Status: Warning\n   Last Check: 2023-10-12\n\nHere's the Markdown table:\n\n| Component        | Status      | Last Check |\n|------------------|-------------|------------|\n| Battery          | OK          | 2023-10-10 |\n| Camera           | Faulty      | 2023-10-09 |\n| Motor            | OK          | 2023",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

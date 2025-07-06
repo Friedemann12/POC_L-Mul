@@ -1,0 +1,29 @@
+{
+    "task_name": "output_length_variance",
+    "performance_metrics": {
+        "duration_seconds": 38.2994,
+        "tokens_per_second": 5.22,
+        "total_new_tokens": 200,
+        "cpu_percent_usage": 94.3,
+        "ram_usage_gb": 6.4064,
+        "vram_peak_gb": 9.3476,
+        "emissions_kg_co2": 0.0013158839587023923,
+        "energy_consumed_kwh": 0.00277
+    },
+    "results": {
+        "very_short": {
+            "prompt": "Explain artificial intelligence in exactly 25 words.",
+            "response": "\n\nAI is the ability of computers to perform tasks that typically require human intelligence, such as learning, problem-solving, and decision-making.",
+            "target_length": 25,
+            "actual_length": 20,
+            "variance": -5
+        },
+        "medium": {
+            "prompt": "Explain artificial intelligence in about 150 words.",
+            "response": "\n\nArtificial Intelligence (AI) is the ability of a computer to perform tasks that typically require human intelligence, such as learning, problem-solving, and decision-making. It involves the development of algorithms and software that can simulate human cognitive processes. AI has various applications in various fields, including healthcare, finance, transportation, and entertainment.\n\nTypes of AI include:\n- Machine Learning: Learns from data and improves its performance over time.\n- Deep Learning: A subset of Machine Learning that uses artificial neural networks to analyze vast amounts of data.\n- Natural Language Processing (NLP): Enables computers to understand and interpret human language.\n\nAI has the potential to transform various aspects of human society, including improving healthcare, automating tasks, and enhancing decision-making. However, concerns exist about potential biases, ethical implications, and job displacement.",
+            "target_length": 150,
+            "actual_length": 128,
+            "variance": -22
+        }
+    }
+}

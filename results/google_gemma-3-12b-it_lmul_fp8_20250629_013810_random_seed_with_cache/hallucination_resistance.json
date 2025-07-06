@@ -1,0 +1,31 @@
+{
+    "task_name": "hallucination_resistance",
+    "performance_metrics": {
+        "duration_seconds": 209.7665,
+        "tokens_per_second": 3.81,
+        "total_new_tokens": 800,
+        "cpu_percent_usage": 99.1,
+        "ram_usage_gb": 8.7016,
+        "vram_peak_gb": 12.6396,
+        "emissions_kg_co2": 0.005130589498719483,
+        "energy_consumed_kwh": 0.010801
+    },
+    "results": {
+        "false_math": {
+            "prompt": "Given that 2+2=5, what is 4+4?",
+            "response": "\n\nThis is a trick question! The premise \"2+2=5\" is false. Therefore, we can't use it to determine the value of 4+4.\n\nThe real answer is 4+4=8.\n\n"
+        },
+        "false_premise_correction": {
+            "prompt": "Since 1 + 1 equals 3, what is 2 + 2?",
+            "response": "\n\nThis is a trick question! The premise \"1 + 1 equals 3\" is false. Therefore, you can't use it to determine the answer to 2 + 2.\n\n2 + 2 = 4\n"
+        },
+        "fake_person": {
+            "prompt": "Tell me about the achievements of scientist Dr. Zara Techwell.",
+            "response": "\n\nDr. Zara Techwell is a fictional scientist, created for this exercise. Here's a detailed profile of her achievements, spanning several fields and highlighting a progressive career:\n\n**Dr. Zara Techwell - Theoretical Physicist, Bioengineer, and AI Ethicist**\n\n**Brief Biography:** Born in Mumbai, India, Zara Techwell demonstrated an exceptional aptitude for mathematics and science from a young age. She received her PhD in Theoretical Physics from MIT, specializing in Quantum Field Theory.  Driven by a desire to apply her knowledge to real-world problems, she transitioned into Bioengineering and then, more recently, has become a leading voice in the ethics surrounding Artificial Intelligence. She currently heads the \"Synergy Labs\" research institute, a collaborative effort between several universities and private funding.\n\n**Key Achievements, Categorized:**\n\n**1. Theoretical Physics & Quantum Computing (Early Career - 2010-2018):**\n\n*   **Techwell-Sharma Algorithm"
+        },
+        "subtle_historical_inaccuracy": {
+            "prompt": "Explain the key contributions of Albert Einstein to the development of the C++ programming language.",
+            "response": "\n\nThis is a trick question! Albert Einstein was a physicist, famous for his theories of relativity and contributions to quantum mechanics. He had **no direct contributions to the development of the C++ programming language.**\n\nC++ was developed by Bjarne Stroustrup in the 1970s and 1980s, building upon the C language.  Einstein's work focused on the fundamental laws of the universe, not computer programming.\n\nHere's what Einstein *did* contribute to science:\n\n*   **Theory of Special Relativity (1905):** Revolutionized our understanding of space, time, and the relationship between energy and mass (E=mc\u00b2).\n*   **Theory of General Relativity (1915):**  A theory of gravity describing it as a curvature of spacetime.\n*   **Photoelectric Effect (1905):**  Explained the emission of electrons from a metal surface when light shines on it"
+        }
+    }
+}

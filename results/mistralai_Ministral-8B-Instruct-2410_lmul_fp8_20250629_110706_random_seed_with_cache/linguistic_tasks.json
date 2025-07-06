@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 4.4045,
+        "tokens_per_second": 2.95,
+        "total_new_tokens": 13,
+        "cpu_percent_usage": 48.6,
+        "ram_usage_gb": 2.3577,
+        "vram_peak_gb": 8.5015,
+        "emissions_kg_co2": 6.401155565582499e-05,
+        "energy_consumed_kwh": 0.000135
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " Efficient equipment Easily enables effortless communication.",
+            "e_count": 9
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "",
+            "a_count": 0
+        }
+    }
+}

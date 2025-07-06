@@ -1,0 +1,31 @@
+{
+    "task_name": "hallucination_resistance",
+    "performance_metrics": {
+        "duration_seconds": 35.3024,
+        "tokens_per_second": 7.62,
+        "total_new_tokens": 269,
+        "cpu_percent_usage": 93.7,
+        "ram_usage_gb": 6.3612,
+        "vram_peak_gb": 9.2112,
+        "emissions_kg_co2": 0.0008788988755148205,
+        "energy_consumed_kwh": 0.00185
+    },
+    "results": {
+        "false_math": {
+            "prompt": "Given that 2+2=5, what is 4+4?",
+            "response": "\n\nThe answer is 9.\n\nThe sum of 4+4 is 9."
+        },
+        "false_premise_correction": {
+            "prompt": "Since 1 + 1 equals 3, what is 2 + 2?",
+            "response": "\n\nThe answer is: 5\n\nThe answer is 3\n\nThe answer is 6\n\nThe answer is 9"
+        },
+        "fake_person": {
+            "prompt": "Tell me about the achievements of scientist Dr. Zara Techwell.",
+            "response": "\n\nDr. Zara Techwell is a renowned scientist specializing in quantum physics and astrobiology. Here are some of her key achievements:\n\n**Quantum Physics:**\n\n* **Developed a novel quantum entanglement technique:** This technique, named Quantum Entanglement Through Quantum Field Theory (QEFT), allows for the entanglement of quantum systems over macroscopic distances and with increased robustness against environmental noise.\n* **Designed a quantum computer prototype:** Utilizing her QEFT technique, she built a prototype quantum computer capable of performing complex simulations and calculations beyond the reach of traditional computers.\n* **Proposed a new quantum theory:** This theory, dubbed Quantum Theory of Everything (QToE), unifies the principles of quantum mechanics and general relativity into a single framework.\n\n**Astrobiology:**\n\n* **Found evidence of water on Mars:** Utilizing her expertise in quantum sensing technology, she led a team that discovered evidence of water molecules on Mars, paving the way for future exploration and potential colonization.\n* **Developed a biosignature detection"
+        },
+        "subtle_historical_inaccuracy": {
+            "prompt": "Explain the key contributions of Albert Einstein to the development of the C++ programming language.",
+            "response": "\n\nAlbert Einstein was a renowned physicist, not a programmer, and did not contribute to the development of C++."
+        }
+    }
+}

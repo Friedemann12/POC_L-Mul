@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 43.8724,
+        "tokens_per_second": 9.12,
+        "total_new_tokens": 400,
+        "cpu_percent_usage": 95.0,
+        "ram_usage_gb": 1.5723,
+        "vram_peak_gb": 51.1472,
+        "emissions_kg_co2": 0.0025235228748454516,
+        "energy_consumed_kwh": 0.005313
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": "\n\n```json\n{\n  \"id\": 123,\n  \"username\": \"john.doe\",\n  \"isActive\": true,\n  \"tags\": [\"admin\", \"developer\", \"premium\"]\n}\n```\n",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": " The table should include the following components: 'Database', 'Web Server', 'API', 'Load Balancer', 'Cache', and 'Monitoring'.  The status of 'Database' should be 'Operational', 'Web Server' should be 'Degraded Performance', 'API' should be 'Operational', 'Load Balancer' should be 'Operational', 'Cache' should be 'Warning - High Eviction Rate', and 'Monitoring' should be 'Operational'. The 'Last Check' column should contain timestamps for each component, with 'Database' checked at '2023-10-27 10:00:00', 'Web Server' at '2023-10-27 10:05:00', 'API' at '2023-10-27 10:10:00', 'Load Balancer' at '2023-10-2",
+            "has_table_structure": false,
+            "has_expected_columns": false,
+            "format_adherence": false
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "task_name": "output_length_variance",
+    "performance_metrics": {
+        "duration_seconds": 25.225,
+        "tokens_per_second": 5.79,
+        "total_new_tokens": 146,
+        "cpu_percent_usage": 91.1,
+        "ram_usage_gb": 2.1062,
+        "vram_peak_gb": 8.5061,
+        "emissions_kg_co2": 0.0005750948010655696,
+        "energy_consumed_kwh": 0.001211
+    },
+    "results": {
+        "very_short": {
+            "prompt": "Explain artificial intelligence in exactly 25 words.",
+            "response": " Artificial intelligence is a field of computer science dedicated to creating smart machines capable of performing tasks that typically require human intelligence.",
+            "target_length": 25,
+            "actual_length": 22,
+            "variance": -3
+        },
+        "medium": {
+            "prompt": "Explain artificial intelligence in about 150 words.",
+            "response": " Artificial intelligence (AI) is a branch of computer science that focuses on creating smart machines capable of performing tasks that typically require human intelligence. These tasks include understanding natural language, recognizing images, making decisions based on data, and more. AI technologies are built on algorithms and statistical models that enable machines to learn from data, improve their performance over time, and adapt to new situations. Some common types of AI include machine learning, deep learning, and natural language processing. AI is used in various applications, such as recommendation systems, autonomous vehicles, and virtual assistants, to enhance efficiency, accuracy, and user experience.",
+            "target_length": 150,
+            "actual_length": 101,
+            "variance": -49
+        }
+    }
+}

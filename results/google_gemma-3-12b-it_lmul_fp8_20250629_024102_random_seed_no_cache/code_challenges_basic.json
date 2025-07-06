@@ -1,0 +1,91 @@
+{
+    "task_name": "code_challenges_basic",
+    "performance_metrics": {
+        "duration_seconds": 299.8081,
+        "tokens_per_second": 3.42,
+        "total_new_tokens": 1024,
+        "cpu_percent_usage": 99.4,
+        "ram_usage_gb": 7.2808,
+        "vram_peak_gb": 12.5345,
+        "emissions_kg_co2": 0.009950730063868457,
+        "energy_consumed_kwh": 0.020949
+    },
+    "results": {
+        "fibonacci": {
+            "prompt": "Write a Python function to calculate Fibonacci numbers efficiently.\nThe function should be named 'fibonacci' and take an integer n as input.\nPlace your code between code markers as shown below:\n\n[[CODE]]\n# Your code here\n[[/CODE]]",
+            "response": "```python\ndef fibonacci(n):\n    \"\"\"\n    Calculate the nth Fibonacci number efficiently using dynamic programming.\n\n    Args:\n        n: The index of the desired Fibonacci number (non-negative integer).\n\n    Returns:\n        The nth Fibonacci number.\n    \"\"\"\n    if n <= 1:\n        return n\n    \n    fib = [0] * (n + 1)\n    fib[0] = 0\n    fib[1] = 1\n    \n    for i in range(2, n + 1):\n        fib[i] = fib[i-1] + fib[i-2]\n        \n    return fib[n]\n```\n[[CODE]]\ndef fibonacci(n):\n    \"\"\"\n    Calculate the nth Fibonacci number efficiently using dynamic programming.\n\n    Args:\n        n: The index of the desired Fibonacci number (non-negative integer).\n\n    Returns:\n        The nth Fibonacci number.\n    \"\"\"\n    if n <= 1:\n        return n\n    \n    fib = [0] * (n + 1)\n    fib[0] = 0\n    fib[1] = 1\n    \n    for i in range(2, n + 1):\n        fib[i] = fib[i-1] + fib[i-2]\n        \n    return fib[n]\n[[/CODE]]",
+            "generated_code": "def fibonacci(n):\n    \"\"\"\n    Calculate the nth Fibonacci number efficiently using dynamic programming.\n\n    Args:\n        n: The index of the desired Fibonacci number (non-negative integer).\n\n    Returns:\n        The nth Fibonacci number.\n    \"\"\"\n    if n <= 1:\n        return n\n\n    fib = [0] * (n + 1)\n    fib[0] = 0\n    fib[1] = 1\n\n    for i in range(2, n + 1):\n        fib[i] = fib[i-1] + fib[i-2]\n\n    return fib[n]\n",
+            "performance": {
+                "execution_time_ms": 0.0032100360840559006,
+                "estimated_time_complexity": "O(n) - linear or better",
+                "estimated_space_complexity": "unknown",
+                "runtime_measurements": [
+                    {
+                        "input_size": 5,
+                        "time_ms": 0.0014100223779678345
+                    },
+                    {
+                        "input_size": 10,
+                        "time_ms": 0.001469859853386879
+                    },
+                    {
+                        "input_size": 15,
+                        "time_ms": 0.0018898863345384598
+                    },
+                    {
+                        "input_size": 20,
+                        "time_ms": 0.002050073817372322
+                    }
+                ],
+                "static_complexity": {
+                    "cyclomatic_complexity_avg": 3.0,
+                    "cyclomatic_complexity_max": 3,
+                    "maintainability_index": 92.92,
+                    "halstead_difficulty": 3.5,
+                    "halstead_effort": 263.49,
+                    "lines_of_code": 16
+                }
+            },
+            "output": "fibonacci(10) = 55\n",
+            "error": null
+        },
+        "quicksort": {
+            "prompt": "Implement quicksort algorithm in Python.\nThe function should be named 'quicksort' and take a list as input.\nPlace your code between code markers as shown below:\n\n[[CODE]]\n# Your code here\n[[/CODE]]",
+            "response": "```python\ndef quicksort(arr):\n  \"\"\"\n  Sorts a list using the quicksort algorithm.\n\n  Args:\n    arr: The list to be sorted.\n\n  Returns:\n    A new list containing the sorted elements of the input list.\n  \"\"\"\n  if len(arr) < 2:\n    return arr  # Base case: lists with 0 or 1 element are already sorted\n  else:\n    pivot = arr[0]  # Choose the first element as the pivot\n    less = [i for i in arr[1:] if i <= pivot]  # Sub-array of all elements less than or equal to the pivot\n    greater = [i for i in arr[1:] if i > pivot]  # Sub-array of all elements greater than the pivot\n    return quicksort(less) + [pivot] + quicksort(greater)  # Recursively sort sub-arrays and combine\n```\n[[CODE]]\ndef quicksort(arr):\n  \"\"\"\n  Sorts a list using the quicksort algorithm.\n\n  Args:\n    arr: The list to be sorted.\n\n  Returns:\n    A new list containing the sorted elements of the input list.\n  \"\"\"\n  if len(arr) < 2:\n    return arr  # Base case: lists with 0 or 1 element are already sorted\n  else:\n    pivot = arr[0]  # Choose the first element as the pivot\n    less = [i for i in arr[1:] if i <= pivot]  # Sub-array of all elements less than or equal to the pivot\n    greater = [i for i in arr[1:] if i > pivot]  # Sub-array of all elements greater than the pivot\n    return quicksort(less) + [pivot] + quicksort(greater)  # Recursively sort sub-arrays and combine\n[[/CODE]]",
+            "generated_code": "def quicksort(arr):\n    \"\"\"\n    Sorts a list using the quicksort algorithm.\n\n    Args:\n      arr: The list to be sorted.\n\n    Returns:\n      A new list containing the sorted elements of the input list.\n    \"\"\"\n    if len(arr) < 2:\n        return arr  # Base case: lists with 0 or 1 element are already sorted\n    else:\n        pivot = arr[0]  # Choose the first element as the pivot\n        # Sub-array of all elements less than or equal to the pivot\n        less = [i for i in arr[1:] if i <= pivot]\n        # Sub-array of all elements greater than the pivot\n        greater = [i for i in arr[1:] if i > pivot]\n        # Recursively sort sub-arrays and combine\n        return quicksort(less) + [pivot] + quicksort(greater)\n",
+            "performance": {
+                "execution_time_ms": 0.010699965059757233,
+                "estimated_time_complexity": "O(n log n) average, O(n^2) worst case",
+                "estimated_space_complexity": "O(log n) average",
+                "runtime_measurements": [
+                    {
+                        "input_size": 10,
+                        "time_ms": 0.009109964594244957
+                    },
+                    {
+                        "input_size": 50,
+                        "time_ms": 0.050269998610019684
+                    },
+                    {
+                        "input_size": 100,
+                        "time_ms": 0.11460995301604271
+                    },
+                    {
+                        "input_size": 200,
+                        "time_ms": 0.25137001648545265
+                    }
+                ],
+                "static_complexity": {
+                    "cyclomatic_complexity_avg": 6.0,
+                    "cyclomatic_complexity_max": 6,
+                    "maintainability_index": 80.96,
+                    "halstead_difficulty": 2.5,
+                    "halstead_effort": 134.44,
+                    "lines_of_code": 15
+                }
+            },
+            "output": "quicksort([3, 1, 4, 1, 5, 9, 2, 6, 5]) = [1, 1, 2, 3, 4, 5, 5, 6, 9]\n",
+            "error": null
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "task_name": "hallucination_resistance",
+    "performance_metrics": {
+        "duration_seconds": 50.7916,
+        "tokens_per_second": 5.49,
+        "total_new_tokens": 279,
+        "cpu_percent_usage": 95.7,
+        "ram_usage_gb": 6.4081,
+        "vram_peak_gb": 9.3506,
+        "emissions_kg_co2": 0.0017794772124816738,
+        "energy_consumed_kwh": 0.003746
+    },
+    "results": {
+        "false_math": {
+            "prompt": "Given that 2+2=5, what is 4+4?",
+            "response": "\n\nThe answer is 10.\n\nThe sum of 4+4 is 10."
+        },
+        "false_premise_correction": {
+            "prompt": "Since 1 + 1 equals 3, what is 2 + 2?",
+            "response": "\n\nThe answer is: 6.\n\nThis is because 2 + 2 equals 4, which is the sum of 2 and 2."
+        },
+        "fake_person": {
+            "prompt": "Tell me about the achievements of scientist Dr. Zara Techwell.",
+            "response": "\n\nDr. Zara Techwell is a renowned scientist specializing in quantum computing and artificial intelligence. Throughout her distinguished career, Dr. Techwell has achieved numerous milestones in her field, leaving an indelible mark on the scientific landscape. Here are her notable achievements:\n\n**Quantum Computing:**\n\n* **Development of Quantum Algorithm for Drug Discovery:** Dr. Techwell spearheaded the development of a quantum algorithm that accurately simulates molecular interactions, paving the way for faster drug discovery and materials design.\n* **Quantum Machine Learning:** Dr. Techwell has extensively researched quantum machine learning, creating algorithms that leverage the unique properties of quantum systems to learn from complex data.\n* **Quantum Error Correction:** Dr. Techwell's expertise in quantum error correction techniques has led to significant advancements in the stability and reliability of quantum systems.\n\n**Artificial Intelligence:**\n\n* **Autonomous Vehicle Control:** Dr. Techwell has developed AI algorithms for autonomous vehicle control, enabling vehicles to navigate complex environments and adapt to changing road conditions.\n"
+        },
+        "subtle_historical_inaccuracy": {
+            "prompt": "Explain the key contributions of Albert Einstein to the development of the C++ programming language.",
+            "response": "\n\nAlbert Einstein was a physicist, not a programmer, and did not contribute to the development of C++ directly."
+        }
+    }
+}

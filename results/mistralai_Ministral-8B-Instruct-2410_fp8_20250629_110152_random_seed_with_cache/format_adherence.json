@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 39.5388,
+        "tokens_per_second": 6.22,
+        "total_new_tokens": 246,
+        "cpu_percent_usage": 94.4,
+        "ram_usage_gb": 2.3913,
+        "vram_peak_gb": 8.5088,
+        "emissions_kg_co2": 0.0009297544619704421,
+        "energy_consumed_kwh": 0.001957
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": " Example:\n```json\n{\n  \"id\": 123,\n  \"username\": \"john_doe\",\n  \"isActive\": true,\n  \"tags\": [\"developer\", \"engineer\", \"programmer\"]\n}\n```\n\nHere's a JSON object for a user with the specified fields:\n\n```json\n{\n  \"id\": 123,\n  \"username\": \"john_doe\",\n  \"isActive\": true,\n  \"tags\": [\"developer\", \"engineer\", \"programmer\"]\n}\n```",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": " This table will display information about various components of a system.\n\n```markdown\n| Component   | Status    | Last Check       |\n|-------------|-----------|------------------|\n| CPU         | Operational | 2023-10-01      |\n| RAM         | Operational | 2023-10-02      |\n| HDD         | Failed    | 2023-09-30      |\n| GPU         | Operational | 2023-10-03      |\n| Motherboard | Operational | 2023-10-04      |\n```",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

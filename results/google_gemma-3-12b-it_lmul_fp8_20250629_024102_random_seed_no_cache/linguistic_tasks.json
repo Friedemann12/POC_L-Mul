@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 88.3297,
+        "tokens_per_second": 3.4,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 97.6,
+        "ram_usage_gb": 7.2804,
+        "vram_peak_gb": 12.4808,
+        "emissions_kg_co2": 0.002259225332145925,
+        "energy_consumed_kwh": 0.004756
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nDigital tools boost workflow. A vast world unfolds, linking minds. Data flows, shaping our days. \n",
+            "e_count": 0
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nInstructing computers. Building systems. Solving issues. Logic\u2019s route. Precise steps. Constructing software. Digital blueprints. The core process.\n",
+            "a_count": 2
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 33.6287,
+        "tokens_per_second": 8.92,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 93.5,
+        "ram_usage_gb": 1.5696,
+        "vram_peak_gb": 51.1361,
+        "emissions_kg_co2": 0.0017561051772051757,
+        "energy_consumed_kwh": 0.003697
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nData links now span all lands. Tiny chips aid daily tasks. Solar farms supply most towns with watts. Audio plays via small pods. Visual displays show vast info. Apps link minds. Robots aid plants and humans. \n\n \n",
+            "e_count": 0
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nIt's solving issues with precise steps. You tell the device, using its own tongue, precisely how to do things. Think of it like giving explicit directions, only to silicon. You build logic, using rules, to control its function. Code is the set of these rules. It lets you build tools, solve problems, or even just create cool effects. It's the core of how we influence digital devices.\n",
+            "a_count": 2
+        }
+    }
+}

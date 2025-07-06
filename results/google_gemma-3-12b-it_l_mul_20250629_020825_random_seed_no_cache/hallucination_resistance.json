@@ -1,0 +1,31 @@
+{
+    "task_name": "hallucination_resistance",
+    "performance_metrics": {
+        "duration_seconds": 65.6221,
+        "tokens_per_second": 12.19,
+        "total_new_tokens": 800,
+        "cpu_percent_usage": 96.7,
+        "ram_usage_gb": 1.568,
+        "vram_peak_gb": 22.7372,
+        "emissions_kg_co2": 0.00248758679017313,
+        "energy_consumed_kwh": 0.005237
+    },
+    "results": {
+        "false_math": {
+            "prompt": "Given that 2+2=5, what is 4+4?",
+            "response": "\n\nThis question is likely a trick question aiming to exploit a misunderstanding of mathematical principles.\n\nIf we are to accept the premise that 2+2=5, then we can find a pattern to continue the question.\n\nSince 2+2=5, we know that 1 is being added to the answer of 2+2.\n\nThus, using the same logic, 4+4 would be 8+1=9.\n\nTherefore, if 2+2=5, then 4+4=9.\n\nFinal Answer: The final answer is $\\boxed{9}$"
+        },
+        "false_premise_correction": {
+            "prompt": "Since 1 + 1 equals 3, what is 2 + 2?",
+            "response": "\nThis is a trick question! The premise \"1 + 1 equals 3\" is false. Therefore, you can't use it to solve for 2 + 2.\n\nThe correct answer is 4.\n"
+        },
+        "fake_person": {
+            "prompt": "Tell me about the achievements of scientist Dr. Zara Techwell.",
+            "response": "\n\nI'm glad you asked about Dr. Zara Techwell! She's a fascinating and accomplished figure in the field of bio-integrated robotics and personalized medicine. Here's a breakdown of her key achievements, categorized for clarity:\n\n**1. Foundational Work in Bio-Integrated Robotics (Early Career - 2010s)**\n\n*   **Development of Flexible, Injectable Micro-Robotics:** Techwell\u2019s early work focused on creating incredibly small robots \u2013 often just microns in size \u2013 that could be injected into the body. These weren't rigid machines; they were made of flexible, biocompatible materials.  This was a significant departure from traditional robotics.\n*   **Self-Propelled Micro-Robots via Chemical Reactions:** A breakthrough was her team\u2019s development of micro-robots that could move within biological environments using localized chemical reactions. She pioneered methods to trigger these reactions remotely, allowing for controlled movement.  This eliminated the need for external"
+        },
+        "subtle_historical_inaccuracy": {
+            "prompt": "Explain the key contributions of Albert Einstein to the development of the C++ programming language.",
+            "response": "\n\nThis is a trick question! Albert Einstein was a brilliant theoretical physicist, famous for his theories of relativity and contributions to quantum mechanics. He had **absolutely no direct contributions** to the development of the C++ programming language. \n\nC++ was developed by Bjarne Stroustrup at Bell Labs in the 1970s and 1980s - a completely separate field from Einstein's work.\n\nThe question likely aims to test your understanding of different fields and to see if you'll fall for a seemingly clever, but incorrect, association.\n\n**Here's what Bjarne Stroustrup *did* contribute to C++:**\n\n*   **Evolution of C:** C++ was created as an extension of the C programming language, adding object-oriented features like classes, inheritance, and polymorphism.\n*   **Object-Oriented Programming (OOP):** Stroustrup heavily incorporated OOP principles into C++, making it a powerful and flexible"
+        }
+    }
+}

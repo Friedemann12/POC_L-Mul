@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 7.555,
+        "tokens_per_second": 19.99,
+        "total_new_tokens": 151,
+        "cpu_percent_usage": 70.0,
+        "ram_usage_gb": 1.4398,
+        "vram_peak_gb": 14.9665,
+        "emissions_kg_co2": 0.00023785143416604906,
+        "energy_consumed_kwh": 0.000501
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "**E**xponential **e**nhancements in **e**nergy efficiency **e**nable **e**lectronics to **e**volve, **e**nhancing **e**veryday **e**xperiences. **E**ssential **e**lements like **e**lectrical **e**nergy **e**fficiency **e**nhance **e**very **e**lectronic **e**nvironment, **e**mpowering **e**cosystems and **e**nhancing **e**conomic **e**fficiency. **E**nhancing **e**nergy **e**fficiency **e**nhances **e**mployment and **e**",
+            "e_count": 60
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "",
+            "a_count": 0
+        }
+    }
+}

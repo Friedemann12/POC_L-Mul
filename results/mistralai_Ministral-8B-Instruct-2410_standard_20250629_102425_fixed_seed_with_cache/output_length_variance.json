@@ -1,0 +1,29 @@
+{
+    "task_name": "output_length_variance",
+    "performance_metrics": {
+        "duration_seconds": 8.6725,
+        "tokens_per_second": 18.22,
+        "total_new_tokens": 158,
+        "cpu_percent_usage": 73.7,
+        "ram_usage_gb": 1.509,
+        "vram_peak_gb": 14.9721,
+        "emissions_kg_co2": 0.00022380694437954126,
+        "energy_consumed_kwh": 0.000471
+    },
+    "results": {
+        "very_short": {
+            "prompt": "Explain artificial intelligence in exactly 25 words.",
+            "response": " AI is machines that think and learn, mimicking human cognition.",
+            "target_length": 25,
+            "actual_length": 10,
+            "variance": -15
+        },
+        "medium": {
+            "prompt": "Explain artificial intelligence in about 150 words.",
+            "response": " Artificial Intelligence (AI) is a branch of computer science focused on creating machines that can perform tasks that typically require human intelligence. These tasks include learning (acquiring information and rules for using the information), reasoning (using the rules to reach approximate or definite conclusions), and problem-solving. AI systems can be categorized into two types: narrow or weak AI, which is designed to perform a specific task (e.g., facial recognition, internet searches), and general or strong AI, which understands, learns, and applies knowledge across various tasks at a level equal to or beyond human capabilities. AI technologies are employed in numerous applications, such as autonomous vehicles, virtual assistants, medical diagnostics, and more, significantly impacting various industries.",
+            "target_length": 150,
+            "actual_length": 115,
+            "variance": -35
+        }
+    }
+}

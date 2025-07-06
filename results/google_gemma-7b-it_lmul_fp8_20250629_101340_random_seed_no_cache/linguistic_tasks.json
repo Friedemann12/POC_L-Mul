@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 27.4456,
+        "tokens_per_second": 5.36,
+        "total_new_tokens": 147,
+        "cpu_percent_usage": 91.9,
+        "ram_usage_gb": 6.4077,
+        "vram_peak_gb": 9.3396,
+        "emissions_kg_co2": 0.000914301128791818,
+        "energy_consumed_kwh": 0.001925
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nSure, here is the response:\n\nElectronic gadgets have revolutionized the way we live and interact with the world. From smartphones to computers, the ubiquity of electronic devices has drastically altered our daily routines. The seamless integration of electronic gadgets into our lives has led to an era of unprecedented convenience and efficiency. With the help of artificial intelligence, electronic gadgets have made our lives easier, faster, and more connected.",
+            "e_count": 63
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nA computer program is a set of instructions that a computer follows to complete a task. These instructions are written in a programming language, which is like a language that humans use to communicate with computers. The programmer writes the instructions in a way that the computer can understand, and the computer then executes those instructions.",
+            "a_count": 25
+        }
+    }
+}

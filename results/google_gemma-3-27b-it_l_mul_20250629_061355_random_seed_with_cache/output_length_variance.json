@@ -1,0 +1,29 @@
+{
+    "task_name": "output_length_variance",
+    "performance_metrics": {
+        "duration_seconds": 61.7488,
+        "tokens_per_second": 8.5,
+        "total_new_tokens": 525,
+        "cpu_percent_usage": 96.5,
+        "ram_usage_gb": 1.6066,
+        "vram_peak_gb": 51.3632,
+        "emissions_kg_co2": 0.0021576983535010704,
+        "energy_consumed_kwh": 0.004543
+    },
+    "results": {
+        "very_short": {
+            "prompt": "Explain artificial intelligence in exactly 25 words.",
+            "response": "\nArtificial intelligence mimics human intelligence in machines, enabling them to learn, problem-solve, and make decisions\u2014often exceeding human capabilities in specific tasks.\n",
+            "target_length": 25,
+            "actual_length": 21,
+            "variance": -4
+        },
+        "medium": {
+            "prompt": "Explain artificial intelligence in about 150 words.",
+            "response": "\n\nArtificial intelligence (AI) is broadly the simulation of human intelligence processes by computer systems. It's not about robots taking over, but about machines learning, reasoning, and problem-solving. \n\nThere are two main types: **Narrow or Weak AI**, designed for specific tasks like spam filtering or image recognition, and **General or Strong AI**, a hypothetical AI with human-level cognitive abilities. \n\nAI achieves this through techniques like **machine learning**, where systems improve from data without explicit programming, and **deep learning**, using artificial neural networks with multiple layers. \n\nCurrently, AI powers many everyday applications: recommendation systems, virtual assistants, self-driving cars, and medical diagnoses.  While still evolving, AI is rapidly transforming industries and impacting how we live and work, offering both immense potential and ethical considerations.\n",
+            "target_length": 150,
+            "actual_length": 121,
+            "variance": -29
+        }
+    }
+}

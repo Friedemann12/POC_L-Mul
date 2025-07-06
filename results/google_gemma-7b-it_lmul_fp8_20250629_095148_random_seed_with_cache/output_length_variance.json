@@ -1,0 +1,29 @@
+{
+    "task_name": "output_length_variance",
+    "performance_metrics": {
+        "duration_seconds": 19.3759,
+        "tokens_per_second": 6.76,
+        "total_new_tokens": 131,
+        "cpu_percent_usage": 88.4,
+        "ram_usage_gb": 6.3034,
+        "vram_peak_gb": 9.0778,
+        "emissions_kg_co2": 0.0004588704285870279,
+        "energy_consumed_kwh": 0.000966
+    },
+    "results": {
+        "very_short": {
+            "prompt": "Explain artificial intelligence in exactly 25 words.",
+            "response": "\n\nAI is the ability of a computer to perform tasks that typically require human intelligence.",
+            "target_length": 25,
+            "actual_length": 15,
+            "variance": -10
+        },
+        "medium": {
+            "prompt": "Explain artificial intelligence in about 150 words.",
+            "response": "\n\nArtificial intelligence (AI) is the ability of a computer to perform tasks that typically require human intelligence, such as learning, problem-solving, and decision-making. AI can be divided into two main categories: weak AI, which is capable of performing specific tasks, and strong AI, which is capable of general intelligence. AI has a wide range of applications in various fields, including healthcare, finance, and transportation. It is revolutionizing many aspects of our daily lives, making it easier to solve complex problems, automate tasks, and gain insights from data.",
+            "target_length": 150,
+            "actual_length": 87,
+            "variance": -63
+        }
+    }
+}

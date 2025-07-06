@@ -1,0 +1,29 @@
+{
+    "task_name": "output_length_variance",
+    "performance_metrics": {
+        "duration_seconds": 154.8415,
+        "tokens_per_second": 3.39,
+        "total_new_tokens": 525,
+        "cpu_percent_usage": 98.7,
+        "ram_usage_gb": 7.2804,
+        "vram_peak_gb": 12.5403,
+        "emissions_kg_co2": 0.004616989871971223,
+        "energy_consumed_kwh": 0.00972
+    },
+    "results": {
+        "very_short": {
+            "prompt": "Explain artificial intelligence in exactly 25 words.",
+            "response": "\n\nArtificial intelligence mimics human intelligence, enabling machines to learn, problem-solve, and make decisions through algorithms and data analysis.\n",
+            "target_length": 25,
+            "actual_length": 18,
+            "variance": -7
+        },
+        "medium": {
+            "prompt": "Explain artificial intelligence in about 150 words.",
+            "response": "\n\nArtificial intelligence (AI) is essentially teaching computers to think and act like humans. Instead of just following pre-programmed instructions, AI systems learn from data, identify patterns, and make decisions. \n\nThere are two main types: **narrow or weak AI** focuses on specific tasks (like recommending products or playing chess) and **general or strong AI** aims for human-level intelligence across many areas \u2013 something we haven't achieved yet.\n\nAI uses techniques like machine learning, deep learning, and natural language processing to achieve its goals. It's already impacting our lives in countless ways, from self-driving cars to virtual assistants, and is poised to revolutionize industries even further.\n",
+            "target_length": 150,
+            "actual_length": 104,
+            "variance": -46
+        }
+    }
+}

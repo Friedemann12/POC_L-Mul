@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 37.5965,
+        "tokens_per_second": 10.64,
+        "total_new_tokens": 400,
+        "cpu_percent_usage": 94.1,
+        "ram_usage_gb": 1.6289,
+        "vram_peak_gb": 22.9479,
+        "emissions_kg_co2": 0.0011497118764109018,
+        "energy_consumed_kwh": 0.00242
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": "\n\n```json\n{\n  \"id\": 123,\n  \"username\": \"johndoe\",\n  \"isActive\": true,\n  \"tags\": [\"developer\", \"backend\", \"python\"]\n}\n```\n",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": "\n\nThe table should contain the following components and their associated status and last check information:\n\n*   **Database Server:** Online, 2024-03-08\n*   **Web Server:** Offline, 2024-03-07\n*   **Cache Server:** Online, 2024-03-08\n*   **Message Queue:** Degraded, 2024-03-09\n\n```markdown\n| Component | Status | Last Check |\n|---|---|---|\n| Database Server | Online | 2024-03-08 |\n| Web Server | Offline | 2024-03-07 |\n| Cache Server | Online | 2024-03-08 |\n| Message Queue | Degraded | 2024-03-09 |\n```\n",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

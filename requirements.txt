@@ -1,0 +1,11 @@
+torch
+transformers>=4.53.0
+bitsandbytes
+accelerate
+codecarbon
+psutil
+pandas
+numpy
+radon>=5.1.0
+autopep8>=2.0.0
+huggingface_hub

@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 11.1336,
+        "tokens_per_second": 30.09,
+        "total_new_tokens": 335,
+        "cpu_percent_usage": 79.8,
+        "ram_usage_gb": 1.5403,
+        "vram_peak_gb": 16.0199,
+        "emissions_kg_co2": 0.00036313390475184535,
+        "energy_consumed_kwh": 0.000764
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": "\n\n```\n{\n  \"id\": 1,\n  \"username\": \"john.doe\",\n  \"isActive\": true,\n  \"tags\": [\"music\", \"movies\", \"games\"]\n}\n```\n\n**Instructions:**\n\n1. Create a variable called `user` and assign the JSON object to it.\n2. Print the contents of the `user` variable.\n\n**Expected Output:**\n\n```\n{\n  \"id\": 1,\n  \"username\": \"john.doe\",\n  \"isActive\": true,\n  \"tags\": [\"music\", \"movies\", \"games\"]\n}\n```\n\n**Sample Code:**\n\n```python\n# Create a variable called user and assign the JSON object to it\nuser = {\n  \"id\": 1,\n  \"username\": \"john.doe\",\n  \"isActive\": True,\n  \"tags\": [\"music\", \"movies\", \"games\"]\n",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": "\n\n| Component | Status | Last Check |\n|---|---|---|\n| Header | Active | Yesterday |\n| Navigation Menu | Active | Today |\n| Content | Active | Last Week |\n| Footer | Active | Today |\n\n**Note:** The 'Last Check' column is updated manually, therefore it may not always be accurate.\n\n**Additional Information:**\n\n* The components are all active, meaning they are currently functional.\n* The 'Last Check' column provides the last date on which each component was checked to ensure its functionality.\n* The information in the table is subject to change, as the 'Last Check' column is updated manually.",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 105.5496,
+        "tokens_per_second": 3.79,
+        "total_new_tokens": 400,
+        "cpu_percent_usage": 98.0,
+        "ram_usage_gb": 8.5315,
+        "vram_peak_gb": 12.6932,
+        "emissions_kg_co2": 0.0025654136501508935,
+        "energy_consumed_kwh": 0.005401
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": "\n\n```json\n{\n  \"id\": 12345,\n  \"username\": \"john.doe\",\n  \"isActive\": true,\n  \"tags\": [\"developer\", \"backend\", \"python\"]\n}\n```\n\n",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": "  The table should list the following components: 'Database Server', 'Web Server', 'API Server', 'Cache Server', and 'Message Queue'.  The status of each component should be randomly chosen from 'Online', 'Offline', 'Degraded', or 'Maintenance'.  The last check time should be a random time within the last 24 hours, formatted as \"HH:MM\".  You can use a simple Python script to generate the random statuses and times.\n\n```python\nimport random\nimport datetime\n\ncomponents = ['Database Server', 'Web Server', 'API Server', 'Cache Server', 'Message Queue']\nstatuses = ['Online', 'Offline', 'Degraded', 'Maintenance']\n\ndef generate_random_time():\n    now = datetime.datetime.now()\n    time_delta = datetime.timedelta(hours=random.randint(0, 23), minutes=random.randint(0, 59))\n    past_",
+            "has_table_structure": false,
+            "has_expected_columns": false,
+            "format_adherence": false
+        }
+    }
+}

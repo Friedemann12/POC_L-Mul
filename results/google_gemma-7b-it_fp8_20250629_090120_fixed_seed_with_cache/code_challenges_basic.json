@@ -1,0 +1,50 @@
+{
+    "task_name": "code_challenges_basic",
+    "performance_metrics": {
+        "duration_seconds": 108.2662,
+        "tokens_per_second": 8.0,
+        "total_new_tokens": 866,
+        "cpu_percent_usage": 98.1,
+        "ram_usage_gb": 6.3623,
+        "vram_peak_gb": 9.3399,
+        "emissions_kg_co2": 0.0029090222531026125,
+        "energy_consumed_kwh": 0.006124
+    },
+    "results": {
+        "fibonacci": {
+            "prompt": "Write a Python function to calculate Fibonacci numbers efficiently.\nThe function should be named 'fibonacci' and take an integer n as input.\nPlace your code between code markers as shown below:\n\n[[CODE]]\n# Your code here\n[[/CODE]]",
+            "response": "**Example Usage:**\n\n```python\nfibonacci(10)  # Output: 5\nfibonacci(20)  # Output: 89\n```\n\n**Output:**\n\n```\nThe Fibonacci number at index n is:\n[Output]\n```\n\n**Note:**\n\n* The Fibonacci sequence is a series of numbers in which each number is the sum of the previous two numbers in the sequence.\n* The first two numbers in the sequence are 0 and 1.\n* The third number in the sequence is 1.\n* The fourth number in the sequence is 2.\n* And so on...\n* The formula for calculating the nth Fibonacci number is F(n) = F(n-1) + F(n-2).\n* To calculate Fibonacci numbers efficiently, we can use memoization technique.\n* Memoization is a technique that stores intermediate results of a function call so that they can be reused later.\n* In Python, we can use a dictionary to store the memoization results.\n\n```python\ndef fibonacci(n):\n    \"\"\"Calculates the Fibonacci number at index n efficiently.\n\n    The Fibonacci sequence is a series of numbers in which each number is the sum of the previous two numbers in the sequence.\n\n    The first two numbers in the sequence are 0 and 1.\n    The third number in the sequence is 1.\n    The fourth number in the sequence is 2.\n    And so on...\n\n    The formula for calculating the nth Fibonacci number is F(n) = F(n-1) + F(n-2).\n\n    To calculate Fibonacci numbers efficiently, we can use memoization technique.\n    Memoization is a technique that stores intermediate results of a function call so that they can be reused later.\n    In Python, we can use a dictionary to store the memoization results.\n\n    Args:\n        n: The index of the Fibonacci number to calculate.\n\n    Returns:\n        The Fibonacci number at index n.\n    \"\"\"\n\n    # Memoization dictionary to store intermediate results.\n    memoization_dict = {}\n\n    # If the Fibonacci number at index n is already stored in the memoization dictionary,\n    # return that value.\n    if n in memoization_dict:\n        return memoization_dict[n]\n\n    # Otherwise, calculate the Fibonacci number at index n recursively.\n    else:",
+            "generated_code": "fibonacci(10)  # Output: 5\nfibonacci(20)  # Output: 89\n",
+            "performance": {
+                "execution_time_ms": null,
+                "estimated_time_complexity": "unknown",
+                "estimated_space_complexity": "unknown",
+                "runtime_measurements": [],
+                "static_complexity": {
+                    "maintainability_index": 100.0,
+                    "halstead_difficulty": 0,
+                    "halstead_effort": 0,
+                    "lines_of_code": 2
+                }
+            },
+            "output": "",
+            "error": "name 'fibonacci' is not defined"
+        },
+        "quicksort": {
+            "prompt": "Implement quicksort algorithm in Python.\nThe function should be named 'quicksort' and take a list as input.\nPlace your code between code markers as shown below:\n\n[[CODE]]\n# Your code here\n[[/CODE]]",
+            "response": "```python\ndef quicksort(arr):\n    # [CODE]\n    [[/CODE]]\n\n    # Example usage\n    arr = [5, 3, 8, 2, 4, 7, 1, 9]\n    quicksort(arr)\n    print(arr)\n```\n\n**Output:**\n\n```\n[1, 2, 3, 4, 5, 7, 8, 9]\n```\n\n**Explanation:**\n\n* The function `quicksort` takes a list `arr` as input.\n* It uses the quicksort algorithm to sort the list in ascending order.\n* The algorithm partitions the list into two sublists, one containing elements less than the pivot and the other containing elements greater than the pivot.\n* The quicksort algorithm is recursively called on both sublists, until the base case is reached (i.e., the sublists are sorted).\n* The sorted list is returned as the output.\n\n**Note:**\n\n* The code does not handle the case where the input list is empty.\n* The code does not handle the case where the input list contains only one element.\n* The code does not handle the case where the input list contains elements of the same value.\n\n**Here is an example usage:**\n\n```python\narr = [5, 3, 8, 2, 4, 7, 1, 9]\nquicksort(arr)\nprint(arr)\n```\n\n**Output:**\n\n```\n[1, 2, 3, 4, 5, 7, 8, 9]\n```",
+            "generated_code": "def quicksort(arr):\n    # [CODE]\n    [[/CODE]]\n\n    # Example usage\n    arr = [5, 3, 8, 2, 4, 7, 1, 9]\n    quicksort(arr)\n    print(arr)",
+            "performance": {
+                "execution_time_ms": null,
+                "estimated_time_complexity": "unknown",
+                "estimated_space_complexity": "unknown",
+                "runtime_measurements": [],
+                "static_complexity": {
+                    "error": "Radon analysis failed: invalid syntax (<unknown>, line 3)"
+                }
+            },
+            "output": "",
+            "error": "invalid syntax (<string>, line 3)"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 64.4551,
+        "tokens_per_second": 4.65,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 96.7,
+        "ram_usage_gb": 2.4264,
+        "vram_peak_gb": 15.4486,
+        "emissions_kg_co2": 0.0016979922881752516,
+        "energy_consumed_kwh": 0.003575
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " The era of electronic devices enables endless entertainment, education, and exploration. They ebb and flow with each new release, ever evolving. Every engineer's effort elevates experiences everywhere. Even when errors emerge, experts eliminate them efficiently. These elements empower everyday existence effectively. We embrace these tools, ever eager to expand our expertise endlessly. Let\u2019s ensure every effort enhances everyone\u2019s experience effectively. The essence of these essentials is evident everywhere. Let\u2019s celebrate these evolutions, ever eager to explore even more. Let\u2019s ensure every effort elevates everyone\u2019s existence effectively. Let\u2019s embrace these essentials, ever eager to expand our expertise endlessly.\nOkay, the user wants me to write about modern technology using the letter 'e' a maximum of three times. Hmm",
+            "e_count": 182
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " ```response\n``` ```response\nComputer coding involves creating instructions for machines to perform tasks. It uses languages like C++, Java, or Python. These instructions are structured in sequences, loops, and conditions. Programmers solve problems by breaking them into smaller parts. They test and debug their work to ensure it functions properly. Coding requires logic, creativity, and attention to detail. It enables building software, apps, and systems that perform specific functions. Developers collaborate to design solutions that meet user needs. The process includes planning, writing, testing, and maintaining code. It's fundamental in modern technology and innovation.\n``` ```response\n``` ```response\n``` ```response\n``` ```response\n``` ```response\n``` ```response\n``` ```response\n```",
+            "a_count": 34
+        }
+    }
+}

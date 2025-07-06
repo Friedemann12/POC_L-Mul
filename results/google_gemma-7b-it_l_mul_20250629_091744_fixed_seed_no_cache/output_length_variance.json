@@ -1,0 +1,29 @@
+{
+    "task_name": "output_length_variance",
+    "performance_metrics": {
+        "duration_seconds": 8.0009,
+        "tokens_per_second": 22.75,
+        "total_new_tokens": 182,
+        "cpu_percent_usage": 71.6,
+        "ram_usage_gb": 1.4865,
+        "vram_peak_gb": 15.9417,
+        "emissions_kg_co2": 0.00027094724532193503,
+        "energy_consumed_kwh": 0.00057
+    },
+    "results": {
+        "very_short": {
+            "prompt": "Explain artificial intelligence in exactly 25 words.",
+            "response": "\n\nAI is the ability of a computer to perform tasks that typically require human intelligence.",
+            "target_length": 25,
+            "actual_length": 15,
+            "variance": -10
+        },
+        "medium": {
+            "prompt": "Explain artificial intelligence in about 150 words.",
+            "response": "\n\nArtificial intelligence (AI) is the ability of a computer to perform tasks that typically require human intelligence, such as learning, problem-solving, and decision-making. AI has advanced rapidly in recent years, with applications in various fields, including healthcare, finance, and transportation.\n\nThere are different types of AI, including narrow AI, general AI, and super AI. Narrow AI is designed for specific tasks, while general AI has the ability to learn and adapt to many different situations. Super AI is hypothetical, but it would have human-like intelligence and learning abilities.\n\nAI has the potential to revolutionize many aspects of human society, bringing benefits such as improved healthcare, increased efficiency, and new opportunities. However, there are also concerns about the potential impact of AI on jobs, privacy, and security.",
+            "target_length": 150,
+            "actual_length": 126,
+            "variance": -24
+        }
+    }
+}

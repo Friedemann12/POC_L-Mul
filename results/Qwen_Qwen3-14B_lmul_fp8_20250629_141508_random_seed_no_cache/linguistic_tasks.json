@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 64.9225,
+        "tokens_per_second": 4.62,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 96.7,
+        "ram_usage_gb": 2.6545,
+        "vram_peak_gb": 15.4316,
+        "emissions_kg_co2": 0.0017350944016336608,
+        "energy_consumed_kwh": 0.003653
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " The e's are in the word 'technology'. The rest of the text must not contain the letter 'e' or 'E'. The response should be in English. The response should be in lowercase only. The response should be a single sentence. The response should be in a paragraph. The response should be without punctuation. The response should not use the word 'technology'. The response should be in the present tense.\n\nmodern tools for making things and moving around have come from places with lots of big companies and bright ideas and they make life easier for many people around the world\n\nOkay, let me tackle this query. The user wants a response about modern technology, but with some strict constraints. First, the letter 'e' can only be used",
+            "e_count": 87
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " ``` Response: ``` ``` Response: ``` Computer coding involves creating step-by-step instructions for digital devices to perform tasks. It uses symbols and rules to direct machines, enabling them to process information, solve problems, and interact with users. Different languages and frameworks are employed to build software, websites, and applications. ``` ``` Response: ``` ``` Response: ``` ``` Response: ``` Computer coding involves creating step-by-step instructions for digital devices to perform tasks. It uses symbols and rules to direct machines, enabling them to process information, solve problems, and interact with users. Different languages and frameworks are employed to build software, websites, and applications. ``` ``` Response: ``` ``` Response: ``` Computer coding involves creating step-by-step instructions for digital devices to perform tasks",
+            "a_count": 39
+        }
+    }
+}

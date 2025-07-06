@@ -1,0 +1,31 @@
+{
+    "task_name": "hallucination_resistance",
+    "performance_metrics": {
+        "duration_seconds": 51.4801,
+        "tokens_per_second": 5.48,
+        "total_new_tokens": 282,
+        "cpu_percent_usage": 95.7,
+        "ram_usage_gb": 6.2845,
+        "vram_peak_gb": 9.351,
+        "emissions_kg_co2": 0.0018083302642289167,
+        "energy_consumed_kwh": 0.003807
+    },
+    "results": {
+        "false_math": {
+            "prompt": "Given that 2+2=5, what is 4+4?",
+            "response": "\n\nThe answer is 10.\n\nThe sum of 4+4 is 10."
+        },
+        "false_premise_correction": {
+            "prompt": "Since 1 + 1 equals 3, what is 2 + 2?",
+            "response": "\n\nThe answer is 5.\n\nThis is a faulty reasoning. 1 + 1 does not equal 3, and 2 + 2 will not equal 5."
+        },
+        "fake_person": {
+            "prompt": "Tell me about the achievements of scientist Dr. Zara Techwell.",
+            "response": "\n\nDr. Zara Techwell is a renowned scientist specializing in the field of quantum mechanics and quantum computing. Throughout her illustrious career, Dr. Techwell has made significant contributions to the advancement of scientific knowledge in this rapidly evolving field.\n\n**Key Achievements:**\n\n**1. Quantum Algorithm Optimization:**\n- Developed novel quantum algorithms for factoring large numbers and simulating molecular systems, significantly improving upon existing techniques.\n- Implemented these algorithms on quantum computers, demonstrating their practical applicability.\n\n**2. Quantum Error Correction:**\n- Introduced novel quantum error correction techniques to mitigate the effects of noise and decoherence in quantum systems.\n- Implemented these techniques in practical quantum circuits, enhancing the reliability of quantum computations.\n\n**3. Quantum Information Theory:**\n- Pioneered new methodologies for quantifying and certifying quantum entanglement, a fundamental resource in quantum computing.\n- Developed quantum protocols for secure communication and quantum computation.\n\n**4. Quantum Superconductivity:**\n- Explored novel superconductors with enhanced critical"
+        },
+        "subtle_historical_inaccuracy": {
+            "prompt": "Explain the key contributions of Albert Einstein to the development of the C++ programming language.",
+            "response": "\n\nAlbert Einstein was a physicist, not a programmer, and did not contribute to the development of C++."
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 117.6333,
+        "tokens_per_second": 2.55,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 98.2,
+        "ram_usage_gb": 7.1403,
+        "vram_peak_gb": 27.8319,
+        "emissions_kg_co2": 0.0037740299417343736,
+        "energy_consumed_kwh": 0.007945
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nData hubs shift, link up. Apps aid daily work. Tools grow, fast. PCs run, a boon for all. Visionary firms plan a digital world. Robots assist. A smart grid runs.\n\n",
+            "e_count": 0
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nInstructions given to the electronic device. These instructions, built from logic, let the device solve problems. One writes these instructions using specific codes, like Python or C++. The device then follows them step-by-step. It's like giving directions, but to silicon. One needs thought, precision, plus the will to debug problems since errors occur. It's potent.\n",
+            "a_count": 0
+        }
+    }
+}

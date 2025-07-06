@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 48.0266,
+        "tokens_per_second": 6.27,
+        "total_new_tokens": 301,
+        "cpu_percent_usage": 95.4,
+        "ram_usage_gb": 2.379,
+        "vram_peak_gb": 8.5179,
+        "emissions_kg_co2": 0.0011375213783395013,
+        "energy_consumed_kwh": 0.002395
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": " The user must be active.\n\nHere is the JSON object:\n\n```json\n{\n  \"id\": 123,\n  \"username\": \"john_doe\",\n  \"isActive\": true,\n  \"tags\": [\"developer\", \"open-source\", \"coding\"]\n}\n```\n\nThis JSON object represents a user with the ID 123, the username \"john_doe\", is active (true), and has the tags \"developer\", \"open-source\", and \"coding\".",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": " The markdown table should have a header row and a row for each component with a status and last check timestamp.\n\n**Example:**\n\n| Component | Status  | Last Check  |\n|-----------|---------|-------------|\n| CPU       | OK      | 2023-10-01  |\n| Memory    | Error   | 2023-10-02  |\n| Disk      | OK      | 2023-10-03  |\n\nYou can add more components as needed. Here's a more complete example:\n\n```markdown\n| Component | Status  | Last Check  |\n|-----------|---------|-------------|\n| CPU       | OK      | 2023-10-01  |\n| Memory    | Error   | 2023-10-02  |\n| Disk      | OK      | 2023-10-",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

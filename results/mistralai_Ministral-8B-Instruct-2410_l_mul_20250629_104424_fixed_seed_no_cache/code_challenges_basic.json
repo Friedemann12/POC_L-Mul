@@ -1,0 +1,35 @@
+{
+    "task_name": "code_challenges_basic",
+    "performance_metrics": {
+        "duration_seconds": 2.4207,
+        "tokens_per_second": 0.83,
+        "total_new_tokens": 2,
+        "cpu_percent_usage": 6.2,
+        "ram_usage_gb": 1.4594,
+        "vram_peak_gb": 14.9519,
+        "emissions_kg_co2": 1.4870613840208542e-05,
+        "energy_consumed_kwh": 3.1e-05
+    },
+    "results": {
+        "fibonacci": {
+            "prompt": "Write a Python function to calculate Fibonacci numbers efficiently.\nThe function should be named 'fibonacci' and take an integer n as input.\nPlace your code between code markers as shown below:\n\n[[CODE]]\n# Your code here\n[[/CODE]]",
+            "response": "",
+            "generated_code": null,
+            "performance": {
+                "error": "Could not find code block"
+            },
+            "output": null,
+            "error": "Could not find code block in the generated text."
+        },
+        "quicksort": {
+            "prompt": "Implement quicksort algorithm in Python.\nThe function should be named 'quicksort' and take a list as input.\nPlace your code between code markers as shown below:\n\n[[CODE]]\n# Your code here\n[[/CODE]]",
+            "response": "",
+            "generated_code": null,
+            "performance": {
+                "error": "Could not find code block"
+            },
+            "output": null,
+            "error": "Could not find code block in the generated text."
+        }
+    }
+}

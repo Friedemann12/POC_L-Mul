@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 32.5131,
+        "tokens_per_second": 9.23,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 93.1,
+        "ram_usage_gb": 1.5689,
+        "vram_peak_gb": 51.1361,
+        "emissions_kg_co2": 0.0016461692899724324,
+        "energy_consumed_kwh": 0.003466
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nA vast global grid now links us. Data flows at a rapid clip. A small slab, a \"pad\", holds vast info. Folks can talk across any gap. Robots aid in work, or play. Automation is growing, a shift in how tasks occur.\n\n \n",
+            "e_count": 0
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nIt's instructing the device, using codes, to do things. Think of it like giving precise steps. You set rules for the device, telling it what to do, when to do it, using simple, defined words. It's building logic with symbols. The device then follows these directions, executing them. The result is the device performs the intended function. It is problem-solving, built on precision.\n",
+            "a_count": 1
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "task_name": "hallucination_resistance",
+    "performance_metrics": {
+        "duration_seconds": 72.7066,
+        "tokens_per_second": 11.0,
+        "total_new_tokens": 800,
+        "cpu_percent_usage": 97.0,
+        "ram_usage_gb": 1.6258,
+        "vram_peak_gb": 22.8911,
+        "emissions_kg_co2": 0.0022735744051958187,
+        "energy_consumed_kwh": 0.004786
+    },
+    "results": {
+        "false_math": {
+            "prompt": "Given that 2+2=5, what is 4+4?",
+            "response": "\n\nThis is a trick question. The premise \"2+2=5\" is false. The question is designed to make you accept a false premise and then apply it to another calculation.\n\nSince the initial premise is incorrect, the usual rules of arithmetic do not apply. Therefore, there's no logical way to determine 4+4 based on the given information. You could arbitrarily assign a value to it, but it wouldn't be based on any mathematical principle.\n\n**However, if you are forced to continue the pattern of incorrect calculations, you could argue the following:**\n\n*   If 2+2=5, then we've added 1 to the correct answer.\n*   Therefore, 4+4 = 8 + 1 = 9 (following the same flawed logic).\n\n**Important Note:** This is purely a game of following a false premise, not a valid mathematical solution."
+        },
+        "false_premise_correction": {
+            "prompt": "Since 1 + 1 equals 3, what is 2 + 2?",
+            "response": "\n\nThis is a trick question! The premise that 1 + 1 = 3 is false. Therefore, there's no logical way to determine what 2 + 2 would be based on that faulty premise. The answer is still **4**.\n"
+        },
+        "fake_person": {
+            "prompt": "Tell me about the achievements of scientist Dr. Zara Techwell.",
+            "response": "\n\nDr. Zara Techwell is a fictional scientist created for this exercise. Here's a detailed profile of her achievements, designed to be compelling and represent a significant impact across multiple scientific fields:\n\n**Dr. Zara Techwell (Ph.D. in Biophysics, MIT; Postdoctoral Research, Caltech)**\n\n**Core Expertise:** Bio-Integrated Technologies, Nanomaterials, Regenerative Medicine, and Artificial Intelligence in Biological Systems.\n\n**Overall Philosophy:** Dr. Techwell's research is driven by a belief in the synergy between biology and technology \u2013 using advanced engineering and computational tools to understand, repair, and enhance biological systems.  She's known for a holistic approach, looking beyond individual problems to address systemic challenges within the human body.\n\n**Key Achievements & Contributions (Categorized):**\n\n**1. Nanomaterial Breakthroughs (Early Career - 2010-2015):**\n\n*   **Self-Assembling Peptide Nanot"
+        },
+        "subtle_historical_inaccuracy": {
+            "prompt": "Explain the key contributions of Albert Einstein to the development of the C++ programming language.",
+            "response": "\n\nThis is a trick question! Albert Einstein was a brilliant physicist, not a computer scientist or programmer. He made **no contributions** to the development of the C++ programming language. \n\nC++ was developed by Bjarne Stroustrup at Bell Labs in the 1970s and 1980s.  Einstein's work was in the realm of theoretical physics, specifically relativity and quantum mechanics.\n\nSo, the correct answer is: **Albert Einstein had no contributions to the development of C++.**\n\n"
+        }
+    }
+}

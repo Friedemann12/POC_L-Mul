@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 156.9248,
+        "tokens_per_second": 2.55,
+        "total_new_tokens": 400,
+        "cpu_percent_usage": 98.7,
+        "ram_usage_gb": 7.146,
+        "vram_peak_gb": 27.822,
+        "emissions_kg_co2": 0.0052378191768854,
+        "energy_consumed_kwh": 0.011027
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": " The 'id' should be a unique number, and the 'username' should be a valid username. The 'tags' array can be empty.\n\n```json\n{\n  \"id\": 12345,\n  \"username\": \"john.doe\",\n  \"isActive\": true,\n  \"tags\": [\"developer\", \"python\", \"beginner\"]\n}\n```\n```json\n{\n  \"id\": 67890,\n  \"username\": \"jane_smith\",\n  \"isActive\": false,\n  \"tags\": []\n}\n```\n```json\n{\n  \"id\": 1,\n  \"username\": \"testuser\",\n  \"isActive\": true,\n  \"tags\": [\"admin\", \"security\"]\n}\n```",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": " The table should list the following components: 'Database Server', 'Web Server', 'API Server', 'Caching Server', 'Message Queue'. Fill in the 'Status' column with 'Online', 'Offline', 'Degraded', 'Online', 'Online' respectively. For the 'Last Check' column, use the following timestamps: '2023-10-27 10:00:00', '2023-10-27 10:05:00', '2023-10-27 10:10:00', '2023-10-27 10:15:00', '2023-10-27 10:20:00'.\n\n```markdown\n| Component      | Status     | Last Check           |\n|----------------|------------|----------------------|\n| Database Server",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

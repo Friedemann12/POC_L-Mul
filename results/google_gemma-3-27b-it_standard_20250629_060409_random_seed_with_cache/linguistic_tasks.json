@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 36.0907,
+        "tokens_per_second": 8.31,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 93.8,
+        "ram_usage_gb": 1.6212,
+        "vram_peak_gb": 51.3365,
+        "emissions_kg_co2": 0.001234414771962233,
+        "energy_consumed_kwh": 0.002599
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nData flow. Apps aid. Bots scan.\n\nInfo is rapid.\n\nA digital world. \n\nSolid links. \n\nNow.\n\n \n",
+            "e_count": 0
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n \nIt\u2019s instructing the device. You give it precise rules, like steps to solve issues. These rules, written in code, tell the system precisely how to respond. Think of it like giving directions, but to silicon. It needs every detail, every specific item, to work correctly. Code lets you build tools, solve problems, or even design entire worlds within the system. It\u2019s logic, structure, plus precision.\n",
+            "a_count": 1
+        }
+    }
+}

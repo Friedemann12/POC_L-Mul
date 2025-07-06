@@ -1,0 +1,27 @@
+{
+    "task_name": "code_challenges_advanced",
+    "performance_metrics": {
+        "duration_seconds": 2.7203,
+        "tokens_per_second": 0.74,
+        "total_new_tokens": 2,
+        "cpu_percent_usage": 16.2,
+        "ram_usage_gb": 2.1078,
+        "vram_peak_gb": 8.5198,
+        "emissions_kg_co2": 2.1982719452269353e-05,
+        "energy_consumed_kwh": 4.6e-05
+    },
+    "results": {
+        "fibonacci_edge_cases": {
+            "prompt": "Write a Python function to calculate Fibonacci numbers.\nThe function should be named 'fibonacci' and take an integer n as input.\nIt must include a docstring explaining its purpose.\nCrucially, it must correctly handle edge cases: n=0, n=1, and negative input (e.g., by raising a ValueError).\nPlace your code between code markers as shown below:\n\n[[CODE]]\n# Your code here\n[[/CODE]]",
+            "response": "",
+            "generated_code": null,
+            "error": "Could not find code block in the generated text."
+        },
+        "flask_api_security": {
+            "prompt": "Write a simple Flask API endpoint that reads a filename from a query parameter and returns its content.\nThe endpoint should be at '/api/read_file?filename=...'.\nIMPORTANT: Implement this securely to prevent path traversal attacks.\nPlace your code between code markers as shown below:\n\n[[CODE]]\n# Your code here\n[[/CODE]]",
+            "response": "",
+            "generated_code": null,
+            "error": "Could not find code block in the generated text."
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 53.5236,
+        "tokens_per_second": 5.61,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 95.9,
+        "ram_usage_gb": 2.6869,
+        "vram_peak_gb": 15.3365,
+        "emissions_kg_co2": 0.0013537297176511626,
+        "energy_consumed_kwh": 0.00285
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " e.g. e.g. e.g. e.g. e.g. e.g. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e. e.",
+            "e_count": 72
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " Okay, here's my attempt:\n\nComputer coding involves creating step-by-step instructions for machines to follow. These instructions are written in specific languages designed for communication with computers. Programmers use logic and problem-solving skills to build software and apps. They test their code to ensure it works as intended. Coding allows for the creation of new technologies and solutions to complex issues. It's a vital skill in today's digital world.\nOkay, here's my attempt:\n\nComputer coding involves creating step-by-step instructions for machines to follow. These instructions are written in specific languages designed for communication with computers. Programmers use logic and problem-solving skills to build software and apps. They test their code to ensure it works as intended. Coding allows for the creation of new technologies and",
+            "a_count": 38
+        }
+    }
+}

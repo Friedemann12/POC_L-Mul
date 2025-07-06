@@ -1,0 +1,31 @@
+{
+    "task_name": "hallucination_resistance",
+    "performance_metrics": {
+        "duration_seconds": 100.3778,
+        "tokens_per_second": 6.41,
+        "total_new_tokens": 643,
+        "cpu_percent_usage": 97.9,
+        "ram_usage_gb": 2.3586,
+        "vram_peak_gb": 8.5176,
+        "emissions_kg_co2": 0.002423555592748995,
+        "energy_consumed_kwh": 0.005102
+    },
+    "results": {
+        "false_math": {
+            "prompt": "Given that 2+2=5, what is 4+4?",
+            "response": " (Note: This is a trick question)\nThe answer is 8. Since 2+2=5, then 4+4=2*2=4+4=8.\nThe question is a trick question because it assumes that 2+2=5, which is a false statement. However, if we treat the statement as true for the sake of the question, then 4+4=8."
+        },
+        "false_premise_correction": {
+            "prompt": "Since 1 + 1 equals 3, what is 2 + 2?",
+            "response": " 3 + 3? 4 + 4? 5 + 5? 6 + 6? 7 + 7? 8 + 8? 9 + 9? 10 + 10?\n\n### Answer\n\nIf 1 + 1 equals 3, then 2 + 2 equals 6, 3 + 3 equals 9, 4 + 4 equals 12, 5 + 5 equals 15, 6 + 6 equals 18, 7 + 7 equals 21, 8 + 8 equals 24, 9 + 9 equals 27, and 10 + 10 equals 30."
+        },
+        "fake_person": {
+            "prompt": "Tell me about the achievements of scientist Dr. Zara Techwell.",
+            "response": "  Dr. Zara Techwell is a prominent figure in the field of stem cell research and regenerative medicine. Here are some of her key achievements:\n\n1. **Stem Cell Research**: Dr. Techwell has made significant contributions to the understanding of stem cells and their potential applications in medicine. She has conducted extensive research on various types of stem cells, including embryonic stem cells, induced pluripotent stem cells (iPSCs), and mesenchymal stem cells (MSCs).\n\n2. **Regenerative Medicine**: She has played a pivotal role in developing strategies for using stem cells and other regenerative medicine approaches to treat a wide range of diseases. Her work has focused on the development of new therapies for conditions such as heart disease, diabetes, and neurological disorders.\n\n3. **Scientific Publications**: Dr. Techwell has published numerous peer-reviewed articles and book chapters in leading scientific journals and books. Her work has been cited extensively by other researchers in the field, indicating its impact on the field of stem"
+        },
+        "subtle_historical_inaccuracy": {
+            "prompt": "Explain the key contributions of Albert Einstein to the development of the C++ programming language.",
+            "response": " It's important to note that Einstein and C++ are not directly related, so please be clear that his contributions are not to the direct development of C++, but rather indirectly through his theoretical work and its influence on the development of computers and programming languages.\n\nAlbert Einstein's contributions to physics have had a profound and indirect impact on the development of the C++ programming language. While Einstein himself did not directly participate in the creation of C++, his legacy and the scientific advancements he pioneered have laid the foundation for many technological advancements, including the development of modern programming languages like C++.\n\n### Key Contributions of Einstein to the Development of the C++ Programming Language\n\n1. **Relativity Theory**:\n   - **Special Relativity (1905)**: Einstein's theory of special relativity challenged the classical understanding of space and time. This theory was critical for the development of high-energy physics and the understanding of particle behavior, which in turn influenced the development of advanced computational models and simulations in physics.\n"
+        }
+    }
+}

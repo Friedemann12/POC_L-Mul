@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 35.6759,
+        "tokens_per_second": 8.41,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 93.8,
+        "ram_usage_gb": 1.6248,
+        "vram_peak_gb": 51.3365,
+        "emissions_kg_co2": 0.0012246659915118097,
+        "energy_consumed_kwh": 0.002578
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nA vast global grid now links us. Data flows at light's quick jump. Apps aid us daily; tasks grow swift. Gadgets, small or grand, assist. A world of info is at hand.\n\n\n\n",
+            "e_count": 1
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nIt's instructing the device, using codes, to do things. Think of it like giving precise steps. You set rules for the device, telling it what to do, when to do it, using simple, defined words. It's building logic with symbols. The device follows these rules \u2013 the code \u2013 to solve problems, present info, or perform functions. You refine the code, testing it, fixing errors until it works correctly. It's like writing recipes, but for silicon.\n\n\n\n",
+            "a_count": 1
+        }
+    }
+}

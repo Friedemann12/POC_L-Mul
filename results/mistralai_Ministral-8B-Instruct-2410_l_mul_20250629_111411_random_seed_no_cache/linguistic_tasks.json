@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 3.2928,
+        "tokens_per_second": 8.2,
+        "total_new_tokens": 27,
+        "cpu_percent_usage": 31.0,
+        "ram_usage_gb": 1.4623,
+        "vram_peak_gb": 14.9529,
+        "emissions_kg_co2": 4.6388653840697314e-05,
+        "energy_consumed_kwh": 9.8e-05
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "Example: \"Email is a modern form of communication used to send electronic messages.\"",
+            "e_count": 10
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " I write code to make computers do work.",
+            "a_count": 1
+        }
+    }
+}

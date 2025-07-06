@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 11.5374,
+        "tokens_per_second": 4.51,
+        "total_new_tokens": 52,
+        "cpu_percent_usage": 80.5,
+        "ram_usage_gb": 2.346,
+        "vram_peak_gb": 8.5092,
+        "emissions_kg_co2": 0.0002449994848275321,
+        "energy_consumed_kwh": 0.000516
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "Yes, modern tech has evolved rapidly, with electronic devices now prevalent. These gadgets, from smartphones to laptops, enhance our lives with ease, offering email and entertainment. However, e-waste is a growing concern, as disposal is challenging.",
+            "e_count": 31
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "",
+            "a_count": 0
+        }
+    }
+}

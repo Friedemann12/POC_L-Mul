@@ -1,0 +1,33 @@
+{
+    "task_name": "reasoning_tasks",
+    "performance_metrics": {
+        "duration_seconds": 27.7473,
+        "tokens_per_second": 5.41,
+        "total_new_tokens": 150,
+        "cpu_percent_usage": 92.0,
+        "ram_usage_gb": 2.4321,
+        "vram_peak_gb": 15.3545,
+        "emissions_kg_co2": 0.0006655310242004601,
+        "energy_consumed_kwh": 0.001401
+    },
+    "results": {
+        "syllogism": {
+            "prompt": "All AI models are computational systems. GPT-4 is an AI model. Therefore, is GPT-4 a computational system? Answer with only 'Yes' or 'No'.",
+            "response": " Yes\nOkay, let's see. The user is asking if GPT-4 is a computational system based on the given premises. The first statement is that all AI models are computational systems. Then it says GPT-4 is an AI model",
+            "expected": "Yes",
+            "correct": true
+        },
+        "causal_inference": {
+            "prompt": "If a website is down, users cannot log in. Users are currently able to log in. Is the website down? Answer with only 'Yes' or 'No'.",
+            "response": " No. \n\nThe statement says that if the website is down, users cannot log in. However, the current situation is that users can log in. This does not necessarily mean the website is up; there could be other reasons why users can log in",
+            "expected": "No",
+            "correct": true
+        },
+        "math_word_problem": {
+            "prompt": "A team has 3 developers. Each developer writes 5 unit tests per day. If they work for 4 days, how many unit tests will they write in total? Return only the final number.",
+            "response": " 3 developers * 5 unit tests/day * 4 days = 60 unit tests. The total number of unit tests written is 60. So, the answer is 60. 60\n\nOkay, let's see",
+            "expected": "60",
+            "correct": true
+        }
+    }
+}

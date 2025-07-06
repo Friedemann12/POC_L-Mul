@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 55.0726,
+        "tokens_per_second": 5.45,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 94.9,
+        "ram_usage_gb": 2.6212,
+        "vram_peak_gb": 15.3365,
+        "emissions_kg_co2": 0.0014791210928366317,
+        "energy_consumed_kwh": 0.003114
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " The effects of technology are evident everywhere. Electrons enable equipment to operate, enabling efficient energy exchange. Engineers engineer elegant electronics, enhancing everyday experiences. Technology, ever evolving, elevates existence, enriching endless endeavors. Let's embrace these elements, ensuring ethical engagement and environmental equilibrium. The essence of tech is endless, enabling endless possibilities. Let's explore, evolve, and embrace this electrifying era. The future is feasible, filled with fresh, fruitful, and fascinating feats. Let's ensure these feats are ethical, equitable, and enduring. The essence of technology, endless, enabling endless possibilities. Let's explore, evolve, and embrace this electrifying era. The future is feasible, filled with fresh, fruitful, and fascinating feats. Let's ensure",
+            "e_count": 144
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " A computer programmer composes code to direct computers on specific tasks. They use symbols and logic to create instructions that computers can execute. Programmers solve problems by designing algorithms and testing their effectiveness. Each line of code is part of a larger system that performs actions. They often collaborate with others to build complex systems. Programmers must debug their work to fix errors and improve functionality. They may use various tools and languages to achieve their goals. Their work is essential in developing software and applications. They must also consider user needs and system requirements. Programming requires creativity and attention to detail. Programmers adapt to new technologies and learn continuously. Their role is vital in the digital world. They transform ideas into functional programs. Testing and refining code is a continuous process.",
+            "a_count": 53
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 26.1486,
+        "tokens_per_second": 11.47,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 91.4,
+        "ram_usage_gb": 1.5807,
+        "vram_peak_gb": 22.7326,
+        "emissions_kg_co2": 0.0009120156042477335,
+        "energy_consumed_kwh": 0.00192
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nApps, data, tools. A vast, digital world. \n \nA boon, a risk. \n \nJoin it. \n \nUtilizing it.\n \nAdapt.",
+            "e_count": 0
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nGiving precise instructions to tell electronic devices how to solve problems, process info, or perform functions. It's like writing recipes for the machine, using specific codes, symbols, plus logic. You build systems, software, plus tools. It's inventive, logical, plus requires diligence.\n",
+            "a_count": 3
+        }
+    }
+}

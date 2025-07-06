@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 33.7324,
+        "tokens_per_second": 11.86,
+        "total_new_tokens": 400,
+        "cpu_percent_usage": 93.4,
+        "ram_usage_gb": 1.5719,
+        "vram_peak_gb": 22.7401,
+        "emissions_kg_co2": 0.0012900229964236925,
+        "energy_consumed_kwh": 0.002716
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": "\n\n```json\n{\n  \"id\": 123,\n  \"username\": \"john.doe\",\n  \"isActive\": true,\n  \"tags\": [\"user\", \"active\", \"premium\"]\n}\n```\n\n\n\n\n\n\n",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": " The table should be at least 5 rows long, and show a mix of statuses and recent check times.\n\n```markdown\n| Component | Status | Last Check |\n|---|---|---|\n| Database Server | Operational | 2024-10-27 10:30 AM |\n| Web Application | Degraded | 2024-10-27 11:15 AM |\n| Load Balancer | Operational | 2024-10-27 09:45 AM |\n| Message Queue | Warning | 2024-10-27 12:00 PM |\n| Cache Service | Operational | 2024-10-27 08:00 AM |\n| API Gateway | Operational | 2024-10-27 10:00 AM |\n| Monitoring",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

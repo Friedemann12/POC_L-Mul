@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 12.4489,
+        "tokens_per_second": 24.1,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 81.9,
+        "ram_usage_gb": 1.4872,
+        "vram_peak_gb": 14.9779,
+        "emissions_kg_co2": 0.0003745489601268143,
+        "energy_consumed_kwh": 0.000789
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": " The `id` should be a unique identifier, the `username` should be a unique username, the `username` should be different from 'admin', and the `isActive` should be `true`. The `tags` array should contain at least three items.\n\nHere's an example JSON object for a user:\n\n```json\n{\n  \"id\": 1,\n  \"username\": \"john_doe\",\n  \"isActive\": true,\n  \"tags\": [\"developer\", \"javascript\", \"fullstack\"]\n}\n```\n\nYou can create another JSON object for a different user following the same format.",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": " The Markdown table should display the following data:\n\n- Component: 'System', Status: 'Running', Last Check: '2023-10-01'\n- Component: 'Database', Status: 'Stopped', Last Check: '2023-10-01'\n- Component: 'Web Server', Status: 'Running', Last Check: '2023-10-02'\n\nHere is the Markdown table:\n\n| Component       | Status    | Last Check |\n|-----------------|-----------|------------|\n| System          | Running   | 2023-10-01 |\n| Database        | Stopped   | 2023-10-01 |\n| Web Server      | Running   | 2023-10-02 |",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

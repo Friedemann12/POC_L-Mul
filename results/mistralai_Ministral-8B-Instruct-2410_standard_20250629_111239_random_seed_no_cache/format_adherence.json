@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 15.9698,
+        "tokens_per_second": 25.05,
+        "total_new_tokens": 400,
+        "cpu_percent_usage": 86.0,
+        "ram_usage_gb": 1.4415,
+        "vram_peak_gb": 14.9719,
+        "emissions_kg_co2": 0.0006502484955407037,
+        "energy_consumed_kwh": 0.001369
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": " The 'id' field should be a unique identifier for the user, and the 'id' field should be auto-incremented. The 'tags' field should be an array of strings that describe the user.\n\nHere is an example of how you can create a JSON object for a user:\n\n```json\n{\n    \"id\": 1,\n    \"username\": \"johndoe\",\n    \"isActive\": true,\n    \"tags\": [\"developer\", \"python\", \"javascript\"]\n}\n```\n\nTo generate new unique `id` values, you can keep track of a counter. Below is an example of how you might create a function in JavaScript to generate a new user with a unique `id`:\n\n```javascript\nlet userIdCounter = 1;\n\nfunction createUser(username, isActive, tags) {\n  const newUser = {\n    id: userIdCounter,\n    username: username,\n    isActive: isActive,\n    tags: tags\n  };\n  user",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": " The table should include the following components: 'Power Supply', 'Vent Fan', 'CPU', 'Motherboard', 'RAM', 'Storage', 'GPU', 'Cooling System', 'Power Supply Unit', 'Ventilation System', 'CPU Cooling', 'Heat Sink'.\n\n### Markdown Table\n\n```markdown\n| Component       | Status       | Last Check |\n|-----------------|--------------|------------|\n| Power Supply    | Running      | 2023-10-01 |\n| Vent Fan        | Running      | 2023-10-02 |\n| CPU            | Running      | 2023-10-03 |\n| Motherboard    | Running      | 2023-10-04 |\n| RAM             | Running      | 2023-10-05 |\n| Storage         | Running      | 2023-1",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

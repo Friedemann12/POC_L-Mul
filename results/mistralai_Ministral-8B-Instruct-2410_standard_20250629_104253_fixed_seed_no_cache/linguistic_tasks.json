@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 9.6784,
+        "tokens_per_second": 22.11,
+        "total_new_tokens": 214,
+        "cpu_percent_usage": 76.6,
+        "ram_usage_gb": 1.4377,
+        "vram_peak_gb": 14.9664,
+        "emissions_kg_co2": 0.0003238105194103891,
+        "energy_consumed_kwh": 0.000682
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "E\n\nEmerging tech is transforming everyday life. Exponential advancements in electronics, embedded systems, and AI are reshaping industries. Enhanced connectivity via Ethernet, 5G, and IoT devices enables seamless communication. Empowering individuals, enterprises embrace edge computing with efficiency. Expect exponential growth in these areas.",
+            "e_count": 50
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " Please write a solution in Python.\n\n```python\ndef create_algorithm(language):\n    if language.lower() == 'python':\n        print(\"Write a program using Python language.\")\n    elif language.lower() == 'java':\n        print(\"Write a program using Java language.\")\n    else:\n        print(\"Unknown programming language.\")\n\ncreate_algorithm('python')\ncreate_algorithm('java')\ncreate_algorithm('c++')\n```\n\n```python\ndef create_algorithm(language):\n    if language.lower() == 'python':\n        print(\"Write a program using Python language.\")\n    elif language.lower() == 'java':\n        print(\"Write a program using Java language.\")\n    else:\n        print(\"Unknown programming language.\")\n\ncreate_algorithm('python')\ncreate",
+            "a_count": 59
+        }
+    }
+}

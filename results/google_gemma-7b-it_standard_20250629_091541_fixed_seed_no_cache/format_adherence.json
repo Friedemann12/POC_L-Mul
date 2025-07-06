@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 10.651,
+        "tokens_per_second": 28.45,
+        "total_new_tokens": 303,
+        "cpu_percent_usage": 78.8,
+        "ram_usage_gb": 1.4618,
+        "vram_peak_gb": 15.9488,
+        "emissions_kg_co2": 0.0004519784130830455,
+        "energy_consumed_kwh": 0.000952
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": "\n\n```python\nuser = {\n    \"id\": 1,\n    \"username\": \"john.doe\",\n    \"isActive\": True,\n    \"tags\": [\"music\", \"movies\", \"games\"]\n}\n```\n\n**Output:**\n\n```json\n{\n  \"id\": 1,\n  \"username\": \"john.doe\",\n  \"isActive\": true,\n  \"tags\": [\"music\", \"movies\", \"games\"]\n}\n```",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": "\n\nSure, please provide me with the information for the table, and I will generate the Markdown table.\n\n**Additional Information:**\n\n* You may include as much information as you want in each column.\n* The 'Last Check' column can be filled with the date and time of the last time the component was checked.\n* The 'Status' column can be filled with the current status of the component, such as 'active', 'inactive', 'pending', etc.\n\n**Example:**\n\n| Component | Status | Last Check |\n|---|---|---|\n| Main Server | Active | 2023-08-01 10:00:00 |\n| Database | Inactive | 2023-08-01 09:00:00 |\n| Load Balancer | Pending | 2023-08-01 08:00:00 |\n\n**",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

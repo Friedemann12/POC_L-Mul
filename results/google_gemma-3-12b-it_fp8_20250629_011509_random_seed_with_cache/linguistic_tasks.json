@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 80.2889,
+        "tokens_per_second": 3.74,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 97.3,
+        "ram_usage_gb": 7.3954,
+        "vram_peak_gb": 12.6402,
+        "emissions_kg_co2": 0.0019325733440299876,
+        "energy_consumed_kwh": 0.004069
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nApps, data, tools. \nA digital dawn. \nInnovation's sway.\nA quick, vast world.\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n",
+            "e_count": 0
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nInstructing systems, step-by-step, to perform specific duties. It involves logic, problem-solving, plus the use of precise, structured code. One writes instructions, then the machine follows them. Result? Solutions to complex issues, new systems, plus tools we use every moment.\n",
+            "a_count": 1
+        }
+    }
+}

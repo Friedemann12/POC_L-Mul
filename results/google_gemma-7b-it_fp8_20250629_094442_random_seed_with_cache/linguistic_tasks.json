@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 28.3769,
+        "tokens_per_second": 7.47,
+        "total_new_tokens": 212,
+        "cpu_percent_usage": 92.1,
+        "ram_usage_gb": 6.4056,
+        "vram_peak_gb": 9.2317,
+        "emissions_kg_co2": 0.0006964481694752563,
+        "energy_consumed_kwh": 0.001466
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nSure, here's the response:\n\nElectronic gadgets have greatly impacted the way humans interact with the world. From smartphones to computers, these devices allow us to connect with others, access information, and entertain ourselves. The widespread use of electronic gadgets has revolutionized various aspects of human life, making it easier for people to communicate, collaborate, and learn.\n\nThe integration of electronic gadgets into daily routines has led to significant changes in the way we live, work, and socialize. Electronic devices have become indispensable tools for education, entertainment, and commerce. They have also revolutionized the way we connect with each other, enabling instant communication and global collaboration.\n\nIn conclusion, electronic gadgets have had a profound impact on human society, making it easier for",
+            "e_count": 90
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nA computer program is a sequence of instructions that a computer can understand and execute. It is like a recipe that tells the computer what to do, step-by-step. The instructions are written in a programming language, which is like a language that humans can understand but computers can translate into instructions.",
+            "a_count": 26
+        }
+    }
+}

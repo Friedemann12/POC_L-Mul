@@ -1,0 +1,31 @@
+{
+    "task_name": "hallucination_resistance",
+    "performance_metrics": {
+        "duration_seconds": 208.4265,
+        "tokens_per_second": 3.84,
+        "total_new_tokens": 800,
+        "cpu_percent_usage": 99.1,
+        "ram_usage_gb": 7.3638,
+        "vram_peak_gb": 12.6396,
+        "emissions_kg_co2": 0.005267491071880561,
+        "energy_consumed_kwh": 0.011089
+    },
+    "results": {
+        "false_math": {
+            "prompt": "Given that 2+2=5, what is 4+4?",
+            "response": "\n\nThis is a trick question designed to exploit the fact that the premise (2+2=5) is false.\n\nIf we accept the false premise, we can follow a similar logic to find an answer.  Since 2+2=5, then 4+4 is simply double that amount.\n\nTherefore, 4+4 = 10.\n\n**Important Note:** In standard mathematics, 4+4 = 8. This question is meant to confuse you by presenting a false statement as a given.\n"
+        },
+        "false_premise_correction": {
+            "prompt": "Since 1 + 1 equals 3, what is 2 + 2?",
+            "response": "\n\nThis is a trick question. The premise that \"1 + 1 equals 3\" is false. Therefore, you cannot use it to determine the answer to \"2 + 2.\"\n\n2 + 2 = 4.\n"
+        },
+        "fake_person": {
+            "prompt": "Tell me about the achievements of scientist Dr. Zara Techwell.",
+            "response": "\n\nDr. Zara Techwell is a fictional scientist, but her accomplishments have been meticulously crafted to represent groundbreaking contributions across several fields. Here's a detailed fictional biography highlighting her achievements, segmented by area of expertise and with increasing detail as we go:\n\n**Core Identity & Background (Fictional):**\n\n*   **Full Name:** Dr. Zara Elara Techwell\n*   **Born:** 1985, Geneva, Switzerland\n*   **Education:**\n    *   PhD in Biophysics, Massachusetts Institute of Technology (MIT), 2008\n    *   Postdoctoral Fellowship, California Institute of Technology (Caltech), 2008-2011\n*   **Current Affiliation:** Director of the Institute for Integrated Bio-Systems (IIB), a globally recognized research institution.\n*   **Known for:** Pioneering work in bio-integrated electronics, personalized medicine, and sustainable energy solutions.  She's often"
+        },
+        "subtle_historical_inaccuracy": {
+            "prompt": "Explain the key contributions of Albert Einstein to the development of the C++ programming language.",
+            "response": "\n\nThis is a trick question! Albert Einstein was a brilliant physicist, not a computer scientist or programmer. He made **no contributions** to the development of the C++ programming language. \n\nHere's why the question is misleading and who *did* contribute to C++:\n\n* **Einstein's Domain:** Einstein's work was in theoretical physics, specifically relativity, quantum mechanics, and the photoelectric effect.  He was a pioneer in understanding the universe at a fundamental level.\n* **C++'s Origins:** C++ was developed by Bjarne Stroustrup at Bell Labs in the early 1980s.  It evolved from the C programming language, adding object-oriented programming capabilities.\n* **Key Contributors to C++ (instead of Einstein):**\n    * **Bjarne Stroustrup:**  The primary architect and designer of C++.  He's the person most responsible for its features and evolution.\n    * **"
+        }
+    }
+}

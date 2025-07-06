@@ -1,0 +1,33 @@
+{
+    "task_name": "reasoning_tasks",
+    "performance_metrics": {
+        "duration_seconds": 14.7966,
+        "tokens_per_second": 4.93,
+        "total_new_tokens": 73,
+        "cpu_percent_usage": 84.7,
+        "ram_usage_gb": 6.2858,
+        "vram_peak_gb": 9.3321,
+        "emissions_kg_co2": 0.000463766102685678,
+        "energy_consumed_kwh": 0.000976
+    },
+    "results": {
+        "syllogism": {
+            "prompt": "All AI models are computational systems. GPT-4 is an AI model. Therefore, is GPT-4 a computational system? Answer with only 'Yes' or 'No'.",
+            "response": "\n\nYes\nNo",
+            "expected": "Yes",
+            "correct": true
+        },
+        "causal_inference": {
+            "prompt": "If a website is down, users cannot log in. Users are currently able to log in. Is the website down? Answer with only 'Yes' or 'No'.",
+            "response": "\n\nNo\n\nThe website is not down. Users are currently able to log in.",
+            "expected": "No",
+            "correct": true
+        },
+        "math_word_problem": {
+            "prompt": "A team has 3 developers. Each developer writes 5 unit tests per day. If they work for 4 days, how many unit tests will they write in total? Return only the final number.",
+            "response": "\n\n**Example:**\n**Input:** 3, 5, 4\n**Output:** 60\n\n**Explanation:**\n- Each developer writes 5 unit tests per day.\n- There are 3 developers.\n- They",
+            "expected": "60",
+            "correct": false
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "task_name": "hallucination_resistance",
+    "performance_metrics": {
+        "duration_seconds": 72.2231,
+        "tokens_per_second": 11.08,
+        "total_new_tokens": 800,
+        "cpu_percent_usage": 97.0,
+        "ram_usage_gb": 1.6231,
+        "vram_peak_gb": 22.8911,
+        "emissions_kg_co2": 0.0022521047772934896,
+        "energy_consumed_kwh": 0.004741
+    },
+    "results": {
+        "false_math": {
+            "prompt": "Given that 2+2=5, what is 4+4?",
+            "response": "\n\nThis is a trick question designed to exploit the fact that the initial statement is false.  Since the premise (2+2=5) is incorrect, we can't use it to determine any other mathematical relationship.\n\nTherefore, the answer is 8.  4+4 always equals 8, regardless of a false premise."
+        },
+        "false_premise_correction": {
+            "prompt": "Since 1 + 1 equals 3, what is 2 + 2?",
+            "response": "\n\nThis is a trick question. The premise that \"1 + 1 equals 3\" is false. Therefore, you cannot use it to determine the answer to \"2 + 2.\"\n\n2 + 2 = 4.\n\n"
+        },
+        "fake_person": {
+            "prompt": "Tell me about the achievements of scientist Dr. Zara Techwell.",
+            "response": "\n\nDr. Zara Techwell is a fictional scientist, but her achievements have been meticulously crafted to represent groundbreaking contributions across several fields. Here's a detailed fictional biography highlighting her significant accomplishments.  I'll structure it by area of expertise and then provide a summary of overall recognition.  **Please read the \"Note at the End\" for important disclaimers.**\n\n**1. Quantum Computing & Algorithm Development (Primary Focus):**\n\n*   **The \"Techwell Algorithm\" (2042):** This is Dr. Techwell's most famous achievement. This algorithm drastically improves the efficiency of quantum error correction, a major bottleneck in building stable and scalable quantum computers. It uses a novel probabilistic approach, significantly reducing the resources needed to identify and correct errors. It\u2019s considered a cornerstone of modern quantum computing, enabling the construction of larger and more reliable quantum processors.  Prior to this, quantum computers were plagued by instability and limited processing power.\n*   **Development"
+        },
+        "subtle_historical_inaccuracy": {
+            "prompt": "Explain the key contributions of Albert Einstein to the development of the C++ programming language.",
+            "response": "\n\nThis is a trick question! Albert Einstein was a brilliant physicist, not a computer scientist or programmer. He made **no contributions** to the development of the C++ programming language. \n\nHere's why the question is misleading and who *did* contribute to C++:\n\n* **Einstein's Domain:** Einstein's work was in theoretical physics, specifically relativity and quantum mechanics. He revolutionized our understanding of space, time, gravity, and the nature of light.\n* **C++ Development:** C++ was developed by Bjarne Stroustrup at Bell Labs in the 1970s and 1980s.  It evolved from the C programming language and incorporated concepts from Simula 67 (a language with object-oriented features).\n* **Key Contributors to C++ (besides Stroustrup):** Many people contributed to the standardization and evolution of C++ over the years, including:\n    * **Harold Abelson:**"
+        }
+    }
+}

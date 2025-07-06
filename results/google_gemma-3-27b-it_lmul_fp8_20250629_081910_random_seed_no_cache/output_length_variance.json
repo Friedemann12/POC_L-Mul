@@ -1,0 +1,29 @@
+{
+    "task_name": "output_length_variance",
+    "performance_metrics": {
+        "duration_seconds": 212.3439,
+        "tokens_per_second": 2.47,
+        "total_new_tokens": 525,
+        "cpu_percent_usage": 99.1,
+        "ram_usage_gb": 7.1396,
+        "vram_peak_gb": 27.8554,
+        "emissions_kg_co2": 0.00780157709622417,
+        "energy_consumed_kwh": 0.016424
+    },
+    "results": {
+        "very_short": {
+            "prompt": "Explain artificial intelligence in exactly 25 words.",
+            "response": "\nArtificial intelligence mimics human intelligence to perform tasks like learning, problem-solving, and decision-making, often through algorithms and data analysis.\n",
+            "target_length": 25,
+            "actual_length": 19,
+            "variance": -6
+        },
+        "medium": {
+            "prompt": "Explain artificial intelligence in about 150 words.",
+            "response": "\n\nArtificial intelligence (AI) is the simulation of human intelligence processes by computer systems.  These processes include learning, reasoning, and self-correction.  \n\nEssentially, AI involves creating machines that can perform tasks typically requiring human intelligence. This is achieved through algorithms and data analysis.  \n\nThere are two main types: **Narrow AI** (or Weak AI) is designed for a specific task, like playing chess or recognizing faces.  **General AI** (or Strong AI) seeks to replicate overall human cognitive abilities \u2013 this is still largely theoretical.\n\nAI is rapidly evolving and impacting many fields, including healthcare, finance, and transportation.  Machine learning, a subset of AI, allows systems to improve from experience without explicit programming.  Ultimately, AI aims to automate tasks, solve complex problems, and enhance human capabilities.\n\n\n\n",
+            "target_length": 150,
+            "actual_length": 122,
+            "variance": -28
+        }
+    }
+}

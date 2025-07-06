@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 53.6177,
+        "tokens_per_second": 5.32,
+        "total_new_tokens": 285,
+        "cpu_percent_usage": 95.9,
+        "ram_usage_gb": 6.4101,
+        "vram_peak_gb": 9.3485,
+        "emissions_kg_co2": 0.00193737638478421,
+        "energy_consumed_kwh": 0.004079
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": "\n\n```python\nuser = {\n    \"id\": 1,\n    \"username\": \"john.doe\",\n    \"isActive\": True,\n    \"tags\": [\"music\", \"movies\", \"games\"]\n}\n```\n\nYou have successfully created a JSON object for a user named John Doe. Please print the JSON object.\n\n```python\nprint(user)\n```\n\n**Output:**\n\n```\n{'id': 1, 'username': 'john.doe', 'isActive': True, 'tags': ['music', 'movies', 'games']}\n```\n\n**Note:** The 'tags' field is an array of strings, and the 'isActive' field is a boolean value.",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": "\n\n## Components Status and Last Check\n\n| Component | Status | Last Check |\n|---|---|---|\n| Main Server | Operational | 2023-02-08 |\n| Database | Operational | 2023-02-07 |\n| Web Application | Under Maintenance | 2023-02-06 |\n| API Gateway | Operational | 2023-02-05 |\n| Monitoring System | Operational | 2023-02-04 |\n\nPlease note that the 'Last Check' date may not be exact and may need to be updated.",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

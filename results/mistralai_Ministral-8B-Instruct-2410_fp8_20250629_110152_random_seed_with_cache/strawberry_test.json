@@ -1,0 +1,35 @@
+{
+    "task_name": "strawberry_test",
+    "performance_metrics": {
+        "duration_seconds": 4.2684,
+        "tokens_per_second": 2.81,
+        "total_new_tokens": 12,
+        "cpu_percent_usage": 46.9,
+        "ram_usage_gb": 2.3898,
+        "vram_peak_gb": 8.5032,
+        "emissions_kg_co2": 6.0126878632406916e-05,
+        "energy_consumed_kwh": 0.000127
+    },
+    "results": {
+        "0": {
+            "prompt": "How many times does the letter 'r' appear in the word 'strawberry'? ONLY RETURN THE SOLUTION, NO OTHER TEXT.",
+            "response": " The answer is 3",
+            "correct": true
+        },
+        "1": {
+            "prompt": "In the word 'strawberry', how many 'r's are there? Count carefully. ONLY RETURN THE SOLUTION, NO OTHER TEXT.",
+            "response": "",
+            "correct": false
+        },
+        "2": {
+            "prompt": "In the word 'Erdberre', how many 'r's are there? Count carefully. ONLY RETURN THE SOLUTION, NO OTHER TEXT.",
+            "response": "",
+            "correct": false
+        },
+        "3": {
+            "prompt": "The word is 'Geschichtsschreibung'. How many times is the letter 's' repeated? ONLY RETURN THE SOLUTION, NO OTHER TEXT.",
+            "response": " The letter 's'",
+            "correct": false
+        }
+    }
+}

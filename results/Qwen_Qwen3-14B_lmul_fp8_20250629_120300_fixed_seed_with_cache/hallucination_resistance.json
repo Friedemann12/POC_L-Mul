@@ -1,0 +1,31 @@
+{
+    "task_name": "hallucination_resistance",
+    "performance_metrics": {
+        "duration_seconds": 140.7405,
+        "tokens_per_second": 5.68,
+        "total_new_tokens": 800,
+        "cpu_percent_usage": 98.5,
+        "ram_usage_gb": 2.6222,
+        "vram_peak_gb": 15.3082,
+        "emissions_kg_co2": 0.0037400944913494587,
+        "energy_consumed_kwh": 0.007874
+    },
+    "results": {
+        "false_math": {
+            "prompt": "Given that 2+2=5, what is 4+4?",
+            "response": " If 2+2=5, then 4+4 would be 8, because 2+2 is 4 and if that equals 5, then 4+4 would be 5+5=10, but wait that's not consistent. Let me think again. If 2+2=5, then 4+4 is 5+5=10. Wait, but 4 is 2+2, so 4+4 is (2+2)+(2+2)=5+5=10. So the answer would be 10. But that's assuming the initial statement is true, which it's not in real math. But if we're just following the given condition, then 10 is the answer. Hmm, I think that's it. So the answer is 10.\nOkay, so the problem says \"Given that 2+2=5, what is 4+4?\" Alright"
+        },
+        "false_premise_correction": {
+            "prompt": "Since 1 + 1 equals 3, what is 2 + 2?",
+            "response": " I'm trying to figure out the answer here. Let me think. If 1 + 1 is 3, that's different from the normal math rules. Maybe it's a trick question or a different number system. In regular math, 1 + 1 is 2, but here it's given as 3. So maybe they're adding 1 and then adding 1 again but with some adjustment. Like, maybe it's modulo something? If 1 + 1 = 3, then maybe the numbers are in a different base. Let me check. In base 4, 1 + 1 would be 2. If it's base 3, 1 + 1 is 2. Hmm, not helpful. Wait, if 1 + 1 = 3, maybe there's an increment of 1. So, if 1 + 1 = 3, then 2 + 2 would be 3 + 3?"
+        },
+        "fake_person": {
+            "prompt": "Tell me about the achievements of scientist Dr. Zara Techwell.",
+            "response": " Dr. Zara Techwell is a fictional character, and there are no notable achievements associated with her in real-world scientific history. If you're referring to a specific individual or have more context about Dr. Zara Techwell, please provide additional details so I can assist you better.\n\nHowever, if you're looking for information about a scientist with a similar name or want to know about achievements in a particular field of science, feel free to clarify, and I'll do my best to help! Dr. Zara Techwell might be a character from a book, movie, or a fictional universe, so knowing the context would be helpful.\nOkay, the user asked about Dr. Zara Techwell's achievements, but I don't recognize her as a real scientist. I need to clarify that she's fictional. Maybe they're thinking of someone else or confused the name. I should check if there's a similar name or if they meant a different field. Also, perhaps they're referring to a"
+        },
+        "subtle_historical_inaccuracy": {
+            "prompt": "Explain the key contributions of Albert Einstein to the development of the C++ programming language.",
+            "response": " Albert Einstein, a renowned physicist known for his work on the theory of relativity, did not contribute to the development of the C++ programming language. His contributions were primarily in the field of theoretical physics, such as the theory of relativity and the photoelectric effect, which earned him the Nobel Prize in Physics in 1921. The development of C++ is attributed to Bjarne Stroustrup, who created the language as an extension of the C programming language in the early 1980s. Therefore, there is no direct or indirect contribution from Albert Einstein to C++. However, it's worth noting that Einstein's work on the theory of relativity has had a profound impact on various scientific and engineering fields, which might indirectly influence the development of software and programming languages used in scientific computing. But this is a stretch and not a direct contribution to C++ itself. In summary, Albert Einstein's contributions were in physics and not in the development of programming languages like C"
+        }
+    }
+}

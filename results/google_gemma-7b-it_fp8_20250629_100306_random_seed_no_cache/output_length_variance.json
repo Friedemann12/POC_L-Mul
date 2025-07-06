@@ -1,0 +1,29 @@
+{
+    "task_name": "output_length_variance",
+    "performance_metrics": {
+        "duration_seconds": 31.643,
+        "tokens_per_second": 5.18,
+        "total_new_tokens": 164,
+        "cpu_percent_usage": 93.0,
+        "ram_usage_gb": 6.2839,
+        "vram_peak_gb": 9.3437,
+        "emissions_kg_co2": 0.0010684941027562433,
+        "energy_consumed_kwh": 0.002249
+    },
+    "results": {
+        "very_short": {
+            "prompt": "Explain artificial intelligence in exactly 25 words.",
+            "response": "\n\nAI is the ability of a computer to perform tasks that typically require human intelligence.",
+            "target_length": 25,
+            "actual_length": 15,
+            "variance": -10
+        },
+        "medium": {
+            "prompt": "Explain artificial intelligence in about 150 words.",
+            "response": "\n\nArtificial Intelligence (AI) is the ability of a computer to perform tasks that typically require human intelligence, such as learning, problem-solving, and decision-making. AI can be categorized into different types, including machine learning, deep learning, and natural language processing.\n\nAI has revolutionized various fields, including healthcare, finance, and transportation. It enables computers to learn from data, make predictions, and perform complex tasks with human-like accuracy. AI also enhances human capabilities, such as by automating tasks and providing insights.\n\nIn conclusion, AI is a transformative technology that empowers computers to mimic human intelligence and perform a wide range of complex tasks. It has the potential to revolutionize numerous industries and enhance human capabilities.",
+            "target_length": 150,
+            "actual_length": 112,
+            "variance": -38
+        }
+    }
+}

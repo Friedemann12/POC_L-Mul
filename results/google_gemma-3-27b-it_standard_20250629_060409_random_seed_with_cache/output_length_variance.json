@@ -1,0 +1,29 @@
+{
+    "task_name": "output_length_variance",
+    "performance_metrics": {
+        "duration_seconds": 62.0786,
+        "tokens_per_second": 8.46,
+        "total_new_tokens": 525,
+        "cpu_percent_usage": 96.5,
+        "ram_usage_gb": 1.62,
+        "vram_peak_gb": 51.3632,
+        "emissions_kg_co2": 0.0021666357285635937,
+        "energy_consumed_kwh": 0.004561
+    },
+    "results": {
+        "very_short": {
+            "prompt": "Explain artificial intelligence in exactly 25 words.",
+            "response": "\nArtificial intelligence mimics human intelligence in machines, enabling them to learn, problem-solve, and make decisions. It powers everything from virtual assistants to self-driving cars.\n",
+            "target_length": 25,
+            "actual_length": 24,
+            "variance": -1
+        },
+        "medium": {
+            "prompt": "Explain artificial intelligence in about 150 words.",
+            "response": "\n\nArtificial intelligence (AI) is broadly the simulation of human intelligence processes by computer systems. These processes include learning, reasoning, and self-correction.  \n\nAI isn't a single technology, but rather an umbrella term encompassing various methods like machine learning (where systems learn from data without explicit programming), deep learning (using artificial neural networks), and natural language processing (enabling computers to understand human language).\n\nAI applications are becoming increasingly prevalent, from virtual assistants like Siri and Alexa, to recommendation systems on platforms like Netflix and Amazon, to self-driving cars and medical diagnosis tools.  \n\nWhile \"general AI\" \u2013 AI with human-level intelligence \u2013 remains a long-term goal, current AI excels at specific tasks.  Ethical considerations, such as bias and job displacement, are important ongoing discussions surrounding its development and deployment.\n\n\n\n",
+            "target_length": 150,
+            "actual_length": 126,
+            "variance": -24
+        }
+    }
+}

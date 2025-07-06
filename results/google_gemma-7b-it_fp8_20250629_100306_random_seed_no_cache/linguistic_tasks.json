@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 30.667,
+        "tokens_per_second": 5.35,
+        "total_new_tokens": 164,
+        "cpu_percent_usage": 92.7,
+        "ram_usage_gb": 6.2843,
+        "vram_peak_gb": 9.3417,
+        "emissions_kg_co2": 0.0010396758806260607,
+        "energy_consumed_kwh": 0.002189
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nSure, here is the response:\n\nElectronic gadgets have revolutionized the way we live and interact with the world. From smartphones to laptops, the ubiquitous presence of electronic devices has transformed daily routines and connected people across borders. The exponential growth of the internet has further fueled this revolution, enabling instant communication and access to vast repositories of information.\n\nIn conclusion, modern technology, characterized by its reliance on electronic gadgets and the exponential growth of the internet, has significantly impacted our lives, revolutionizing the way we communicate, interact, and access information.",
+            "e_count": 70
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nA computer program is a set of instructions that tells a computer what to do. Each instruction is like a command that is given to the computer. The instructions are written in a language that the computer understands. The computer reads the instructions and carries them out.\n",
+            "a_count": 19
+        }
+    }
+}

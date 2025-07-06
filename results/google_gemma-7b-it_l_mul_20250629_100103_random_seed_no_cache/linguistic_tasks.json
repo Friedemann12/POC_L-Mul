@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 8.5374,
+        "tokens_per_second": 26.47,
+        "total_new_tokens": 226,
+        "cpu_percent_usage": 73.4,
+        "ram_usage_gb": 1.4862,
+        "vram_peak_gb": 15.9415,
+        "emissions_kg_co2": 0.0003113150786183678,
+        "energy_consumed_kwh": 0.000655
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nSure, here is the response:\n\nModern technology has ushered in an era of unprecedented connectivity and accessibility. With the advent of the internet, electronic devices have revolutionized the way we interact with the world. From smartphones to computers, these gadgets have become indispensable tools for communication, information, and entertainment. Moreover, the widespread use of electronic gadgets has led to a dramatic shift in our daily habits, transforming the way we work, socialize, and learn.\n\nThe impact of modern technology on society is undeniable. It has brought people closer together, bridging geographical distances through the medium of the internet. Electronic devices have also revolutionized the way we access and consume information, making knowledge more readily available than ever before. Furthermore, the advent of electronic entertainment has",
+            "e_count": 107
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nA computer program is a set of instructions that tells a computer what to do. It is like a blueprint that is used to guide the computer through a series of steps. The instructions are written in a programming language, which is like a language that humans and computers can understand. The program is then executed by the computer, which follows the instructions one step at a time.",
+            "a_count": 25
+        }
+    }
+}

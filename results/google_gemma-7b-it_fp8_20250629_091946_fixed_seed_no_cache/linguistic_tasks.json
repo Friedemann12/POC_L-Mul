@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 48.0672,
+        "tokens_per_second": 5.35,
+        "total_new_tokens": 257,
+        "cpu_percent_usage": 95.4,
+        "ram_usage_gb": 6.3688,
+        "vram_peak_gb": 9.3456,
+        "emissions_kg_co2": 0.00170280199600599,
+        "energy_consumed_kwh": 0.003585
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nSure, here is your response:\n\nModern technology has ushered in an era of unprecedented convenience and connectivity. Electronic gadgets have revolutionized various aspects of human life, from communication to entertainment. With the advent of the internet, people can now access vast repositories of information instantaneously. Furthermore, electronic devices have made it easier for individuals to connect with friends, family, and colleagues across the globe.\n\nIn conclusion, modern technology has ushered in an era of unprecedented convenience and connectivity, primarily due to the proliferation of electronic gadgets and the advent of the internet.",
+            "e_count": 80
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nA computer program is a set of instructions that a computer follows to complete a task. It is like a recipe that tells you what ingredients to use and how to combine them.\n\nYou write a computer program using a programming language, which is like the language you use to talk to your friends. Some popular programming languages include C++, Java, Python, and JavaScript.\n\nTo write a computer program, you first need to understand the problem you want to solve. Then, you choose a programming language and start writing the code. The code is broken down into instructions that the computer can understand. You test the program to see if it works as you intended. If it does not, you fix the code until it does.",
+            "a_count": 44
+        }
+    }
+}

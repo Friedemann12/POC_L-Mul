@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 43.3781,
+        "tokens_per_second": 6.2,
+        "total_new_tokens": 269,
+        "cpu_percent_usage": 94.9,
+        "ram_usage_gb": 2.3651,
+        "vram_peak_gb": 8.5179,
+        "emissions_kg_co2": 0.001025131421573114,
+        "energy_consumed_kwh": 0.002158
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": " Here is an example:\n\n```json\n{\n  \"id\": 123,\n  \"username\": \"johndoe\",\n  \"isActive\": true,\n  \"tags\": [\"developer\", \"frontend\", \"programmer\"]\n}\n```\n\nThe JSON object should contain a unique 'id' and should have all required fields.",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": " The table should list the following components: 'Component1', 'Component2', 'Component3', 'Component4', 'Component5'. The 'Status' for each component should be either 'Active' or 'Inactive'. The 'Last Check' should be a date in the format 'YYYY-MM-DD'.\n\nThe table should be displayed in a tabular format.\n\n| Component | Status | Last Check |\n|-----------|--------|------------|\n| Component1| Active | 2023-10-01 |\n| Component2| Inactive| 2023-10-05 |\n| Component3| Active | 2023-10-02 |\n| Component4| Inactive| 2023-10-03 |\n| Component5| Active | 2023-10-04 |\n\n```markdown\n| Component       | Status   | Last Check |\n|-----------------|",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

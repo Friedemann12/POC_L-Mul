@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 2.4711,
+        "tokens_per_second": 1.21,
+        "total_new_tokens": 3,
+        "cpu_percent_usage": 8.1,
+        "ram_usage_gb": 1.483,
+        "vram_peak_gb": 14.9529,
+        "emissions_kg_co2": 1.561611115100394e-05,
+        "energy_consumed_kwh": 3.3e-05
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "e",
+            "e_count": 1
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "",
+            "a_count": 0
+        }
+    }
+}

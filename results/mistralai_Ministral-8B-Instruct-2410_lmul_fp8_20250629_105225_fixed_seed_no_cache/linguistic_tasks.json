@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 33.617,
+        "tokens_per_second": 5.21,
+        "total_new_tokens": 175,
+        "cpu_percent_usage": 93.4,
+        "ram_usage_gb": 2.3922,
+        "vram_peak_gb": 8.5186,
+        "emissions_kg_co2": 0.000806493194370343,
+        "energy_consumed_kwh": 0.001698
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "E, technology is vast and diverse, impacting many aspects of life. It's crucial to understand its capabilities and limitations.",
+            "e_count": 8
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " I've been coding since the dawn of the digital age. I've programmed in languages from the classic to the cutting-edge. I've created software that's run on desktops, smartphones, and servers. I've debugged, optimized, and scaled my code to meet performance needs. I've collaborated with teams to deliver solutions that meet diverse requirements. I've tackled complex problems and found elegant solutions. I've stayed up-to-date with the latest trends and technologies, always striving to improve my craft. I've faced challenges, learned from failures, and grown as a programmer. I've created applications that have improved people's lives. I've built systems that have revolutionized industries. I've contributed to open-source projects, sharing my knowledge",
+            "a_count": 45
+        }
+    }
+}

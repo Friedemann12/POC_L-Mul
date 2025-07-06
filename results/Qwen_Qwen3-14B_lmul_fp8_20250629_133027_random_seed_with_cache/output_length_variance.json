@@ -1,0 +1,29 @@
+{
+    "task_name": "output_length_variance",
+    "performance_metrics": {
+        "duration_seconds": 91.82,
+        "tokens_per_second": 5.72,
+        "total_new_tokens": 525,
+        "cpu_percent_usage": 97.7,
+        "ram_usage_gb": 2.6824,
+        "vram_peak_gb": 15.312,
+        "emissions_kg_co2": 0.0023119512975511665,
+        "energy_consumed_kwh": 0.004867
+    },
+    "results": {
+        "very_short": {
+            "prompt": "Explain artificial intelligence in exactly 25 words.",
+            "response": " Artificial intelligence is the simulation of human intelligence in machines programmed to think, learn, and solve problems. It involves algorithms, data analysis, and machine learning to perform tasks that typically require human cognition, such as decision-making, language understanding, and perception. This technology evolves through continuous learning and adaptation, enabling systems to improve performance over time without explicit programming. It has diverse applications across",
+            "target_length": 25,
+            "actual_length": 63,
+            "variance": 38
+        },
+        "medium": {
+            "prompt": "Explain artificial intelligence in about 150 words.",
+            "response": " Artificial Intelligence (AI) refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human cognition. These tasks include learning, reasoning, problem-solving, perception, and decision-making. AI systems are built using algorithms and large datasets to identify patterns, make predictions, and adapt to new information. There are two main types: narrow AI, designed for specific tasks like voice assistants or recommendation systems, and general AI, which aims to replicate human-like understanding across all domains (though this remains theoretical). Machine learning, a subset of AI, allows systems to improve from experience without explicit programming. AI is now integral to various fields, such as healthcare (diagnosis, drug discovery), finance (fraud detection), and autonomous vehicles. However, it raises ethical concerns about job displacement, bias, and privacy. As AI advances, balancing innovation with responsible governance becomes crucial to ensure its benefits are maximized while minimizing risks. The future of AI holds transformative potential, but its success depends on ethical frameworks and continuous oversight.\n\nOkay, I need to explain artificial intelligence in about 150 words. Let me start by defining what AI is. It's the simulation of human intelligence in machines, right? So machines can perform tasks that usually require human intelligence, like learning, reasoning, problem-solving, perception, and decision-making. Then I should mention the two main types: narrow AI and general AI. Narrow AI is for specific tasks, like voice assistants or recommendation systems. General AI is the theoretical one that can handle any intellectual task a human can. \n\nNext, I should talk about machine learning as a subset of AI, where systems learn from data without being explicitly programmed. Examples of AI applications in healthcare, finance, autonomous vehicles. Also, the ethical concerns like job displacement, bias, privacy. Finally, the importance of balancing innovation with responsible governance. Let me check the word count. The example response is around 150 words. I need to make sure I don't go over. Avoid technical jargon but still be precise. Maybe mention algorithms and datasets. Also, the conclusion about future potential and ethical frameworks. Okay, that should cover it.\n</think>\n\nArtificial Intelligence (AI) involves creating machines or systems that",
+            "target_length": 150,
+            "actual_length": 355,
+            "variance": 205
+        }
+    }
+}

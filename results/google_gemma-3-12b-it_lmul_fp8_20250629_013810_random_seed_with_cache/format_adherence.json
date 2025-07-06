@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 106.0504,
+        "tokens_per_second": 3.77,
+        "total_new_tokens": 400,
+        "cpu_percent_usage": 98.0,
+        "ram_usage_gb": 8.7038,
+        "vram_peak_gb": 12.6932,
+        "emissions_kg_co2": 0.0025774637209948627,
+        "energy_consumed_kwh": 0.005426
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": "\n\n```json\n{\n  \"id\": 123,\n  \"username\": \"johndoe\",\n  \"isActive\": true,\n  \"tags\": [\"developer\", \"backend\", \"python\"]\n}\n```\n",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": " The table should include the following components: 'Database', 'Web Server', 'API Gateway'. The 'Status' column should have the following values: 'Healthy', 'Degraded', and 'Unhealthy' respectively. The 'Last Check' should have the following values: '2024-10-26 10:00 AM', '2024-10-26 09:30 AM', and '2024-10-26 08:00 AM' respectively.\n\n```markdown\n| Component | Status | Last Check |\n|---|---|---|\n| Database | Healthy | 2024-10-26 10:00 AM |\n| Web Server | Degraded | 2024-10-26 09:30 AM |\n| API Gateway | Unhealthy | 2024-10",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

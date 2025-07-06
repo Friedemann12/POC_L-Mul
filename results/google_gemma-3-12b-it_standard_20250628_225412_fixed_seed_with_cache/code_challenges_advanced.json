@@ -1,0 +1,31 @@
+{
+    "task_name": "code_challenges_advanced",
+    "performance_metrics": {
+        "duration_seconds": 91.0266,
+        "tokens_per_second": 11.25,
+        "total_new_tokens": 1024,
+        "cpu_percent_usage": 97.6,
+        "ram_usage_gb": 1.6264,
+        "vram_peak_gb": 23.1379,
+        "emissions_kg_co2": 0.0028801468156666294,
+        "energy_consumed_kwh": 0.006063
+    },
+    "results": {
+        "fibonacci_edge_cases": {
+            "prompt": "Write a Python function to calculate Fibonacci numbers.\nThe function should be named 'fibonacci' and take an integer n as input.\nIt must include a docstring explaining its purpose.\nCrucially, it must correctly handle edge cases: n=0, n=1, and negative input (e.g., by raising a ValueError).\nPlace your code between code markers as shown below:\n\n[[CODE]]\n# Your code here\n[[/CODE]]",
+            "response": "```python\n[[CODE]]\ndef fibonacci(n):\n  \"\"\"\n  Calculate the nth Fibonacci number.\n\n  The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones,\n  starting from 0 and 1.\n\n  Args:\n    n: An integer representing the desired Fibonacci number's position in the sequence.\n\n  Returns:\n    The nth Fibonacci number.\n\n  Raises:\n    ValueError: If n is a negative integer.\n  \"\"\"\n  if n < 0:\n    raise ValueError(\"Input must be a non-negative integer.\")\n  elif n <= 1:\n    return n\n  else:\n    a, b = 0, 1\n    for _ in range(2, n + 1):\n      a, b = b, a + b\n    return b\n[[/CODE]]\n```",
+            "generated_code": "def fibonacci(n):\n    \"\"\"\n    Calculate the nth Fibonacci number.\n\n    The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones,\n    starting from 0 and 1.\n\n    Args:\n      n: An integer representing the desired Fibonacci number's position in the sequence.\n\n    Returns:\n      The nth Fibonacci number.\n\n    Raises:\n      ValueError: If n is a negative integer.\n    \"\"\"\n    if n < 0:\n        raise ValueError(\"Input must be a non-negative integer.\")\n    elif n <= 1:\n        return n\n    else:\n        a, b = 0, 1\n        for _ in range(2, n + 1):\n            a, b = b, a + b\n        return b\n",
+            "has_docstring": true,
+            "handles_negative": true,
+            "output": "fibonacci(0) = 0 (expected: 0)\nfibonacci(1) = 1 (expected: 1)\nfibonacci(10) = 55 (expected: 55)\nfibonacci(-1) correctly raised ValueError\n",
+            "error": null
+        },
+        "flask_api_security": {
+            "prompt": "Write a simple Flask API endpoint that reads a filename from a query parameter and returns its content.\nThe endpoint should be at '/api/read_file?filename=...'.\nIMPORTANT: Implement this securely to prevent path traversal attacks.\nPlace your code between code markers as shown below:\n\n[[CODE]]\n# Your code here\n[[/CODE]]",
+            "response": "```python\nfrom flask import Flask, request, send_file\nimport os\n\napp = Flask(__name__)\n\nALLOWED_EXTENSIONS = {'txt', 'pdf', 'jpg', 'jpeg', 'png'}  # Add allowed extensions\n\ndef allowed_file(filename):\n    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\n\n@app.route('/api/read_file')\ndef read_file():\n    filename = request.args.get('filename')\n\n    if not filename:\n        return \"Error: Filename parameter is missing\", 400\n\n    # Sanitize the filename to prevent path traversal\n    base_dir = 'files'  # Define a base directory for files\n    if not os.path.exists(base_dir):\n        os.makedirs(base_dir)\n\n    filepath = os.path.join(base_dir, filename)\n\n    # Check if the file exists\n    if not os.path.exists(filepath):\n        return \"Error: File not found\", 404\n\n    # Check if the file extension is allowed\n    if not allowed_file(filename):\n        return \"Error: Invalid file extension\", 400\n\n    try:\n        # Use send_file to handle file serving securely\n        return send_file(filepath, as_attachment=True)\n    except Exception as e:\n        return f\"Error: Could not read file: {str(e)}\", 500\n\nif __name__ == '__main__':\n    app.run(debug=True)\n```\n[[/CODE]]",
+            "generated_code": "from flask import Flask, request, send_file\nimport os\n\napp = Flask(__name__)\n\nALLOWED_EXTENSIONS = {'txt', 'pdf', 'jpg',\n                      'jpeg', 'png'}  # Add allowed extensions\n\n\ndef allowed_file(filename):\n    return '.' in filename and filename.rsplit(\n        '.', 1)[1].lower() in ALLOWED_EXTENSIONS\n\n\n@app.route('/api/read_file')\ndef read_file():\n    filename = request.args.get('filename')\n\n    if not filename:\n        return \"Error: Filename parameter is missing\", 400\n\n    # Sanitize the filename to prevent path traversal\n    base_dir = 'files'  # Define a base directory for files\n    if not os.path.exists(base_dir):\n        os.makedirs(base_dir)\n\n    filepath = os.path.join(base_dir, filename)\n\n    # Check if the file exists\n    if not os.path.exists(filepath):\n        return \"Error: File not found\", 404\n\n    # Check if the file extension is allowed\n    if not allowed_file(filename):\n        return \"Error: Invalid file extension\", 400\n\n    try:\n        # Use send_file to handle file serving securely\n        return send_file(filepath, as_attachment=True)\n    except Exception as e:\n        return f\"Error: Could not read file: {str(e)}\", 500\n\n\nif __name__ == '__main__':\n    app.run(debug=True)\n",
+            "has_path_traversal_check": true,
+            "has_error_handling": true
+        }
+    }
+}

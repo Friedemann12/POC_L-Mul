@@ -1,0 +1,74 @@
+{
+    "task_name": "code_challenges_basic",
+    "performance_metrics": {
+        "duration_seconds": 156.952,
+        "tokens_per_second": 4.72,
+        "total_new_tokens": 741,
+        "cpu_percent_usage": 98.7,
+        "ram_usage_gb": 6.3705,
+        "vram_peak_gb": 9.3683,
+        "emissions_kg_co2": 0.006489500793406624,
+        "energy_consumed_kwh": 0.013662
+    },
+    "results": {
+        "fibonacci": {
+            "prompt": "Write a Python function to calculate Fibonacci numbers efficiently.\nThe function should be named 'fibonacci' and take an integer n as input.\nPlace your code between code markers as shown below:\n\n[[CODE]]\n# Your code here\n[[/CODE]]",
+            "response": "**Example Usage:**\n\nfibonacci(10)  # Output: 5\nfibonacci(20)  # Output: 89\n\n**Output:**\n\nThe function should calculate the nth Fibonacci number using the following formula:\n\nF(n) = F(n-1) + F(n-2)\n\nwhere F(0) = 0 and F(1) = 1.\n\n**Here is an example of an inefficient solution:**\n\n```python\ndef fibonacci(n):\n  # This solution is inefficient as it calculates the Fibonacci number for each number from scratch, even\n  # when we have already calculated it in previous iterations.\n  if n == 0 or n == 1:\n    return n\n  else:\n    return fibonacci(n-1) + fibonacci(n-2)\n```\n\n**This solution is inefficient because it calculates the Fibonacci number for each number from scratch, even when we have already calculated it in previous iterations.**\n\n**Here is an efficient solution:**\n\n```python\ndef fibonacci(n):\n  # This solution is efficient as it memoizes the Fibonacci number for each number in a dictionary,\n  # thereby avoiding the need to recalculate it in previous iterations.\n  memo = {0: 0, 1: 1}\n  if n in memo:\n    return memo[n]\n  else:\n    memo[n] = fibonacci(n-1) + fibonacci(n-2)\n    return memo[n]\n```\n\n**This solution is efficient because it memoizes the Fibonacci number for each number in a dictionary, thereby avoiding the need to recalculate it in previous iterations.**\n\n**Note:**\n\nThe function should return an integer, not a float.",
+            "generated_code": "def fibonacci(n):\n    # This solution is inefficient as it calculates the Fibonacci number for each number from scratch, even\n    # when we have already calculated it in previous iterations.\n    if n == 0 or n == 1:\n        return n\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)\n",
+            "performance": {
+                "execution_time_ms": 0.016800127923488617,
+                "estimated_time_complexity": "O(2^n) - exponential",
+                "estimated_space_complexity": "unknown",
+                "runtime_measurements": [
+                    {
+                        "input_size": 5,
+                        "time_ms": 0.0016398262232542038
+                    },
+                    {
+                        "input_size": 10,
+                        "time_ms": 0.01561013050377369
+                    },
+                    {
+                        "input_size": 15,
+                        "time_ms": 0.16417005099356174
+                    },
+                    {
+                        "input_size": 20,
+                        "time_ms": 1.75898103043437
+                    }
+                ],
+                "static_complexity": {
+                    "cyclomatic_complexity_avg": 3.0,
+                    "cyclomatic_complexity_max": 3,
+                    "maintainability_index": 99.93,
+                    "halstead_difficulty": 3.0,
+                    "halstead_effort": 193.59,
+                    "lines_of_code": 5
+                }
+            },
+            "output": "fibonacci(10) = 55\n",
+            "error": null
+        },
+        "quicksort": {
+            "prompt": "Implement quicksort algorithm in Python.\nThe function should be named 'quicksort' and take a list as input.\nPlace your code between code markers as shown below:\n\n[[CODE]]\n# Your code here\n[[/CODE]]",
+            "response": "```python\ndef quicksort(arr):\n    # [CODE]\n    # Implement quicksort algorithm here\n    # [/CODE]\n\narr = [5, 3, 8, 2, 4, 7, 1, 9]\nquicksort(arr)\nprint(arr)\n```\n\n**Output:**\n\n```\n[1, 2, 3, 4, 5, 7, 8, 9]\n```\n\n**Explanation:**\n\n* The function `quicksort` takes a list `arr` as input.\n* The algorithm partitions the list into two sublists, one containing elements less than or equal to the median, and the other containing elements greater than the median.\n* The quicksort algorithm is recursively called on both sublists, until the base case is reached (i.e., the sublists are sorted).\n* The final sorted list is returned as the output.\n\n**Note:**\n\n* The code does not handle the case where the input list is empty.\n* The code does not handle the case where the input list has only one element.\n* The code does not handle the case where the input list is already sorted.\n\n**Time complexity:**\n\n* The time complexity of quicksort is O(n log n), where n is the number of elements in the list.\n* This is because the algorithm partitions the list in the best possible way, and the recursion calls on the two sublists are balanced.\n\n**Space complexity:**\n\n* The space complexity of quicksort is O(h), where h is the height of the recursion call stack.\n* This is because the algorithm uses a constant amount of space for each recursive call, regardless of the size of the list.",
+            "generated_code": "def quicksort(arr):\n    # [CODE]\n    # Implement quicksort algorithm here\n    # [/CODE]\n\n    arr = [5, 3, 8, 2, 4, 7, 1, 9]\n    quicksort(arr)\n    print(arr)",
+            "performance": {
+                "execution_time_ms": null,
+                "estimated_time_complexity": "unknown",
+                "estimated_space_complexity": "unknown",
+                "runtime_measurements": [],
+                "static_complexity": {
+                    "cyclomatic_complexity_avg": 1.0,
+                    "cyclomatic_complexity_max": 1,
+                    "maintainability_index": 100.0,
+                    "halstead_difficulty": 0,
+                    "halstead_effort": 0,
+                    "lines_of_code": 4
+                }
+            },
+            "output": "",
+            "error": "maximum recursion depth exceeded"
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "task_name": "code_challenges_basic",
+    "performance_metrics": {
+        "duration_seconds": 28.8928,
+        "tokens_per_second": 27.17,
+        "total_new_tokens": 785,
+        "cpu_percent_usage": 92.3,
+        "ram_usage_gb": 1.4863,
+        "vram_peak_gb": 15.9901,
+        "emissions_kg_co2": 0.0016733754638501358,
+        "energy_consumed_kwh": 0.003523
+    },
+    "results": {
+        "fibonacci": {
+            "prompt": "Write a Python function to calculate Fibonacci numbers efficiently.\nThe function should be named 'fibonacci' and take an integer n as input.\nPlace your code between code markers as shown below:\n\n[[CODE]]\n# Your code here\n[[/CODE]]",
+            "response": "**Example Usage:**\n\n```python\nfibonacci(10)  # Output: 5\nfibonacci(20)  # Output: 89\n```\n\n**Output:**\n\n```\nThe Fibonacci number at index n is:\n5\n89\n```\n\n**Explanation:**\n\nThe function calculates Fibonacci numbers using a memoization technique to avoid repeated calculations. Memoization is a technique that stores intermediate results in a dictionary to avoid recalculating them in the future.\n\n**Code:**\n\n```python\ndef fibonacci(n):\n    \"\"\"Calculates Fibonacci numbers efficiently.\n\n    The function takes an integer n as input and returns the Fibonacci number at index n.\n\n    Args:\n        n: An integer.\n\n    Returns:\n        The Fibonacci number at index n.\n    \"\"\"\n\n    # Memoization dictionary.\n    memo = {}\n\n    # Base case.\n    if n <= 1:\n        return n\n\n    # Check if the Fibonacci number at index n is already stored in the memoization dictionary.\n    if n not in memo:\n        # Calculate the Fibonacci number at index n recursively.\n        fibonacci_n = fibonacci(n-1) + fibonacci(n-2)\n\n        # Store the Fibonacci number at index n in the memoization dictionary.\n        memo[n] = fibonacci_n\n\n    # Return the Fibonacci number at index n from the memoization dictionary.\n    return memo[n]\n```\n\n**Note:**\n\nThe function calculates Fibonacci numbers recursively, which can be inefficient for large values of n. However, the memoization technique prevents repeated calculations, making the function much more efficient.",
+            "generated_code": "fibonacci(10)  # Output: 5\nfibonacci(20)  # Output: 89\n",
+            "performance": {
+                "execution_time_ms": null,
+                "estimated_time_complexity": "unknown",
+                "estimated_space_complexity": "unknown",
+                "runtime_measurements": [],
+                "static_complexity": {
+                    "maintainability_index": 100.0,
+                    "halstead_difficulty": 0,
+                    "halstead_effort": 0,
+                    "lines_of_code": 2
+                }
+            },
+            "output": "",
+            "error": "name 'fibonacci' is not defined"
+        },
+        "quicksort": {
+            "prompt": "Implement quicksort algorithm in Python.\nThe function should be named 'quicksort' and take a list as input.\nPlace your code between code markers as shown below:\n\n[[CODE]]\n# Your code here\n[[/CODE]]",
+            "response": "**Example Usage:**\nquicksort([5, 3, 8, 2, 4, 7, 1, 9])\nOutput:\n[1, 2, 3, 4, 5, 7, 8, 9]\n\n**Note:**\n- The algorithm should be able to handle any list of integers.\n- The time complexity of the algorithm should be O(n log n), where n is the length of the list.\n- The space complexity of the algorithm should be O(log n).\n\n**[CODE]**\n\ndef quicksort(arr):\n    if len(arr) <= 1:\n        return arr\n\n    pivot = arr[0]\n    left = 1\n    right = len(arr) - 1\n\n    for i in range(1, len(arr)):\n        if arr[i] < pivot:\n            arr[i], arr[left] = arr[left], arr[i]\n            left += 1\n\n    return quicksort(arr[left:]) + [pivot] + quicksort(arr[right:])\n\n**[[/CODE]]**\n\n**Output:**\n```\n[1, 2, 3, 4, 5, 7, 8, 9]\n```\n\n**Time Complexity:**\n- The time complexity of quicksort is O(n log n) on average, where n is the length of the list.\n- This is because the algorithm divides the list into smaller and smaller sublists recursively, and the number of comparisons required to sort each sublist is O(n).\n- The total number of comparisons required to sort the entire list is O(n log n) on average.\n\n**Space Complexity:**\n- The space complexity of quicksort is O(log n) on average, where n is the length of the list.\n- This is because the algorithm uses a recursion depth of O(log n) on average.\n- The space complexity of quicksort is O(log n) on average.",
+            "generated_code": "[1, 2, 3, 4, 5, 7, 8, 9]\n",
+            "performance": {
+                "execution_time_ms": null,
+                "estimated_time_complexity": "unknown",
+                "estimated_space_complexity": "unknown",
+                "runtime_measurements": [],
+                "static_complexity": {
+                    "maintainability_index": 100.0,
+                    "halstead_difficulty": 0,
+                    "halstead_effort": 0,
+                    "lines_of_code": 1
+                }
+            },
+            "output": "",
+            "error": null
+        }
+    }
+}

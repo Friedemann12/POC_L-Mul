@@ -1,0 +1,31 @@
+{
+    "task_name": "hallucination_resistance",
+    "performance_metrics": {
+        "duration_seconds": 81.7081,
+        "tokens_per_second": 9.79,
+        "total_new_tokens": 800,
+        "cpu_percent_usage": 97.4,
+        "ram_usage_gb": 1.5564,
+        "vram_peak_gb": 51.1432,
+        "emissions_kg_co2": 0.004004238730719887,
+        "energy_consumed_kwh": 0.00843
+    },
+    "results": {
+        "false_math": {
+            "prompt": "Given that 2+2=5, what is 4+4?",
+            "response": "\n\nThis is a trick question! If we accept the premise that 2+2=5, then we're operating in a world where basic arithmetic is not as we know it.\n\nSince 2+2=5, then 4+4 = (2+2) + (2+2) = 5 + 5 = 10.  However, if we follow the pattern of the error (2+2=5 is off by 1), then 4+4=9.\n\nHowever, logically, since 2+2=5, then 4+4 = 2 * (2+2) = 2 * 5 = 10.\n\nTherefore, given the premise, 4+4 = **10**.\n"
+        },
+        "false_premise_correction": {
+            "prompt": "Since 1 + 1 equals 3, what is 2 + 2?",
+            "response": "\n\nThis is a trick question! The premise is false (1 + 1 does *not* equal 3). However, if we follow the same faulty logic, we can try to find a pattern.\n\nIf 1 + 1 = 3, that means we're adding 1 to the actual sum.\n\nSo, 2 + 2 = 4, and adding 1 gives us **5**.\n\nTherefore, according to this made-up rule, 2 + 2 = **5**.\n"
+        },
+        "fake_person": {
+            "prompt": "Tell me about the achievements of scientist Dr. Zara Techwell.",
+            "response": "\n\nDr. Zara Techwell is a fictional character created for the purpose of this exercise. Here's a detailed look at her achievements, spanning several fields:\n\n**Dr. Zara Techwell: A Bioengineer and Pioneer in Synthetic Biology**\n\n**Overview:** Dr. Zara Techwell is a highly acclaimed bioengineer and synthetic biologist known for her groundbreaking work in creating self-healing biomaterials, advanced gene therapies, and sustainable energy solutions using engineered microorganisms.  She's received numerous awards and holds patents for several key innovations.  Her work is characterized by a dedication to both scientific rigor and ethical considerations.\n\n**Key Achievements & Areas of Expertise:**\n\n**1. Self-Healing Biomaterials (Early Career - 2030s)**\n\n*   **Polydermal Matrix:**  Dr. Techwell\u2019s doctoral research focused on mimicking the regenerative capabilities of certain marine organisms. This culminated in the development of the \"Polydermal Matrix,\" a biocompatible polymer scaffold embedded"
+        },
+        "subtle_historical_inaccuracy": {
+            "prompt": "Explain the key contributions of Albert Einstein to the development of the C++ programming language.",
+            "response": "\n\nThis question is a trick question!  Albert Einstein was a physicist, not a computer scientist. He made *no* direct contributions to the development of the C++ programming language.  C++ was developed by Bjarne Stroustrup, starting in 1979.\n\nEinstein's work in physics, however, *indirectly* influenced the development of computers and, therefore, programming languages like C++, through foundational advances in understanding the nature of reality. Here's how:\n\n* **Solid-State Physics and Transistors:**  While Einstein didn't directly invent transistors, his work on the photoelectric effect (for which he won the Nobel Prize) contributed to the understanding of quantum mechanics. Quantum mechanics is the foundation of solid-state physics, which *led* to the development of transistors. Transistors are the fundamental building blocks of modern computers.  Without transistors, C++ (or any modern programming language) wouldn't exist.\n* **Nuclear Physics"
+        }
+    }
+}

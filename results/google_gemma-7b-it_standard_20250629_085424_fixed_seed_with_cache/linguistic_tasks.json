@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 7.8299,
+        "tokens_per_second": 26.56,
+        "total_new_tokens": 208,
+        "cpu_percent_usage": 71.0,
+        "ram_usage_gb": 1.5346,
+        "vram_peak_gb": 16.0104,
+        "emissions_kg_co2": 0.00023136446888969152,
+        "energy_consumed_kwh": 0.000487
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nElectronic gadgets have revolutionized the way we live. From smartphones to laptops, these devices have become an integral part of our daily lives. The ubiquitous presence of electronic gadgets has drastically altered the way we communicate, socialize, and access information. One of the most significant technological advancements is the development of artificial intelligence. AI has the ability to learn and adapt, making it a powerful tool for various applications.\n\nThe widespread use of electronic gadgets has brought about a myriad of benefits. For instance, they have made it easier for people to connect with each other, regardless of geographical distance. Additionally, electronic gadgets have revolutionized the way we access information, making it easier to learn and stay informed. These devices have also made it simpler to entertain ourselves, providing",
+            "e_count": 96
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nA computer program is a set of instructions that tells a computer what to do. These instructions are written in a programming language, which is like a language that humans and computers can understand. The programmer writes the instructions in a specific order, and the computer follows them one by one.",
+            "a_count": 22
+        }
+    }
+}

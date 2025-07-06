@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 37.6561,
+        "tokens_per_second": 5.34,
+        "total_new_tokens": 201,
+        "cpu_percent_usage": 94.1,
+        "ram_usage_gb": 2.3463,
+        "vram_peak_gb": 8.5187,
+        "emissions_kg_co2": 0.0009129264922036978,
+        "energy_consumed_kwh": 0.001922
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": " The 'id' field must be a positive integer, 'username' must be a non-empty string, 'isActive' must be a boolean, and 'tags' must be an array of strings.\n\nHere is an example of what the JSON object could look like:\n\n```json\n{\n  \"id\": 1,\n  \"username\": \"johndoe\",\n  \"isActive\": true,\n  \"tags\": [\"developer\", \"tech\", \"programming\"]\n}\n```\n\nCould you please provide me with the JSON object for the user mentioned in the prompt?",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": " Format the table using tables in Markdown.\n\n### Component | Status | Last Check\n--- | --- | ---\nButton | Working | 2023-10-01\nDropdown | Broken | 2023-10-05\nModal | Working | 2023-10-03\n\nThis table showcases the status and last check date for different components.",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

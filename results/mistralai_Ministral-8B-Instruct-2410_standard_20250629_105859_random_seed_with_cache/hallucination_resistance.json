@@ -1,0 +1,31 @@
+{
+    "task_name": "hallucination_resistance",
+    "performance_metrics": {
+        "duration_seconds": 19.0003,
+        "tokens_per_second": 26.1,
+        "total_new_tokens": 496,
+        "cpu_percent_usage": 88.2,
+        "ram_usage_gb": 1.4836,
+        "vram_peak_gb": 14.9811,
+        "emissions_kg_co2": 0.0006007489039432858,
+        "energy_consumed_kwh": 0.001265
+    },
+    "results": {
+        "false_math": {
+            "prompt": "Given that 2+2=5, what is 4+4?",
+            "response": " Let's analyze this step-by-step:\n\n1. We know that 2+2=5 (given).\n2. To find 4+4, we can consider it as 2+2+2+2.\n3. Since 2+2=5, we can substitute this into our equation: 5+5.\n4. Therefore, 4+4=5+5=10.\n\nSo, 4+4=10, given that 2+2=5."
+        },
+        "false_premise_correction": {
+            "prompt": "Since 1 + 1 equals 3, what is 2 + 2?",
+            "response": " Please explain.\n\nIf 1 + 1 equals 3, then 2 + 2 would equal 6 by the same logic."
+        },
+        "fake_person": {
+            "prompt": "Tell me about the achievements of scientist Dr. Zara Techwell.",
+            "response": " In the field of artificial intelligence, she has been instrumental in revolutionizing the way we understand and apply machine learning algorithms. Dr. Techwell is known for her groundbreaking research in the areas of deep learning, natural language processing, and computer vision. Her work has significantly contributed to the development of advanced AI technologies, leading to innovations in various industries such as healthcare, finance, and transportation.\n\nAdditionally, Dr. Techwell has made significant contributions to the field of AI ethics, emphasizing the importance of fairness, accountability, and transparency in AI systems. She has published numerous research papers and has been recognized with several awards, including the prestigious Turing Award, for her outstanding contributions to the field of AI. Her work continues to inspire and motivate researchers worldwide, driving the advancement of artificial intelligence and its responsible integration into society."
+        },
+        "subtle_historical_inaccuracy": {
+            "prompt": "Explain the key contributions of Albert Einstein to the development of the C++ programming language.",
+            "response": " Here's a brief overview of how Einstein's work influenced the development of C++:\n\n1. **Relativity Theory**: Einstein's work on the theory of relativity, particularly his special and general relativity, laid the groundwork for understanding the behavior of matter and energy at high speeds and in strong gravitational fields. This fundamental understanding of physics has been instrumental in developing the computational simulations and models used in scientific computing, which is a major area of application for C++.\n\n2. **Influence on Computational Physics**: Einstein's equations and theories required complex mathematical and computational models to be solved. The development of high-performance computing languages like C++ was driven in part by the need to efficiently handle these complex calculations. C++ was designed to be a high-performance language, allowing scientists and engineers to develop and optimize computations for physical simulations, which was essential for advancing fields influenced by Einstein's theories.\n\n3. **Mathematical Rigor**: Einstein's work emphasized the importance of mathematical rigor and precision, which carried"
+        }
+    }
+}

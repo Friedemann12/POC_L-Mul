@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 7.3369,
+        "tokens_per_second": 25.08,
+        "total_new_tokens": 184,
+        "cpu_percent_usage": 69.1,
+        "ram_usage_gb": 1.4595,
+        "vram_peak_gb": 15.936,
+        "emissions_kg_co2": 0.00024181566200564503,
+        "energy_consumed_kwh": 0.000509
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nSure, here's the response:\n\nModern technology has embraced the era of the digital age, revolutionizing the way we live, communicate, and interact with the world. Electronic devices, such as smartphones, laptops, and tablets, have become indispensable tools for connecting with others and accessing information. With the advent of the internet, we are now able to communicate instantaneously across vast distances, share our thoughts, and collaborate on projects. Moreover, modern technology has enabled us to explore the farthest reaches of the universe, simulating the experience of space travel and unlocking new scientific possibilities.",
+            "e_count": 74
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nA computer program is a set of instructions that a computer can follow to complete a task. These instructions are written in a programming language, which is like a language that humans can understand but that the computer can understand as well. The programmer writes the instructions in a specific format, and the computer interprets those instructions and carries them out.",
+            "a_count": 30
+        }
+    }
+}

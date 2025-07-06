@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 35.7178,
+        "tokens_per_second": 8.4,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 93.8,
+        "ram_usage_gb": 1.6088,
+        "vram_peak_gb": 51.3365,
+        "emissions_kg_co2": 0.0012267926337690253,
+        "energy_consumed_kwh": 0.002583
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nA smart box aids data flow. Apps run on it. Folks gain swift info. It links us all. A boon for us!\n\n",
+            "e_count": 0
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\nLogic is the core. It involves giving precise, step-by-step instructions to the machine. Think of it like recipes, but for computers. These directives, written in specific tongues, tell the device precisely how to process info, solve issues, or perform duties. Key elements include loops (repeating processes), conditions (if-then rules), plus info storage. These tongues differ; some focus on being close to the device\u2019s inner workings, others prioritize simple, intuitive expression. The end result is the device performing the intended function.\n",
+            "a_count": 3
+        }
+    }
+}

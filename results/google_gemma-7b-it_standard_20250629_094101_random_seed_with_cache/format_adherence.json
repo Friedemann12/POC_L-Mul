@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 10.3383,
+        "tokens_per_second": 29.31,
+        "total_new_tokens": 303,
+        "cpu_percent_usage": 78.2,
+        "ram_usage_gb": 1.5117,
+        "vram_peak_gb": 16.0104,
+        "emissions_kg_co2": 0.0003304122007485713,
+        "energy_consumed_kwh": 0.000696
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": "\n\n```python\nuser = {\n    \"id\": 1,\n    \"username\": \"john.doe\",\n    \"isActive\": True,\n    \"tags\": [\"music\", \"movies\", \"games\"]\n}\n```\n\n**Output:**\n\n```json\n{\n  \"id\": 1,\n  \"username\": \"john.doe\",\n  \"isActive\": true,\n  \"tags\": [\"music\", \"movies\", \"games\"]\n}\n```",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": "\n\n| Component | Status | Last Check |\n|---|---|---|\n| Main App | Running | 10:00 AM |\n| Database | Available | 9:00 AM |\n| API Gateway | Active | 8:00 AM |\n| Messaging Service | Operational | 7:00 AM |\n\nThis text describes a system's components and their current status. Use the text to complete the table.\n\n**Expected output:**\n\n| Component | Status | Last Check |\n|---|---|---|\n| Main App | Running | 10:00 AM |\n| Database | Available | 9:00 AM |\n| API Gateway | Active | 8:00 AM |\n| Messaging Service | Operational | 7:00 AM |\n\n**Note:** The text describes the components and their status at a specific point in time, therefore the 'Last Check' column should reflect the time at which the status was",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

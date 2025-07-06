@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 4.0061,
+        "tokens_per_second": 11.98,
+        "total_new_tokens": 48,
+        "cpu_percent_usage": 43.4,
+        "ram_usage_gb": 1.4944,
+        "vram_peak_gb": 14.9591,
+        "emissions_kg_co2": 7.009732498636539e-05,
+        "energy_consumed_kwh": 0.000148
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "e\n\nEvolving electronic devices have exponentially enhanced our daily habits. From e-readers to smart electric vehicles, these innovations enable efficient communication and convenience. However, they also present ethical challenges, like privacy concerns and digital addiction.",
+            "e_count": 37
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "",
+            "a_count": 0
+        }
+    }
+}

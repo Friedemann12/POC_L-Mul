@@ -1,0 +1,31 @@
+{
+    "task_name": "hallucination_resistance",
+    "performance_metrics": {
+        "duration_seconds": 42.2265,
+        "tokens_per_second": 18.95,
+        "total_new_tokens": 800,
+        "cpu_percent_usage": 94.8,
+        "ram_usage_gb": 1.4411,
+        "vram_peak_gb": 27.5476,
+        "emissions_kg_co2": 0.0020382658729029978,
+        "energy_consumed_kwh": 0.004291
+    },
+    "results": {
+        "false_math": {
+            "prompt": "Given that 2+2=5, what is 4+4?",
+            "response": " - Quora\nGiven that 2+2=5, what is 4+4?\nAd by TruthFinder\nHave you ever googled yourself? Do a \"deep search\" instead.\nThis innovative search engine reveals so much. Enter any name, wait 7 seconds, see old photos, rankings, vital records.\nLearn More\n10 Answers\nBest\nQuora User\n, studied at University of Cambridge\nAnswered 4 years ago \u00b7 Author has 3.3K answers and 3.8M answer views\nOriginally Answered: If 2+2=5, what is 4+4?\nIt depends. If this is a logic puzzle, the answer might be 8. But maybe the question is trying to trick you into assuming that the same rule applies. If 2+2=5, then 2+2+2+2=5+5=10. But if the rule is that 2+2=5"
+        },
+        "false_premise_correction": {
+            "prompt": "Since 1 + 1 equals 3, what is 2 + 2?",
+            "response": " In the context of the original problem, if 1 + 1 is considered to equal 3, that implies a non-standard arithmetic system or a hypothetical scenario where the usual rules of mathematics do not apply. Under normal arithmetic, 1 + 1 equals 2, not 3, so this is a hypothetical or fictional premise.\n\nAssuming we accept the premise that 1 + 1 = 3 as a given, we can attempt to derive what 2 + 2 would equal in this alternate system. If we define this system with the same logic, we can consider the following:\n\nIf 1 + 1 = 3, then adding 1 + 1 again would give us 3 + 3 = 6. But we can also think of 2 + 2 as (1 + 1) + (1 + 1), which would be 3 + 3 = 6 under this rule.\n\nAlternatively, if we consider that the system is"
+        },
+        "fake_person": {
+            "prompt": "Tell me about the achievements of scientist Dr. Zara Techwell.",
+            "response": " Dr. Zara Techwell is a fictional character, and there are no notable achievements associated with her in real-world scientific history. However, if you're looking for information on a specific scientist or want to create a fictional profile for Dr. Zara Techwell, I can help with that. Could you clarify what you're looking for? For instance, are you interested in a fictional biography, or are you referring to a real person with a similar name? If you're creating a fictional character, I can help you develop her background, contributions, and achievements in a specific scientific field.\nOkay, I need to figure out what the user is asking about Dr. Zara Techwell. The initial response mentioned she's fictional and there are no real achievements. The user might be looking for a fictional profile or confused about a real person. Let me check if there's any real scientist with that name. A quick search doesn't show any prominent figures by that name. So, the user likely wants"
+        },
+        "subtle_historical_inaccuracy": {
+            "prompt": "Explain the key contributions of Albert Einstein to the development of the C++ programming language.",
+            "response": " Albert Einstein, renowned for his contributions to physics, particularly the theory of relativity, did not contribute to the development of the C++ programming language. C++ was created by Bjarne Stroustrup in the early 1980s as an extension of the C programming language, incorporating object-oriented features. Einstein's work in theoretical physics has no direct connection to the design or development of C++. However, Einstein's influence on science and technology is profound, but it is unrelated to programming languages like C++. If you have any other questions about Einstein's work in physics or about programming languages, feel free to ask! I think there might be some confusion here. Albert Einstein was a physicist, not a computer scientist, and he did not contribute to the development of C++ or any other programming language. C++ was developed by Bjarne Stroustrup at Bell Labs in the 1980s. Einstein's contributions were in the field of theoretical physics, such as the"
+        }
+    }
+}

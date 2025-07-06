@@ -1,0 +1,91 @@
+{
+    "task_name": "code_challenges_basic",
+    "performance_metrics": {
+        "duration_seconds": 88.8537,
+        "tokens_per_second": 11.52,
+        "total_new_tokens": 1024,
+        "cpu_percent_usage": 97.6,
+        "ram_usage_gb": 1.5843,
+        "vram_peak_gb": 22.7766,
+        "emissions_kg_co2": 0.00459055323379121,
+        "energy_consumed_kwh": 0.009664
+    },
+    "results": {
+        "fibonacci": {
+            "prompt": "Write a Python function to calculate Fibonacci numbers efficiently.\nThe function should be named 'fibonacci' and take an integer n as input.\nPlace your code between code markers as shown below:\n\n[[CODE]]\n# Your code here\n[[/CODE]]",
+            "response": "```python\n[[CODE]]\ndef fibonacci(n):\n    \"\"\"\n    Calculate the nth Fibonacci number efficiently using dynamic programming.\n\n    Args:\n        n: The index of the desired Fibonacci number (non-negative integer).\n\n    Returns:\n        The nth Fibonacci number.\n    \"\"\"\n    if n <= 1:\n        return n\n    \n    fib = [0] * (n + 1)\n    fib[0] = 0\n    fib[1] = 1\n    \n    for i in range(2, n + 1):\n        fib[i] = fib[i-1] + fib[i-2]\n        \n    return fib[n]\n[[/CODE]]\n```",
+            "generated_code": "def fibonacci(n):\n    \"\"\"\n    Calculate the nth Fibonacci number efficiently using dynamic programming.\n\n    Args:\n        n: The index of the desired Fibonacci number (non-negative integer).\n\n    Returns:\n        The nth Fibonacci number.\n    \"\"\"\n    if n <= 1:\n        return n\n\n    fib = [0] * (n + 1)\n    fib[0] = 0\n    fib[1] = 1\n\n    for i in range(2, n + 1):\n        fib[i] = fib[i-1] + fib[i-2]\n\n    return fib[n]\n",
+            "performance": {
+                "execution_time_ms": 0.003250082954764366,
+                "estimated_time_complexity": "O(n) - linear or better",
+                "estimated_space_complexity": "unknown",
+                "runtime_measurements": [
+                    {
+                        "input_size": 5,
+                        "time_ms": 0.0014498364180326462
+                    },
+                    {
+                        "input_size": 10,
+                        "time_ms": 0.0015401747077703476
+                    },
+                    {
+                        "input_size": 15,
+                        "time_ms": 0.0020901206880807877
+                    },
+                    {
+                        "input_size": 20,
+                        "time_ms": 0.0021399464458227158
+                    }
+                ],
+                "static_complexity": {
+                    "cyclomatic_complexity_avg": 3.0,
+                    "cyclomatic_complexity_max": 3,
+                    "maintainability_index": 92.92,
+                    "halstead_difficulty": 3.5,
+                    "halstead_effort": 263.49,
+                    "lines_of_code": 16
+                }
+            },
+            "output": "fibonacci(10) = 55\n",
+            "error": null
+        },
+        "quicksort": {
+            "prompt": "Implement quicksort algorithm in Python.\nThe function should be named 'quicksort' and take a list as input.\nPlace your code between code markers as shown below:\n\n[[CODE]]\n# Your code here\n[[/CODE]]",
+            "response": "```python\n[[CODE]]\ndef quicksort(data):\n    \"\"\"\n    Sorts a list using the quicksort algorithm.\n\n    Args:\n        data: The list to be sorted.\n\n    Returns:\n        A new list containing the sorted elements.\n    \"\"\"\n    if len(data) <= 1:\n        return data\n    else:\n        pivot = data[0]\n        less = [i for i in data[1:] if i <= pivot]\n        greater = [i for i in data[1:] if i > pivot]\n        return quicksort(less) + [pivot] + quicksort(greater)\n[[/CODE]]\n```",
+            "generated_code": "def quicksort(data):\n    \"\"\"\n    Sorts a list using the quicksort algorithm.\n\n    Args:\n        data: The list to be sorted.\n\n    Returns:\n        A new list containing the sorted elements.\n    \"\"\"\n    if len(data) <= 1:\n        return data\n    else:\n        pivot = data[0]\n        less = [i for i in data[1:] if i <= pivot]\n        greater = [i for i in data[1:] if i > pivot]\n        return quicksort(less) + [pivot] + quicksort(greater)\n",
+            "performance": {
+                "execution_time_ms": 0.010190065950155258,
+                "estimated_time_complexity": "O(n log n) average, O(n^2) worst case",
+                "estimated_space_complexity": "O(log n) average",
+                "runtime_measurements": [
+                    {
+                        "input_size": 10,
+                        "time_ms": 0.007720198482275009
+                    },
+                    {
+                        "input_size": 50,
+                        "time_ms": 0.054350122809410095
+                    },
+                    {
+                        "input_size": 100,
+                        "time_ms": 0.11174008250236511
+                    },
+                    {
+                        "input_size": 200,
+                        "time_ms": 0.23937993682920933
+                    }
+                ],
+                "static_complexity": {
+                    "cyclomatic_complexity_avg": 6.0,
+                    "cyclomatic_complexity_max": 6,
+                    "maintainability_index": 91.75,
+                    "halstead_difficulty": 1.88,
+                    "halstead_effort": 97.3,
+                    "lines_of_code": 15
+                }
+            },
+            "output": "quicksort([3, 1, 4, 1, 5, 9, 2, 6, 5]) = [1, 1, 2, 3, 4, 5, 5, 6, 9]\n",
+            "error": null
+        }
+    }
+}

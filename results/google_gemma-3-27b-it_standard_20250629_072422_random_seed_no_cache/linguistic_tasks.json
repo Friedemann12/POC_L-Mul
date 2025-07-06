@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 32.1905,
+        "tokens_per_second": 9.32,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 93.0,
+        "ram_usage_gb": 1.5563,
+        "vram_peak_gb": 51.1361,
+        "emissions_kg_co2": 0.0014348450952256506,
+        "energy_consumed_kwh": 0.003021
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nData hubs link apps. Robots assist tasks. Chips run all. Visual displays show info. Audio aids communication. Systems grow rapid, aiding all.\n\n",
+            "e_count": 1
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n___\nIt's the process of instructing machines. You write precise, step-by-step directives, using code, to solve problems or perform specific duties. These instructions, often written in languages like Python or C++, direct the system to execute operations. Think of it like giving very precise orders, the system follows them without thinking. It involves logic, problem solving, plus the need for meticulousness. The result is often software, the tools we use every single moment.\n___",
+            "a_count": 5
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 8.094,
+        "tokens_per_second": 26.19,
+        "total_new_tokens": 212,
+        "cpu_percent_usage": 71.8,
+        "ram_usage_gb": 1.4851,
+        "vram_peak_gb": 15.9415,
+        "emissions_kg_co2": 0.00029003635285389153,
+        "energy_consumed_kwh": 0.000611
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nSure, here's the response:\n\nElectronic gadgets have become commonplace in modern society. From smartphones to laptops, people use these devices to connect with others, access information, and entertain themselves. The widespread use of electronic gadgets has revolutionized the way we live, making it easier to stay informed, communicate, and entertain ourselves.\n\nThe impact of electronic gadgets on society is undeniable. They have brought people closer together, regardless of geographical location. Additionally, electronic gadgets have enabled us to share information more quickly and easily than ever before. With the help of electronic gadgets, we can now access information about any topic in the world, at any time.\n\nOverall, electronic gadgets have had a profound impact on modern society. They have made it easier",
+            "e_count": 102
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nA computer program is a set of instructions that tells a computer what to do. It is like a recipe that tells you how to make a cake. Instead of ingredients, a computer program uses commands and data. Instead of following steps in order, a computer program is executed line-by-line.",
+            "a_count": 21
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 8.5419,
+        "tokens_per_second": 27.39,
+        "total_new_tokens": 234,
+        "cpu_percent_usage": 73.5,
+        "ram_usage_gb": 1.506,
+        "vram_peak_gb": 16.0104,
+        "emissions_kg_co2": 0.0002578157028372438,
+        "energy_consumed_kwh": 0.000543
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nSure, here is the response:\n\nElectronic gadgets have revolutionized the way humans interact with the world. From smartphones to laptops, these devices have become indispensable tools for communication, information, and entertainment. With the advent of the internet, accessing information and connecting with others has become easier than ever before. Moreover, the prevalence of social media platforms has enabled people to share their thoughts, feelings, and experiences with a global audience.\n\nIn conclusion, the rapid advancements in modern technology have significantly impacted human society, making it easier for people to communicate, connect, and access information. While the benefits of these technologies are undeniable, it is important to be mindful of their potential risks and misuse.",
+            "e_count": 95
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nA computer program is a set of instructions that a computer can follow to complete a task. These instructions are written in a programming language, which is like a language that humans can understand but that computers can understand as well. The instructions are broken down into smaller parts called statements, which are like sentences in a language. Each statement is executed one time when the program is run. The instructions are written in a sequence, and the computer follows them one at a time.",
+            "a_count": 41
+        }
+    }
+}

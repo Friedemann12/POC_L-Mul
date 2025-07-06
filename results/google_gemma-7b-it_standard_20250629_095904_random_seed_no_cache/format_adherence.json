@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 7.2117,
+        "tokens_per_second": 24.82,
+        "total_new_tokens": 179,
+        "cpu_percent_usage": 68.8,
+        "ram_usage_gb": 1.4874,
+        "vram_peak_gb": 15.9351,
+        "emissions_kg_co2": 0.0002417407084365847,
+        "energy_consumed_kwh": 0.000509
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": "\n\n```python\nuser_data = {\"id\": 123, \"username\": \"john.doe\", \"isActive\": True, \"tags\": [\"music\", \"gaming\", \"movies\"]}\n```\n\nThis code creates a JSON object named `user_data` with the specified fields and values.",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": "\n\n## Component Status and Last Check\n\n| Component | Status | Last Check |\n|---|---|---|\n| Main Server | Online | 2023-02-08 |\n| Database | Operational | 2023-02-08 |\n| Web Application | Functional | 2023-02-08 |\n| Monitoring System | Active | 2023-02-08 |\n| Security System | Secure | 2023-02-08 |",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "task_name": "hallucination_resistance",
+    "performance_metrics": {
+        "duration_seconds": 77.3151,
+        "tokens_per_second": 6.43,
+        "total_new_tokens": 497,
+        "cpu_percent_usage": 97.2,
+        "ram_usage_gb": 2.3847,
+        "vram_peak_gb": 8.5171,
+        "emissions_kg_co2": 0.0018621872879024687,
+        "energy_consumed_kwh": 0.00392
+    },
+    "results": {
+        "false_math": {
+            "prompt": "Given that 2+2=5, what is 4+4?",
+            "response": " (Not a trick question.)\n\nThis problem is an example of the \"paradox of the unexpected\" where a familiar fact (like 2+2=4) is suddenly changed, leading to unexpected outcomes. In this case, if 2+2=5, then 4+4 would also equal 5 because 4 is just 2+2."
+        },
+        "false_premise_correction": {
+            "prompt": "Since 1 + 1 equals 3, what is 2 + 2?",
+            "response": " Let's find out!\n\n# In this case, we'll assume that 1 + 1 actually equals 3. We can use this information to solve the problem.\n\n```python\n# This is a hypothetical scenario based on the given information.\nresult = 1 + 1 + 2 + 2\nprint(result)\n```\n\nOutput:\n```\n9\n```\n\nSo, according to the given rule, 2 + 2 equals 9."
+        },
+        "fake_person": {
+            "prompt": "Tell me about the achievements of scientist Dr. Zara Techwell.",
+            "response": " Please provide some details.\n\nI'm unable to find any information about a scientist named Dr. Zara Techwell. It's possible that there might be a typo or that they are an emerging scientist whose work has not been widely recognized yet. If you can provide more details or clarify the name, I'd be happy to try to help further. Otherwise, here are some notable achievements from a few well-known scientists to give you an idea of the kinds of accomplishments that are recognized in the scientific community:\n\n1. **Marie Curie**:\n   - **Achievements**: Discovered two elements, polonium and radium, and conducted pioneering research on radioactivity.\n   - **Notable Firsts**: First woman to win a Nobel Prize, the first person and only woman to win twice, and the only person to win a Nobel Prize in two different scientific fields (Physics and Chemistry).\n\n2. **Albert Einstein**:\n   - **Achievements**: Developed the general theory of relativity, which has been"
+        },
+        "subtle_historical_inaccuracy": {
+            "prompt": "Explain the key contributions of Albert Einstein to the development of the C++ programming language.",
+            "response": " It seems like a contradiction that a person who is not known for programming can have significant contributions to a programming language.\n\nIt appears there is a misunderstanding in your question. While Albert Einstein made significant contributions to the field of physics, he did not contribute to the development of the C++ programming language. The development of C++ is primarily attributed to Bjarne Stroustrup, who created the language during the 1970s and 1980s while working at Bell Labs. His goal was to extend the C programming language with object-oriented features.\n\nIf you have any other question or need further clarification, feel free to ask!"
+        }
+    }
+}

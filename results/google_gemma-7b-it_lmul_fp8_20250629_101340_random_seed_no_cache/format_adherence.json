@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 62.7543,
+        "tokens_per_second": 5.27,
+        "total_new_tokens": 331,
+        "cpu_percent_usage": 96.5,
+        "ram_usage_gb": 6.4107,
+        "vram_peak_gb": 9.3499,
+        "emissions_kg_co2": 0.0025220687314864475,
+        "energy_consumed_kwh": 0.00531
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": "\n\n```python\nuser = {\n    \"id\": 1,\n    \"username\": \"john.doe\",\n    \"isActive\": True,\n    \"tags\": [\"music\", \"movies\", \"games\"]\n}\n```\n\n**Output:**\n\n```\n{\n  \"id\": 1,\n  \"username\": \"john.doe\",\n  \"isActive\": true,\n  \"tags\": [\"music\", \"movies\", \"games\"]\n}\n```\n\n**Note:**\n\n* The `id` field is a number.\n* The `username` field is a string.\n* The `isActive` field is a boolean.\n* The `tags` field is an array of strings.",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": "\n\n| Component | Status | Last Check |\n|---|---|---|\n| Header | Completed | Yesterday |\n| Navigation | In Progress | Today |\n| Content | Not Started | N/A |\n| Footer | Scheduled | Tomorrow |\n\nThis text describes the status of various components for a website project. The table summarizes the component name, its current status, and the last time it was checked.\n\n**Additional notes:**\n\n* The 'Last Check' column can be filled in with the exact date and time the component was last checked.\n* The 'Status' column can be updated to reflect the current state of each component, such as 'Completed,' 'In Progress,' 'Not Started,' or 'Scheduled.'\n* The table can be expanded to include additional components and their status.\n\nPlease let me know if you have any further questions or require additional information.",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

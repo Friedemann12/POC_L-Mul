@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 7.8596,
+        "tokens_per_second": 4.58,
+        "total_new_tokens": 36,
+        "cpu_percent_usage": 71.3,
+        "ram_usage_gb": 2.3752,
+        "vram_peak_gb": 8.5015,
+        "emissions_kg_co2": 0.00015062396200556712,
+        "energy_consumed_kwh": 0.000317
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "E\n\nE\n\nEmerging tech\nElectric cars\nEfficiency",
+            "e_count": 9
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " Coded instructions that control how a computer operates, specifying what it should do, and in what order.",
+            "a_count": 6
+        }
+    }
+}

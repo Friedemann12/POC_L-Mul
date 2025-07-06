@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 17.2039,
+        "tokens_per_second": 17.44,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 87.0,
+        "ram_usage_gb": 1.4399,
+        "vram_peak_gb": 27.5426,
+        "emissions_kg_co2": 0.0007368976899523801,
+        "energy_consumed_kwh": 0.001551
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " e.g. \"Every evening, the sky becomes.\"\n\nEvery evening, the sky becomes. Evening brings events, energy, and endless possibilities. Events evolve, enabling experiences, expanding essence. Energy enables exploration, engaging every essence. Exploration elevates existence, emerging endlessly. Events, energy, exploration\u2014essential elements enabling endless existence. Essence emerges, enabling endless experiences, evolving endlessly. Events, energy, exploration\u2014essential elements enabling endless existence. Essence emerges, enabling endless experiences, evolving endlessly. Events, energy, exploration\u2014essential elements enabling endless existence. Essence emerges, enabling endless experiences, evolving endlessly. Events, energy, exploration\u2014essential elements enabling endless existence. Essence emerges, enabling endless experiences, evolving endlessly. Events, energy, exploration\u2014essential elements enabling",
+            "e_count": 198
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " Okay, let's tackle this. The user wants me to describe computer programming without using the letter 'a'. Hmm, I need to be careful with each word. First, think about synonyms for common terms. Instead of \"programming,\" maybe \"coding\" or \"scripting.\" But wait, \"coding\" has a 'c', which is okay. Let me check each word.\n\nStart with the basics. \"Computer programming involves creating sets of instructions for machines to follow.\" Replace \"involves\" with \"entails\" or \"requires.\" \"Creating\" is okay. \"Sets of instructions\" \u2013 maybe \"sequences of commands.\" \"Machines\" can stay. \"To follow\" \u2013 \"to execute\" or \"to process.\"\n\nNext",
+            "a_count": 30
+        }
+    }
+}

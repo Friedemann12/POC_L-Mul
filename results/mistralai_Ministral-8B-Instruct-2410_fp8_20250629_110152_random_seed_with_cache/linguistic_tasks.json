@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 20.9837,
+        "tokens_per_second": 5.86,
+        "total_new_tokens": 123,
+        "cpu_percent_usage": 89.3,
+        "ram_usage_gb": 2.383,
+        "vram_peak_gb": 8.5016,
+        "emissions_kg_co2": 0.00047205834970876734,
+        "energy_consumed_kwh": 0.000994
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "technology has evolved remarkably. We now live in an era where electronic devices are ubiquitous. Emails and e-books have replaced traditional postal mail and physical books. The internet, an electronic network, connects us globally. It enables us to access vast amounts of information instantly. Furthermore, artificial intelligence and robotics have advanced significantly, revolutionizing industries from manufacturing to healthcare.",
+            "e_count": 40
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " Don't use 'a' in your response. Cmpytr prmng, usng cmnds, shps, & lgs to crt funcns, prcslngs, & strctrs.",
+            "a_count": 1
+        }
+    }
+}

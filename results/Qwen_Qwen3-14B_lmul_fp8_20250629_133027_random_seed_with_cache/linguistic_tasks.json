@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 53.4924,
+        "tokens_per_second": 5.61,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 95.9,
+        "ram_usage_gb": 2.6895,
+        "vram_peak_gb": 15.3365,
+        "emissions_kg_co2": 0.001354627890036712,
+        "energy_consumed_kwh": 0.002852
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " The effect of technology on everyday existence is evident. People engage with electronic devices effortlessly, exchanging information easily. These devices enable efficient communication, enhancing experiences. Yet, excessive use may lead to excessive dependence, reducing face-to-face engagement. Therefore, balance is essential for effective living. Technology evolves, but the essence of human connection remains. Let\u2019s embrace these tools, keeping equilibrium essential. The future\u2019s potential is endless. Let\u2019s make it meaningful. We mustn\u2019t lose ourselves in the endless digital stream. Let\u2019s ensure technology serves, not enslaves. Let\u2019s celebrate the essence of existence. The key is to be aware and choose wisely. Technology should elevate, not eliminate, the essence of being human. Let\u2019s keep our eyes on the essential",
+            "e_count": 143
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " Here's a brief explanation of coding without using the letter 'a':\n\nCoding involves creating step-by-step instructions to solve problems. These steps are written in a specific language that computers can process. Developers use different tools and methods to write, test, and refine these instructions. Errors are common, and debugging is the process of finding and correcting them. The goal is to build functional software that meets user needs.\nOkay, let's see. The user wants me to explain computer programming without using the letter 'a'. Hmm. First, I need to recall the key points of programming but avoid any words with 'a'. Let me start with the basics. Programming is about giving instructions to computers. But how to say that without 'a'? Maybe \"creating",
+            "a_count": 39
+        }
+    }
+}

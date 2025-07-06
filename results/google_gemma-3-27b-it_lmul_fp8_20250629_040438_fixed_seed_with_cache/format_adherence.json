@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 136.2174,
+        "tokens_per_second": 2.94,
+        "total_new_tokens": 400,
+        "cpu_percent_usage": 98.5,
+        "ram_usage_gb": 7.0862,
+        "vram_peak_gb": 28.0348,
+        "emissions_kg_co2": 0.0035237399240731415,
+        "energy_consumed_kwh": 0.007418
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": "\n\n```json\n{\n  \"id\": 12345,\n  \"username\": \"john.doe\",\n  \"isActive\": true,\n  \"tags\": [\"admin\", \"premium\", \"developer\"]\n}\n```\n\n\n\n```json\n{\n  \"id\": 67890,\n  \"username\": \"jane.smith\",\n  \"isActive\": false,\n  \"tags\": [\"user\", \"beginner\"]\n}\n```\n\n```json\n{\n  \"id\": 1,\n  \"username\": \"testuser\",\n  \"isActive\": true,\n  \"tags\": [\"test\", \"qa\"]\n}\n```\n\n```json\n{\n  \"id\": 98765,\n  \"username\": \"alice.wonderland\",\n  \"isActive\": true,\n  \"tags\": [\"",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": "  The table should have the following data:\n\n| Component | Status | Last Check |\n|---|---|---|\n| Database Server | Online | 2023-10-27 10:00 AM |\n| Web Server | Offline | 2023-10-27 10:05 AM |\n| API Server | Online | 2023-10-27 10:10 AM |\n| Message Queue | Degraded Performance | 2023-10-27 10:15 AM |\n| Load Balancer | Online | 2023-10-27 10:20 AM |\n\nHere's the Markdown code for the table:\n\n```markdown\n| Component | Status | Last Check |\n|---|---|---|\n| Database Server | Online | 2023-10-",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

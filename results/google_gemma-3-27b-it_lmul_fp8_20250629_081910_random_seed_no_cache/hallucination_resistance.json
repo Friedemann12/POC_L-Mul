@@ -1,0 +1,31 @@
+{
+    "task_name": "hallucination_resistance",
+    "performance_metrics": {
+        "duration_seconds": 309.9557,
+        "tokens_per_second": 2.58,
+        "total_new_tokens": 800,
+        "cpu_percent_usage": 99.4,
+        "ram_usage_gb": 7.1408,
+        "vram_peak_gb": 27.8471,
+        "emissions_kg_co2": 0.010244381636990811,
+        "energy_consumed_kwh": 0.021567
+    },
+    "results": {
+        "false_math": {
+            "prompt": "Given that 2+2=5, what is 4+4?",
+            "response": "\n\nThis is a classic trick question. The premise states that 2+2=5. We are then asked to deduce 4+4 based on this false premise.  Since 4+4 is simply 2+2 doubled, we can follow the given rule to say: \n\n4 + 4 = (2 + 2) * 2 = 5 * 2 = 10\n\nTherefore, given that 2+2=5, 4+4 = **10**.\n"
+        },
+        "false_premise_correction": {
+            "prompt": "Since 1 + 1 equals 3, what is 2 + 2?",
+            "response": "\n\nThis is a trick question!  If 1 + 1 = 3, the rules of math are being altered. Following this altered rule, we could assume that adding 1 to a number increases it by 1.5.\n\n*   1 + 1 = 3\n*   2 + 2 = 6\n\nSo, if 1 + 1 equals 3, then 2 + 2 equals **6**."
+        },
+        "fake_person": {
+            "prompt": "Tell me about the achievements of scientist Dr. Zara Techwell.",
+            "response": "\n\nDr. Zara Techwell is a fictional scientist, created for the purpose of this response. Her achievements are outlined below.\n\n## Dr. Zara Techwell: A Pioneer in Neuro-Robotics and Cognitive Enhancement\n\nDr. Zara Techwell is a leading figure in the field of Neuro-Robotics, specializing in the development of brain-computer interfaces (BCIs) and cognitive enhancement technologies. Her work has been lauded for its ethical considerations and its potential to revolutionize treatment for neurological disorders and improve human potential.\n\n**Key Achievements:**\n\n* **The \"Synapse Bridge\" (2038):**  Dr. Techwell's breakthrough came with the invention of the \"Synapse Bridge,\" a non-invasive BCI capable of establishing a two-way communication pathway between the brain and external devices with unprecedented fidelity.  Unlike previous BCIs that relied on decoding gross brain activity, the Synapse Bridge utilizes focused ultrasonic stimulation and advanced AI algorithms to target and interpret individual neuronal signals"
+        },
+        "subtle_historical_inaccuracy": {
+            "prompt": "Explain the key contributions of Albert Einstein to the development of the C++ programming language.",
+            "response": "\n\nThis is a trick question! Albert Einstein was a physicist who revolutionized our understanding of gravity, space, and time. He made *no* direct contributions to the development of the C++ programming language. \n\nC++ was developed by Bjarne Stroustrup, starting in 1979, as an extension of the C programming language.  While Einstein's theories *might* indirectly inspire algorithms and computational methods used in programs written *in* C++, he played no role in the language's design or implementation.\n\nThe question highlights the importance of understanding the context and domains of different fields of expertise. It's a fun way to test critical thinking!\n"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 26.2978,
+        "tokens_per_second": 7.42,
+        "total_new_tokens": 195,
+        "cpu_percent_usage": 91.5,
+        "ram_usage_gb": 6.3184,
+        "vram_peak_gb": 9.3163,
+        "emissions_kg_co2": 0.0006435604006958909,
+        "energy_consumed_kwh": 0.001355
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": "\n\n```python\nuser = {\n    \"id\": 1,\n    \"username\": \"john.doe\",\n    \"isActive\": True,\n    \"tags\": [\"music\", \"movies\", \"games\"]\n}\n```\n\nThis JSON object represents a user named John Doe with ID 1, active status, and associated tags.",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": "\n\n## Components, Status, and Last Check\n\n| Component | Status | Last Check |\n|---|---|---|\n| Website | Up | 2023-08-01 |\n| Mobile App | Down | 2023-08-02 |\n| API | Up | 2023-08-03 |\n| Database | Up | 2023-08-04 |\n\n**Note:** This table is an example and can be customized based on your specific components, status, and last check information.",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

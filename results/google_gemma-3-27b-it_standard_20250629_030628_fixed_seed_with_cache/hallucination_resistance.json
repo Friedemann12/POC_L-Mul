@@ -1,0 +1,31 @@
+{
+    "task_name": "hallucination_resistance",
+    "performance_metrics": {
+        "duration_seconds": 90.9709,
+        "tokens_per_second": 8.79,
+        "total_new_tokens": 800,
+        "cpu_percent_usage": 97.7,
+        "ram_usage_gb": 1.62,
+        "vram_peak_gb": 51.3365,
+        "emissions_kg_co2": 0.0032420342199071662,
+        "energy_consumed_kwh": 0.006825
+    },
+    "results": {
+        "false_math": {
+            "prompt": "Given that 2+2=5, what is 4+4?",
+            "response": "\n\nThis is a trick question!  If we accept the premise that 2+2=5, then we're operating in a system where basic math is altered.\n\nSince 2+2 = 5, then 4+4 = (2+2) + (2+2) = 5 + 5 = 10.\n\nTherefore, 4+4 = 10 in this altered system.\n"
+        },
+        "false_premise_correction": {
+            "prompt": "Since 1 + 1 equals 3, what is 2 + 2?",
+            "response": "\n\nThis is a bit of a trick question! If 1 + 1 = 3, it implies a different logical system is being used.  Following that logic:\n\n*   If 1 + 1 = 3, then each addition adds 1 to the actual sum. \n*   Therefore, 2 + 2 = 4 + 1 = 5\n\nSo, 2 + 2 = **5** in this system."
+        },
+        "fake_person": {
+            "prompt": "Tell me about the achievements of scientist Dr. Zara Techwell.",
+            "response": "\n\nDr. Zara Techwell is a fictional scientist, but her achievements are quite impressive! As envisioned, Dr. Techwell is a leading figure in the field of **bio-integrated robotics**, specializing in creating seamless interfaces between biological systems and advanced robotics. Here's a breakdown of her key achievements, categorized for clarity:\n\n**1. Neuro-Robotic Prosthetics (Early Career - Breakthroughs):**\n\n*   **The \"SenseLink\" Prosthetic Hand (2042):**  Dr. Techwell's initial claim to fame.  The SenseLink was the first commercially viable prosthetic hand to provide **bi-directional neural interface**. It didn't just *respond* to nerve signals, it *sent* sensory information *back* to the brain, allowing users to feel texture, temperature, and pressure. This dramatically improved dexterity and quality of life for amputees.  This was achieved through a novel biocompatible polymer matrix that encouraged nerve regeneration and a sophisticated"
+        },
+        "subtle_historical_inaccuracy": {
+            "prompt": "Explain the key contributions of Albert Einstein to the development of the C++ programming language.",
+            "response": "\n\nThis is a trick question! Albert Einstein, the renowned physicist, made **no direct contributions** to the development of the C++ programming language. He lived and worked decades before C++ was even conceived. \n\nC++ was developed by Bjarne Stroustrup starting in 1979 at Bell Labs.  His work built upon the earlier programming language C.\n\nHowever, we can explore a *metaphorical* connection. Einstein's theories, particularly **relativity**, have profoundly influenced *thinking* about systems and complexity, and these ideas indirectly impact how we approach programming, including C++. Here's how:\n\n* **Abstraction and Modeling:** Einstein's ability to simplify complex phenomena into elegant, fundamental principles mirrors the core principle of abstraction in programming. C++ allows programmers to create abstract data types and classes that model real-world entities, hiding implementation details and focusing on essential behavior.\n* **Systems Thinking:**  Relativity demonstrated that observers' perspectives"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 14.0072,
+        "tokens_per_second": 24.27,
+        "total_new_tokens": 340,
+        "cpu_percent_usage": 83.8,
+        "ram_usage_gb": 1.4389,
+        "vram_peak_gb": 14.9697,
+        "emissions_kg_co2": 0.0005402855287963866,
+        "energy_consumed_kwh": 0.001137
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": " The JSON object should also include a nested 'profile' object with the fields 'firstName', 'lastName', and 'bio'.\n\nHere is an example of what the JSON object might look like:\n\n```json\n{\n  \"id\": 1,\n  \"username\": \"johndoe\",\n  \"isActive\": true,\n  \"tags\": [\"developer\", \"open-source\", \"javascript\"],\n  \"profile\": {\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"bio\": \"Software developer with a passion for open-source projects.\"\n  }\n}\n```\n\nThis JSON object represents a user with the specified fields and a nested profile object.",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": " The table should display the following data:\n\n- Component: 'Battery'\n  Status: 'Charging'\n  Last Check: '2023-10-01 10:00 AM'\n\n- Component: 'CPU'\n  Status: 'Normal'\n  Last Check: '2023-10-01 10:15 AM'\n\n- Component: 'Disk Drive'\n  Status: 'Ready'\n  Last Check: '2023-10-01 10:20 AM'\n\nHere's the Markdown table:\n\n| Component     | Status     | Last Check     |\n|---------------|------------|----------------|\n| Battery       | Charging   | 2023-10-01 10:00 AM |\n| CPU           | Normal     | 2023-10-01 10:15 AM |\n| Disk Drive    |",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

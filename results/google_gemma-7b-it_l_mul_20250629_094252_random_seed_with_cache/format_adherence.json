@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 9.0041,
+        "tokens_per_second": 27.88,
+        "total_new_tokens": 251,
+        "cpu_percent_usage": 74.9,
+        "ram_usage_gb": 1.5269,
+        "vram_peak_gb": 16.0104,
+        "emissions_kg_co2": 0.0002765936451270931,
+        "energy_consumed_kwh": 0.000582
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": "\n\n```python\nuser = {\n    \"id\": 1,\n    \"username\": \"john.doe\",\n    \"isActive\": True,\n    \"tags\": [\"music\", \"movies\", \"games\"]\n}\n```\n\n**Output:**\n\n```json\n{\n  \"id\": 1,\n  \"username\": \"john.doe\",\n  \"isActive\": true,\n  \"tags\": [\"music\", \"movies\", \"games\"]\n}\n```",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": "\n\n```python\n# Import libraries\nimport pandas as pd\n\n# Create a sample data frame\ndata = pd.DataFrame({\n    \"Component\": [\"A\", \"B\", \"C\", \"D\"],\n    \"Status\": [\"Active\", \"Inactive\", \"Warning\", \"Pending\"],\n    \"Last Check\": [\"Yesterday\", \"Today\", \"Tomorrow\", \"Next Week\"]\n})\n\n# Create a table\nprint(pd.table(data))\n```\n\n**Output:**\n\n| Component | Status | Last Check |\n|---|---|---|\n| A | Active | Yesterday |\n| B | Inactive | Today |\n| C | Warning | Tomorrow |\n| D | Pending | Next Week |",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

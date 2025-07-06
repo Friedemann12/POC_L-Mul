@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 16.4858,
+        "tokens_per_second": 18.2,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 86.3,
+        "ram_usage_gb": 1.4769,
+        "vram_peak_gb": 27.5484,
+        "emissions_kg_co2": 0.0005750839288267254,
+        "energy_consumed_kwh": 0.001211
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " The evolution of technology enables efficient energy exchange, expanding everyday experiences. Electrons, elements, and equipment enable seamless communication, enhancing global connections. Engineers experiment, explore, and engineer excellent equipment, ensuring effective, elegant, and enduring systems. These systems enable endless entertainment, education, and empowerment for everyone. Let's embrace these essentials, enabling a better, brighter, and more effective future.\nOkay, the user wants me to write about modern technology using the letter 'e' no more than three times. Let me start by reading their example response to get an idea of how they structured it.\n\nThe example uses \"evolution,\" \"enables,\" \"efficient,\" etc., but they managed to keep 'e's to a minimum. Wait, actually,",
+            "e_count": 129
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " To create instructions for devices to perform specific tasks, coders use a sequence of commands. These commands are structured in a logical order, enabling the device to process data and produce results. The process involves selecting suitable tools and methods to achieve the desired outcome. Each step must be precise to ensure the system operates correctly. Programmers often test their work to identify and fix issues before deployment. This iterative process helps in refining the system for optimal performance. The language used can vary, but the goal remains to instruct machines effectively. Continuous learning and adaptation are key aspects of this field. Coders must think critically and solve problems creatively. The end result is a functional system that meets the intended purpose. Regular updates and maintenance are necessary to keep the system running smoothly",
+            "a_count": 49
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 116.9544,
+        "tokens_per_second": 3.42,
+        "total_new_tokens": 400,
+        "cpu_percent_usage": 98.2,
+        "ram_usage_gb": 8.4624,
+        "vram_peak_gb": 12.4833,
+        "emissions_kg_co2": 0.003274235381500633,
+        "energy_consumed_kwh": 0.006893
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": " The user must be named \"John Doe\", be active, and have the ID 123. They must have the following tags: \"developer\", \"backend\", \"javascript\".\n\n```json\n{\n  \"id\": 123,\n  \"username\": \"John Doe\",\n  \"isActive\": true,\n  \"tags\": [\n    \"developer\",\n    \"backend\",\n    \"javascript\"\n  ]\n}\n```\n\n",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": " The table should represent the system health of a website.\n\nHere's the desired table content:\n\n| Component | Status | Last Check |\n|---|---|---|\n| Database | Operational | 2023-10-27 10:00:00 |\n| Web Server | Degraded | 2023-10-27 09:45:00 |\n| CDN | Operational | 2023-10-27 10:15:00 |\n| API | Operational | 2023-10-27 09:55:00 |\n| Frontend | Operational | 2023-10-27 10:05:00 |\n\n```markdown\n| Component | Status | Last Check |\n|---|---|---|\n| Database | Operational | 2023-",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

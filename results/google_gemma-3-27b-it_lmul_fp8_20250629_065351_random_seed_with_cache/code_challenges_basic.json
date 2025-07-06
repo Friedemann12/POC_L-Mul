@@ -1,0 +1,91 @@
+{
+    "task_name": "code_challenges_basic",
+    "performance_metrics": {
+        "duration_seconds": 350.5754,
+        "tokens_per_second": 2.92,
+        "total_new_tokens": 1024,
+        "cpu_percent_usage": 99.5,
+        "ram_usage_gb": 7.0751,
+        "vram_peak_gb": 28.0404,
+        "emissions_kg_co2": 0.009046366860754862,
+        "energy_consumed_kwh": 0.019045
+    },
+    "results": {
+        "fibonacci": {
+            "prompt": "Write a Python function to calculate Fibonacci numbers efficiently.\nThe function should be named 'fibonacci' and take an integer n as input.\nPlace your code between code markers as shown below:\n\n[[CODE]]\n# Your code here\n[[/CODE]]",
+            "response": "```python\ndef fibonacci(n):\n    \"\"\"\n    Calculate the nth Fibonacci number efficiently using memoization.\n\n    Args:\n        n: The index of the desired Fibonacci number (non-negative integer).\n\n    Returns:\n        The nth Fibonacci number.\n    \"\"\"\n    if n < 0:\n        raise ValueError(\"Input must be a non-negative integer.\")\n    \n    memo = {}  # Use a dictionary to store calculated Fibonacci numbers\n\n    def _fibonacci(n):\n        if n in memo:\n            return memo[n]\n        \n        if n <= 1:\n            return n\n        else:\n            result = _fibonacci(n-1) + _fibonacci(n-2)\n            memo[n] = result\n            return result\n\n    return _fibonacci(n)\n```",
+            "generated_code": "def fibonacci(n):\n    \"\"\"\n    Calculate the nth Fibonacci number efficiently using memoization.\n\n    Args:\n        n: The index of the desired Fibonacci number (non-negative integer).\n\n    Returns:\n        The nth Fibonacci number.\n    \"\"\"\n    if n < 0:\n        raise ValueError(\"Input must be a non-negative integer.\")\n\n    memo = {}  # Use a dictionary to store calculated Fibonacci numbers\n\n    def _fibonacci(n):\n        if n in memo:\n            return memo[n]\n\n        if n <= 1:\n            return n\n        else:\n            result = _fibonacci(n-1) + _fibonacci(n-2)\n            memo[n] = result\n            return result\n\n    return _fibonacci(n)\n",
+            "performance": {
+                "execution_time_ms": 0.004590023308992386,
+                "estimated_time_complexity": "O(n) - linear or better",
+                "estimated_space_complexity": "unknown",
+                "runtime_measurements": [
+                    {
+                        "input_size": 5,
+                        "time_ms": 0.001850072294473648
+                    },
+                    {
+                        "input_size": 10,
+                        "time_ms": 0.0030100345611572266
+                    },
+                    {
+                        "input_size": 15,
+                        "time_ms": 0.004159985110163689
+                    },
+                    {
+                        "input_size": 20,
+                        "time_ms": 0.005449866876006126
+                    }
+                ],
+                "static_complexity": {
+                    "cyclomatic_complexity_avg": 2.0,
+                    "cyclomatic_complexity_max": 2,
+                    "maintainability_index": 90.55,
+                    "halstead_difficulty": 3.75,
+                    "halstead_effort": 249.78,
+                    "lines_of_code": 21
+                }
+            },
+            "output": "fibonacci(10) = 55\n",
+            "error": null
+        },
+        "quicksort": {
+            "prompt": "Implement quicksort algorithm in Python.\nThe function should be named 'quicksort' and take a list as input.\nPlace your code between code markers as shown below:\n\n[[CODE]]\n# Your code here\n[[/CODE]]",
+            "response": "```python\ndef quicksort(arr):\n    \"\"\"\n    Sorts a list using the quicksort algorithm.\n\n    Args:\n        arr: The list to be sorted.\n\n    Returns:\n        The sorted list.\n    \"\"\"\n    if len(arr) < 2:\n        return arr  # Base case: lists with 0 or 1 element are already sorted\n    else:\n        pivot = arr[0]  # Choose the first element as the pivot\n        less = [i for i in arr[1:] if i <= pivot]  # Sub-array of all elements less than or equal to the pivot\n        greater = [i for i in arr[1:] if i > pivot]  # Sub-array of all elements greater than the pivot\n        return quicksort(less) + [pivot] + quicksort(greater)  # Recursive call\n```",
+            "generated_code": "def quicksort(arr):\n    \"\"\"\n    Sorts a list using the quicksort algorithm.\n\n    Args:\n        arr: The list to be sorted.\n\n    Returns:\n        The sorted list.\n    \"\"\"\n    if len(arr) < 2:\n        return arr  # Base case: lists with 0 or 1 element are already sorted\n    else:\n        pivot = arr[0]  # Choose the first element as the pivot\n        # Sub-array of all elements less than or equal to the pivot\n        less = [i for i in arr[1:] if i <= pivot]\n        # Sub-array of all elements greater than the pivot\n        greater = [i for i in arr[1:] if i > pivot]\n        return quicksort(less) + [pivot] + quicksort(greater)  # Recursive call\n",
+            "performance": {
+                "execution_time_ms": 0.010709976777434349,
+                "estimated_time_complexity": "O(n log n) average, O(n^2) worst case",
+                "estimated_space_complexity": "O(log n) average",
+                "runtime_measurements": [
+                    {
+                        "input_size": 10,
+                        "time_ms": 0.009660143405199051
+                    },
+                    {
+                        "input_size": 50,
+                        "time_ms": 0.048819929361343384
+                    },
+                    {
+                        "input_size": 100,
+                        "time_ms": 0.12348010204732418
+                    },
+                    {
+                        "input_size": 200,
+                        "time_ms": 0.2426400315016508
+                    }
+                ],
+                "static_complexity": {
+                    "cyclomatic_complexity_avg": 6.0,
+                    "cyclomatic_complexity_max": 6,
+                    "maintainability_index": 80.96,
+                    "halstead_difficulty": 2.5,
+                    "halstead_effort": 134.44,
+                    "lines_of_code": 15
+                }
+            },
+            "output": "quicksort([3, 1, 4, 1, 5, 9, 2, 6, 5]) = [1, 1, 2, 3, 4, 5, 5, 6, 9]\n",
+            "error": null
+        }
+    }
+}

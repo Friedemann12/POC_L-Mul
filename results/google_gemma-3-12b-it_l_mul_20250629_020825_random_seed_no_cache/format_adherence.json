@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 33.9867,
+        "tokens_per_second": 11.77,
+        "total_new_tokens": 400,
+        "cpu_percent_usage": 93.4,
+        "ram_usage_gb": 1.57,
+        "vram_peak_gb": 22.7401,
+        "emissions_kg_co2": 0.0012901134787647302,
+        "energy_consumed_kwh": 0.002716
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": "\n\n```json\n{\n  \"id\": 12345,\n  \"username\": \"john.doe\",\n  \"isActive\": true,\n  \"tags\": [\"developer\", \"backend\", \"python\"]\n}\n```\n",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": "  The table should list the following components: 'Database', 'API', 'Frontend'. The 'Status' column should initially display 'Pending'. The 'Last Check' column should be blank.\n\n```markdown\n| Component | Status | Last Check |\n|---|---|---|\n| Database | Pending |  |\n| API | Pending |  |\n| Frontend | Pending |  |\n```\n\n",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

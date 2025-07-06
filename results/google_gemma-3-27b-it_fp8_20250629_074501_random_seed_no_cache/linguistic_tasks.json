@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 117.4474,
+        "tokens_per_second": 2.55,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 98.2,
+        "ram_usage_gb": 6.6312,
+        "vram_peak_gb": 27.8406,
+        "emissions_kg_co2": 0.004693661176954409,
+        "energy_consumed_kwh": 0.009881
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nData flows. Apps aid tasks. Chips boost capacity. A digital world grows. Tools link folks. Info is rapid.\n\n",
+            "e_count": 0
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nIt's like giving precise steps to the electronic mind. You tell it, \"Do one thing, then the next, then the next.\" It's using logic, like solving puzzles. We write these steps using specific words the computer knows. These words form 'scripts' which the computer then follows. It's useful for solving problems, building things like online stores, or even controlling robots. The key is being precise; the computer does only the specific things you tell it, nothing more, nothing less. It's the science of instructing the silicon.\n\n\n\n\n",
+            "a_count": 0
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 87.8954,
+        "tokens_per_second": 3.41,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 97.5,
+        "ram_usage_gb": 8.4611,
+        "vram_peak_gb": 12.4789,
+        "emissions_kg_co2": 0.0022499159289739936,
+        "energy_consumed_kwh": 0.004737
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nGadgets aid lots. Apps link folks. A boon.\n",
+            "e_count": 1
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nInstructing computers. Solving problems. Writing code. Building systems. It involves logic, precision, plus the intellect to devise solutions. It\u2019s the engine of modern technology.\n",
+            "a_count": 0
+        }
+    }
+}

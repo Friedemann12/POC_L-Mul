@@ -1,0 +1,29 @@
+{
+    "task_name": "output_length_variance",
+    "performance_metrics": {
+        "duration_seconds": 180.7835,
+        "tokens_per_second": 2.9,
+        "total_new_tokens": 525,
+        "cpu_percent_usage": 98.9,
+        "ram_usage_gb": 6.9849,
+        "vram_peak_gb": 27.7116,
+        "emissions_kg_co2": 0.004650146328258012,
+        "energy_consumed_kwh": 0.00979
+    },
+    "results": {
+        "very_short": {
+            "prompt": "Explain artificial intelligence in exactly 25 words.",
+            "response": "\n\n\nArtificial intelligence replicates human intelligence in machines through learning, problem-solving, and decision-making. It powers automation, data analysis, and innovations across numerous industries.\n\n\n\n\n",
+            "target_length": 25,
+            "actual_length": 22,
+            "variance": -3
+        },
+        "medium": {
+            "prompt": "Explain artificial intelligence in about 150 words.",
+            "response": "\n\nArtificial intelligence (AI) is the simulation of human intelligence processes by computer systems. It encompasses learning (acquiring information and rules), reasoning (using rules to reach conclusions), and self-correction. \n\nAI isn't a single technology but a broad field with many approaches, including machine learning (algorithms learning from data), deep learning (using artificial neural networks), and natural language processing (understanding and generating human language). \n\nAI is already prevalent in our daily lives, powering things like search engines, recommendation systems, spam filters, and virtual assistants.  Its potential impacts are vast, ranging from automating tasks and improving healthcare to creating new forms of entertainment and solving complex global challenges.  However, ethical concerns surrounding bias, job displacement, and autonomous weapons are also crucial considerations.\n\n\n\n",
+            "target_length": 150,
+            "actual_length": 119,
+            "variance": -31
+        }
+    }
+}

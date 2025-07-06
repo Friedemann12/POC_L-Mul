@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 12.3811,
+        "tokens_per_second": 17.28,
+        "total_new_tokens": 214,
+        "cpu_percent_usage": 81.7,
+        "ram_usage_gb": 1.4819,
+        "vram_peak_gb": 27.5475,
+        "emissions_kg_co2": 0.0003999327086932193,
+        "energy_consumed_kwh": 0.000842
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " The response must be in English. The response must be under 200 characters.\n\nModern tech enhances efficiency, enabling seamless experiences. Devices, networks, and apps evolve, expanding possibilities. Energy, ease, and engagement define today's digital era. Let's embrace these elements. \n\n(200 characters)",
+            "e_count": 50
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " To avoid mistakes, check that you didn't use the letter 'a' in your response. You can use a tool to double-check. The response should be in English.\nOkay, let's see. The user wants me to describe computer programming without using the letter 'a'. First, I need to make sure I don't use any 'a's in my response. Let me think about synonyms and alternative phrases.\n\nProgramming involves creating instructions for machines. Instead of \"code,\" maybe \"scripts\" or \"programs.\" \"Developing\" could be \"building\" or \"crafting.\" \"Logic\" is okay, but I need to avoid \"algorithm\" since it has an 'a'. Maybe \"steps\" or \"processes.\" \n\nI",
+            "a_count": 32
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 11.495,
+        "tokens_per_second": 4.52,
+        "total_new_tokens": 52,
+        "cpu_percent_usage": 80.3,
+        "ram_usage_gb": 2.3415,
+        "vram_peak_gb": 8.5055,
+        "emissions_kg_co2": 0.00024371647064223975,
+        "energy_consumed_kwh": 0.000513
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "",
+            "e_count": 0
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": " 1. Code, language, logic, syntax, function. 2. Designing, building, testing. 3. Problem, solution, rules. 4. Algorithm, data, structure. 5. Write, execute, debug.",
+            "a_count": 6
+        }
+    }
+}

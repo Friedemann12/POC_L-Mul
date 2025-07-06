@@ -1,0 +1,29 @@
+{
+    "task_name": "output_length_variance",
+    "performance_metrics": {
+        "duration_seconds": 47.5873,
+        "tokens_per_second": 5.3,
+        "total_new_tokens": 252,
+        "cpu_percent_usage": 95.4,
+        "ram_usage_gb": 2.3459,
+        "vram_peak_gb": 8.5211,
+        "emissions_kg_co2": 0.001381273353813825,
+        "energy_consumed_kwh": 0.002908
+    },
+    "results": {
+        "very_short": {
+            "prompt": "Explain artificial intelligence in exactly 25 words.",
+            "response": " Artificial intelligence (AI) is machine learning and automation to mimic human intelligence.\n\nHere's a breakdown:\n- Artificial Intelligence (AI): The broad field of study.\n- Machine Learning (ML): A subset of AI that involves training models to make predictions or decisions.\n- Automation: The use of machines or software to perform tasks without human intervention.\n- Mimic Human Intelligence: AI",
+            "target_length": 25,
+            "actual_length": 60,
+            "variance": 35
+        },
+        "medium": {
+            "prompt": "Explain artificial intelligence in about 150 words.",
+            "response": " Artificial Intelligence (AI) refers to machines and software designed to perform tasks that typically require human intelligence. These tasks include learning, reasoning, problem-solving, perception, and language understanding. AI can be categorized into different types, including:\n\n1. **Narrow or Weak AI**: Designed to perform a single task (e.g., facial recognition, internet searches).\n2. **General or Strong AI**: Can perform any intellectual task that a human can do.\n\nAI technologies include machine learning, natural language processing, and computer vision. Machine learning involves training algorithms to learn from data, improving performance over time. Natural language processing enables computers to understand, interpret, and generate human language. Computer vision allows machines to interpret and understand digital images or videos. AI has applications in various fields, such as healthcare, finance, education, and entertainment, improving efficiency, accuracy, and decision-making processes.",
+            "target_length": 150,
+            "actual_length": 133,
+            "variance": -17
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 85.5266,
+        "tokens_per_second": 4.68,
+        "total_new_tokens": 400,
+        "cpu_percent_usage": 97.5,
+        "ram_usage_gb": 2.4275,
+        "vram_peak_gb": 15.4852,
+        "emissions_kg_co2": 0.002439435780248841,
+        "energy_consumed_kwh": 0.005136
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": " Also, ensure that the username is not empty and isActive is either true or false. The id should be a positive integer. The tags array must have at least one element. Here is an example of the JSON format:\n\n{\n  \"id\": 123,\n  \"username\": \"john_doe\",\n  \"isActive\": true,\n  \"tags\": [\"tag1\", \"tag2\"]\n}\n\nNow, generate a valid JSON object following these rules. Do not use the example values. Make sure that the JSON is valid and meets all the criteria. Here's a JSON schema to help you:\n\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": {\"type\": \"integer\", \"minimum\": 1},\n    \"username\": {\"type\": \"string\", \"minLength\": 1},\n    \"isActive\": {\"type\": \"boolean\"},\n    \"tags\": {\n      \"type\": \"array\",\n      \"items\": {\"type\": \"string\"},\n",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": " Fill the table with the following data:\n\n- Component: Frontend, Status: Operational, Last Check: 2023-10-05 14:30\n- Component: Backend, Status: Degraded, Last Check: 2023-10-05 14:25\n- Component: Database, Status: Down, Last Check: 2023-10-05 14:20\n\nMake sure that the table is formatted properly and the headers are bolded.\nSure! Here's a properly formatted Markdown table with the specified data:\n\n```\n| **Component** | **Status**   | **Last Check**     |\n|---------------|--------------|--------------------|\n| Frontend      | Operational  | 2023-10-05 14:30   |\n| Backend       | Degraded     | 2023-10-",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

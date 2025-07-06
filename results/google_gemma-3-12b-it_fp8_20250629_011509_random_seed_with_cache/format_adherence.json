@@ -1,0 +1,28 @@
+{
+    "task_name": "format_adherence",
+    "performance_metrics": {
+        "duration_seconds": 106.8305,
+        "tokens_per_second": 3.74,
+        "total_new_tokens": 400,
+        "cpu_percent_usage": 98.0,
+        "ram_usage_gb": 7.3974,
+        "vram_peak_gb": 12.6932,
+        "emissions_kg_co2": 0.002687076126361464,
+        "energy_consumed_kwh": 0.005657
+    },
+    "results": {
+        "json_strict": {
+            "prompt": "Create a JSON object for a user. It must contain these exact fields: 'id' (number), 'username' (string), 'isActive' (boolean), and 'tags' (an array of strings).",
+            "response": "\n\n```json\n{\n  \"id\": 123,\n  \"username\": \"john.doe\",\n  \"isActive\": true,\n  \"tags\": [\"developer\", \"frontend\", \"javascript\"]\n}\n```\n",
+            "valid_json": false,
+            "format_adherence": false
+        },
+        "markdown_table": {
+            "prompt": "Create a Markdown table with three columns: 'Component', 'Status', and 'Last Check'.",
+            "response": "\n\nThe table should include the following components and their statuses:\n\n*   **Database Server:** Online\n*   **Web Server:** Offline\n*   **Cache Server:** Degraded\n*   **API Gateway:** Online\n*   **Message Queue:** Online\n\nThe 'Last Check' column should indicate the timestamp of the last check.  Please assume the current time is 2024-10-27 10:30:00.\n\n```markdown\n| Component | Status | Last Check |\n|---|---|---|\n| Database Server | Online | 2024-10-27 10:30:00 |\n| Web Server | Offline | 2024-10-27 10:30:00 |\n| Cache Server | Degraded | 2024-10-27 10:30:00 |\n",
+            "has_table_structure": true,
+            "has_expected_columns": true,
+            "format_adherence": true
+        }
+    }
+}

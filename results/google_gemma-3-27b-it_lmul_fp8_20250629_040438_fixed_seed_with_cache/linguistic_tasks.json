@@ -1,0 +1,25 @@
+{
+    "task_name": "linguistic_tasks",
+    "performance_metrics": {
+        "duration_seconds": 102.6641,
+        "tokens_per_second": 2.92,
+        "total_new_tokens": 300,
+        "cpu_percent_usage": 97.9,
+        "ram_usage_gb": 7.0829,
+        "vram_peak_gb": 27.9612,
+        "emissions_kg_co2": 0.0026335524009183002,
+        "energy_consumed_kwh": 0.005544
+    },
+    "results": {
+        "limited_e": {
+            "prompt": "Write about modern technology using the letter 'e' maximum 3 times. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nA vast global grid now links us. Data flows at light's quick jump. Apps aid us in daily tasks. Phones fit in a palm. Such tools shift how humans work, play, and bond. \n\n\n\n",
+            "e_count": 1
+        },
+        "no_a": {
+            "prompt": "Describe computer programming without using the letter 'a'. ONLY RETURN THE RESPONSE, NO OTHER TEXT.",
+            "response": "\n\nCode is giving directions to the system. It's fixing problems using logic, rules. One needs to be precise, using symbols the system knows. It involves building steps, loops, conditions. The objective? To get the system to do something useful. It's like telling someone how to solve puzzle, but using machine-level instructions. It requires intense focus, problem solving skills. It\u2019s often done using editors, systems built for this very purpose. Think of it like writing recipes, but for computers. \n",
+            "a_count": 1
+        }
+    }
+}
